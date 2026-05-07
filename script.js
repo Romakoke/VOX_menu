@@ -1,4 +1,4 @@
-const placeholder = "images/placeholder.jpg";
+const placeholder = "images/vox logo.png";
 
 const categoryGroups = {
   kitchen: [
