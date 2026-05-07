@@ -108,7 +108,30 @@ const menuItems = [
   { name: "Сет SHELBY на 12–15 персон", price: "50 000 ₸", category: "company", image: placeholder, ingredients: "Рибай 2, тибон 2, куырдак 2, цыпленок табака 2, сибас, дорадо, дольки 2 порции, микс салата, овощи." },
   { name: "Куырдак", price: "30 000 ₸", category: "company", image: "images/kuyrdak.png", ingredients: "Компанияға арналған қуырдақ." },
   { name: "Бешбармак", price: "25 000 ₸", category: "company", image: "images/beshbarmak.png", ingredients: "Компанияға арналған бешбармак." },
+{
+  name: "Микс суши",
+  price: "18 000 ₸",
+  category: "company",
+  image: "images/Микс суши.png",
+  ingredients: "Суши сет ассорти, роллы, соус, имбирь, васаби."
+},
 
+{
+  name: "Мясной микс",
+  price: "25 000 ₸",
+  category: "company",
+  image: "images/Мясной микс.png",
+  ingredients: "Ет ассорти, гарнир, көкөніс, соустар."
+},
+
+{
+  name: "Куриное асорти",
+  price: "8 000 ₸",
+  category: "company",
+  image: "images/Куриное асорти.png",
+  ingredients: "Тауық ассорти, наггетсы, қанатша, соус."
+},
+  
   { name: "Туркестанский лимонад", price: "2 500 ₸", category: "lemonade", image: "images/lemonade_kiwi_lime.jpeg", ingredients: "Лимон, газды су, сироп, мұз." },
   { name: "Мохито классический", price: "2 500 ₸", category: "lemonade", image: placeholder, ingredients: "Лайм, жалбыз, сироп, газды су, мұз." },
   { name: "Чай черный", price: "1 000 ₸", category: "tea", image: placeholder, ingredients: "Қара шай." },
