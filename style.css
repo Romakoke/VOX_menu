@@ -121,15 +121,12 @@ body {
 /* CATEGORIES */
 .categories {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
-  overflow-x: auto;
-  padding: 0 0 18px;
+  overflow: visible;
+  padding: 0;
   margin-bottom: 30px;
-  scrollbar-width: none;
-}
-
-.categories::-webkit-scrollbar {
-  display: none;
 }
 
 .category-btn {
@@ -143,6 +140,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   transition: .25s;
+  white-space: nowrap;
 }
 
 .category-btn.active,
@@ -189,10 +187,11 @@ body {
 
 .card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  background: linear-gradient(135deg, #160006, #111);
+  height: 220px;
+  object-fit: contain;
+  background: #050505;
   border-bottom: 1px solid rgba(196,155,86,.2);
+  padding: 6px;
 }
 
 .card-body {
@@ -292,10 +291,12 @@ body {
 .modal-box img {
   width: 100%;
   height: 235px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #050505;
   border-radius: 20px;
   margin-bottom: 16px;
   border: 1px solid rgba(196,155,86,.25);
+  padding: 6px;
 }
 
 .modal-box h3 {
@@ -395,6 +396,19 @@ footer {
     font-size: 15px;
   }
 
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 24px;
+  }
+
+  .category-btn {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -405,7 +419,9 @@ footer {
   }
 
   .card img {
-    height: 130px;
+    height: 190px;
+    object-fit: contain;
+    padding: 5px;
   }
 
   .card-body {
@@ -428,15 +444,22 @@ footer {
 
   .modal-box img {
     height: 220px;
+    object-fit: contain;
   }
 }
 
 @media (max-width: 420px) {
+  .category-btn {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+
   .menu-grid {
     grid-template-columns: 1fr;
   }
 
   .card img {
-    height: 205px;
+    height: 210px;
+    object-fit: contain;
   }
 }
