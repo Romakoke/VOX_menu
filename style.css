@@ -359,8 +359,9 @@ footer {
 
 @media (max-width: 700px) {
   .hero {
-    height: 100vh;
-    min-height: 620px;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 1600 / 1200;
   }
 
   .hero-bg {
@@ -431,16 +432,6 @@ footer {
 }
 
 @media (max-width: 420px) {
-  .hero {
-    height: 82vh;
-    min-height: 560px;
-  }
-
-  .hero-bg {
-    background-size: contain;
-    background-position: center center;
-  }
-
   .menu-grid {
     grid-template-columns: 1fr;
   }
