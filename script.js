@@ -1,3 +1,5 @@
+const img = (n) => `images/1 (${n})_resized.jpg`;
+
 const categoryGroups = {
   kitchen: [
     { id: "all", name: "Барлығы" },
@@ -35,21 +37,21 @@ const menuItems = [
     name: "Мясная нарезка",
     price: "7 000 ₸",
     category: "cold",
-    image: "images/placeholder.jpg",
+    image: img(27),
     ingredients: "Ет ассорти, қазы, шұжық, көкөніс."
   },
   {
     name: "Сырная нарезка",
     price: "5 000 ₸",
     category: "cold",
-    image: "images/placeholder.jpg",
+    image: img(56),
     ingredients: "Ірімшік ассорти, жаңғақ, бал, жүзім."
   },
   {
     name: "Салями",
     price: "4 500 ₸",
     category: "cold",
-    image: "images/placeholder.jpg",
+    image: img(27),
     ingredients: "Салями, көкөніс, жасыл салат."
   },
   {
@@ -64,35 +66,35 @@ const menuItems = [
     name: "Салат с шефа",
     price: "4 000 ₸",
     category: "salads",
-    image: "images/placeholder.jpg",
+    image: img(23),
     ingredients: "Фирмалық салат, ет, көкөніс, арнайы соус."
   },
   {
     name: "Греческий",
     price: "3 000 ₸",
     category: "salads",
-    image: "images/placeholder.jpg",
+    image: img(4),
     ingredients: "Қияр, қызанақ, сыр фета, зәйтүн, зәйтүн майы."
   },
   {
     name: "Сытный папа",
     price: "3 000 ₸",
     category: "salads",
-    image: "images/placeholder.jpg",
+    image: img(9),
     ingredients: "Ет, картоп, жұмыртқа, көкөніс, майонез."
   },
   {
     name: "Цезарь с курицей",
     price: "3 000 ₸",
     category: "salads",
-    image: "images/placeholder.jpg",
+    image: img(1),
     ingredients: "Тауық еті, салат жапырағы, сыр, сухари, цезарь соусы."
   },
   {
     name: "Оливье",
     price: "2 500 ₸",
     category: "salads",
-    image: "images/placeholder.jpg",
+    image: img(2),
     ingredients: "Картоп, сәбіз, жұмыртқа, қияр, майонез."
   },
 
@@ -100,28 +102,28 @@ const menuItems = [
     name: "Сет Баварский",
     price: "7 000 ₸",
     category: "beer",
-    image: "images/placeholder.jpg",
+    image: img(40),
     ingredients: "Пиволық закуска ассорти, фри, соус."
   },
   {
     name: "Креветки в кляре",
     price: "4 500 ₸",
     category: "beer",
-    image: "images/placeholder.jpg",
+    image: img(43),
     ingredients: "Креветка, кляр, лимон, соус."
   },
   {
     name: "Кольца кальмара",
     price: "3 000 ₸",
     category: "beer",
-    image: "images/placeholder.jpg",
+    image: img(43),
     ingredients: "Кальмар сақиналары, панировка, соус."
   },
   {
     name: "Наггетсы",
     price: "1 500 ₸",
     category: "beer",
-    image: "images/placeholder.jpg",
+    image: img(44),
     ingredients: "Тауық наггетсы, фирмалық соус."
   },
 
@@ -129,21 +131,21 @@ const menuItems = [
     name: "Сет FOX",
     price: "38 000 ₸",
     category: "company",
-    image: "images/placeholder.jpg",
+    image: img(40),
     ingredients: "Үлкен компанияға арналған ет және закуска ассорти."
   },
   {
     name: "Сет MEDVED",
     price: "50 000 ₸",
     category: "company",
-    image: "images/placeholder.jpg",
+    image: img(42),
     ingredients: "VIP ассорти, ет тағамдары, гарнир, соустар."
   },
   {
     name: "Наурыз Latay",
     price: "30 000 ₸",
     category: "company",
-    image: "images/placeholder.jpg",
+    image: img(32),
     ingredients: "Компанияға арналған ұлттық және ет тағамдары."
   },
 
@@ -151,35 +153,35 @@ const menuItems = [
     name: "Телятина с овощами",
     price: "3 500 ₸",
     category: "second",
-    image: "images/placeholder.jpg",
+    image: img(5),
     ingredients: "Бұзау еті, көкөністер, арнайы соус."
   },
   {
     name: "Курица",
     price: "4 500 ₸",
     category: "second",
-    image: "images/placeholder.jpg",
+    image: img(18),
     ingredients: "Тауық еті, гарнир, соус."
   },
   {
     name: "Телятина с грибным сливочным соусом",
     price: "3 500 ₸",
     category: "second",
-    image: "images/placeholder.jpg",
+    image: img(17),
     ingredients: "Бұзау еті, саңырауқұлақ, кілегейлі соус."
   },
   {
     name: "Куриное филе с овощами",
     price: "3 000 ₸",
     category: "second",
-    image: "images/placeholder.jpg",
+    image: img(6),
     ingredients: "Тауық филесі, көкөністер, дәмдеуіштер."
   },
   {
     name: "Жареная рыба",
     price: "4 500 ₸",
     category: "second",
-    image: "images/placeholder.jpg",
+    image: img(57),
     ingredients: "Қуырылған балық, лимон, көкөніс."
   },
 
@@ -201,14 +203,14 @@ const menuItems = [
     name: "Рамен с курицей",
     price: "2 000 ₸",
     category: "soups",
-    image: "images/placeholder.jpg",
+    image: img(6),
     ingredients: "Кеспе, тауық еті, жұмыртқа, сорпа."
   },
   {
     name: "Рамен с говядиной",
     price: "2 500 ₸",
     category: "soups",
-    image: "images/placeholder.jpg",
+    image: img(18),
     ingredients: "Кеспе, сиыр еті, жұмыртқа, сорпа."
   },
 
@@ -216,28 +218,28 @@ const menuItems = [
     name: "Рибай",
     price: "7 000 ₸",
     category: "steaks",
-    image: "images/placeholder.jpg",
+    image: img(21),
     ingredients: "Рибай стейк, тұз, бұрыш, соус."
   },
   {
     name: "Тибон",
     price: "7 000 ₸",
     category: "steaks",
-    image: "images/placeholder.jpg",
+    image: img(19),
     ingredients: "T-bone стейк, гриль, соус."
   },
   {
     name: "Медальоны с овощами",
     price: "6 500 ₸",
     category: "steaks",
-    image: "images/placeholder.jpg",
+    image: img(20),
     ingredients: "Ет медальоны, көкөністер, соус."
   },
   {
     name: "Стейк из лосося",
     price: "7 500 ₸",
     category: "steaks",
-    image: "images/placeholder.jpg",
+    image: img(57),
     ingredients: "Лосось, лимон, көкөніс, соус."
   },
 
@@ -245,28 +247,28 @@ const menuItems = [
     name: "Казахстан",
     price: "4 500 ₸",
     category: "pizza",
-    image: "images/placeholder.jpg",
+    image: img(61),
     ingredients: "Қазы, сыр, томат соусы, қамыр."
   },
   {
     name: "Пепперони",
     price: "3 500 ₸",
     category: "pizza",
-    image: "images/placeholder.jpg",
+    image: img(7),
     ingredients: "Пепперони, моцарелла, томат соусы."
   },
   {
     name: "Альфредо",
     price: "3 800 ₸",
     category: "pizza",
-    image: "images/placeholder.jpg",
+    image: img(13),
     ingredients: "Тауық еті, кілегейлі соус, сыр."
   },
   {
     name: "Болоньезе",
     price: "4 000 ₸",
     category: "pizza",
-    image: "images/placeholder.jpg",
+    image: img(58),
     ingredients: "Фарш, томат соусы, сыр."
   },
 
@@ -274,28 +276,28 @@ const menuItems = [
     name: "Филадельфия",
     price: "3 500 ₸",
     category: "rolls",
-    image: "images/placeholder.jpg",
+    image: img(50),
     ingredients: "Лосось, күріш, сыр, нори."
   },
   {
     name: "Цезарь",
     price: "3 000 ₸",
     category: "rolls",
-    image: "images/placeholder.jpg",
+    image: img(48),
     ingredients: "Тауық еті, күріш, сыр, соус."
   },
   {
     name: "Америка темпура",
     price: "3 500 ₸",
     category: "rolls",
-    image: "images/placeholder.jpg",
+    image: img(54),
     ingredients: "Күріш, нори, балық, темпура."
   },
   {
     name: "Жареная темпура",
     price: "3 000 ₸",
     category: "rolls",
-    image: "images/placeholder.jpg",
+    image: img(11),
     ingredients: "Қуырылған ролл, күріш, нори, соус."
   },
 
@@ -303,28 +305,28 @@ const menuItems = [
     name: "Кусковой говядина",
     price: "1 600 ₸",
     category: "shashlyk",
-    image: "images/placeholder.jpg",
+    image: img(30),
     ingredients: "Сиыр еті, маринад, пияз."
   },
   {
     name: "Люля кебаб",
     price: "1 500 ₸",
     category: "shashlyk",
-    image: "images/placeholder.jpg",
+    image: img(29),
     ingredients: "Фарш, дәмдеуіштер, пияз."
   },
   {
     name: "Печень в оболочке",
     price: "1 300 ₸",
     category: "shashlyk",
-    image: "images/placeholder.jpg",
+    image: img(31),
     ingredients: "Бауыр, май қабығы, дәмдеуіш."
   },
   {
     name: "Утка",
     price: "2 000 ₸",
     category: "shashlyk",
-    image: "images/placeholder.jpg",
+    image: img(32),
     ingredients: "Үйрек еті, маринад, пияз."
   },
 
@@ -332,14 +334,14 @@ const menuItems = [
     name: "Чесночный соус",
     price: "500 ₸",
     category: "sauces",
-    image: "images/placeholder.jpg",
+    image: img(39),
     ingredients: "Сарымсақ, майонез, дәмдеуіш."
   },
   {
     name: "Сырный соус",
     price: "500 ₸",
     category: "sauces",
-    image: "images/placeholder.jpg",
+    image: img(38),
     ingredients: "Сыр, кілегей, дәмдеуіш."
   },
 
@@ -347,14 +349,14 @@ const menuItems = [
     name: "Туркестанский лимонад",
     price: "2 500 ₸",
     category: "lemonade",
-    image: "images/placeholder.jpg",
+    image: img(34),
     ingredients: "Лимон, газды су, сироп, мұз."
   },
   {
     name: "Мохито классический",
     price: "2 500 ₸",
     category: "lemonade",
-    image: "images/placeholder.jpg",
+    image: img(35),
     ingredients: "Лайм, жалбыз, сироп, газды су, мұз."
   },
   {
@@ -389,14 +391,14 @@ const menuItems = [
     name: "Aperol Spritz",
     price: "3 500 ₸",
     category: "cocktails",
-    image: "images/placeholder.jpg",
+    image: img(36),
     ingredients: "Aperol, prosecco, soda, апельсин, мұз."
   },
   {
     name: "Mojito",
     price: "3 000 ₸",
     category: "cocktails",
-    image: "images/placeholder.jpg",
+    image: img(35),
     ingredients: "Ром, лайм, жалбыз, қант сиропы, soda."
   },
   {
@@ -557,7 +559,7 @@ function renderMenu() {
     return item.category === activeCategory;
   });
 
-  menuGrid.innerHTML = filtered.map(item => `
+  menuGrid.innerHTML = filtered.map((item, index) => `
     <div class="card">
       <img src="${item.image}" alt="${item.name}" onerror="this.src='images/placeholder.jpg'">
       <div class="card-body">
