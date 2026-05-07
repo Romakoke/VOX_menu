@@ -112,7 +112,7 @@ const menuItems = [
   name: "Микс суши",
   price: "18 000 ₸",
   category: "company",
-  image: "images/Микс суши.png",
+  image: "images/mix_sushi_1200x800.png",
   ingredients: "Суши сет ассорти, роллы, соус, имбирь, васаби."
 },
 
@@ -120,7 +120,7 @@ const menuItems = [
   name: "Мясной микс",
   price: "25 000 ₸",
   category: "company",
-  image: "images/Мясной микс.png",
+  image: "images/meat_mix_1200x800.png",
   ingredients: "Ет ассорти, гарнир, көкөніс, соустар."
 },
 
@@ -128,7 +128,7 @@ const menuItems = [
   name: "Куриное асорти",
   price: "8 000 ₸",
   category: "company",
-  image: "images/Куриное асорти.png",
+  image: "images/chicken_assorti_1200x800.png",
   ingredients: "Тауық ассорти, наггетсы, қанатша, соус."
 },
   
