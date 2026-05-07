@@ -1,20 +1,34 @@
-const categories = [
-  { id: "all", name: "Барлығы" },
-  { id: "cold", name: "Холодные закуски" },
-  { id: "salads", name: "Салаты" },
-  { id: "beer", name: "Закуски к пиву" },
-  { id: "company", name: "На компанию" },
-  { id: "second", name: "Вторые блюда" },
-  { id: "soups", name: "Супы" },
-  { id: "steaks", name: "Стейки" },
-  { id: "pizza", name: "Пицца" },
-  { id: "rolls", name: "Роллы" },
-  { id: "shashlyk", name: "Шашлыки" },
-  { id: "sauces", name: "Соусы" },
-  { id: "drinks", name: "Сусындар" },
-  { id: "alcohol", name: "Алкоголь" },
-  { id: "wine", name: "Вина" }
-];
+const categoryGroups = {
+  kitchen: [
+    { id: "all", name: "Барлығы" },
+    { id: "cold", name: "Холодные закуски" },
+    { id: "salads", name: "Салаты" },
+    { id: "beer", name: "Закуски к пиву" },
+    { id: "company", name: "На компанию" },
+    { id: "second", name: "Вторые блюда" },
+    { id: "soups", name: "Супы" },
+    { id: "steaks", name: "Стейки" },
+    { id: "pizza", name: "Пицца" },
+    { id: "rolls", name: "Роллы" },
+    { id: "shashlyk", name: "Шашлыки" },
+    { id: "sauces", name: "Соусы" }
+  ],
+
+  bar: [
+    { id: "all", name: "Барлығы" },
+    { id: "lemonade", name: "Лимонады" },
+    { id: "tea", name: "Чай" },
+    { id: "water", name: "Минеральная вода" },
+    { id: "cocktails", name: "Коктейли" },
+    { id: "wine", name: "Вина" },
+    { id: "beer_bar", name: "Пиво" },
+    { id: "vodka", name: "Водка" },
+    { id: "whiskey", name: "Виски" },
+    { id: "rum", name: "Ром" },
+    { id: "tequila", name: "Текила" },
+    { id: "liqueur", name: "Ликеры" }
+  ]
+};
 
 const menuItems = [
   {
@@ -22,7 +36,7 @@ const menuItems = [
     price: "7 000 ₸",
     category: "cold",
     image: "images/placeholder.jpg",
-    ingredients: "Ет ассорти, қазы, шұжық, жасыл көкөніс."
+    ingredients: "Ет ассорти, қазы, шұжық, көкөніс."
   },
   {
     name: "Сырная нарезка",
@@ -332,89 +346,59 @@ const menuItems = [
   {
     name: "Туркестанский лимонад",
     price: "2 500 ₸",
-    category: "drinks",
+    category: "lemonade",
     image: "images/placeholder.jpg",
     ingredients: "Лимон, газды су, сироп, мұз."
   },
   {
     name: "Мохито классический",
     price: "2 500 ₸",
-    category: "drinks",
+    category: "lemonade",
     image: "images/placeholder.jpg",
     ingredients: "Лайм, жалбыз, сироп, газды су, мұз."
   },
   {
-    name: "Coca-Cola",
-    price: "1 200 ₸",
-    category: "drinks",
+    name: "Чай черный",
+    price: "1 000 ₸",
+    category: "tea",
     image: "images/placeholder.jpg",
-    ingredients: "Салқын сусын."
+    ingredients: "Қара шай."
+  },
+  {
+    name: "Чай зеленый",
+    price: "1 000 ₸",
+    category: "tea",
+    image: "images/placeholder.jpg",
+    ingredients: "Көк шай."
   },
   {
     name: "Borjomi",
     price: "1 600 ₸",
-    category: "drinks",
+    category: "water",
     image: "images/placeholder.jpg",
     ingredients: "Минералды су."
   },
   {
-    name: "Чай",
-    price: "1 000 ₸",
-    category: "drinks",
+    name: "Coca-Cola",
+    price: "1 200 ₸",
+    category: "water",
     image: "images/placeholder.jpg",
-    ingredients: "Қара шай немесе көк шай."
-  },
-
-  {
-    name: "Martini Fiero",
-    price: "2 500 ₸",
-    category: "alcohol",
-    image: "images/placeholder.jpg",
-    ingredients: "Вермут, 100 мл."
+    ingredients: "Салқын сусын."
   },
   {
-    name: "Ararat 3 YO",
-    price: "1 600 ₸",
-    category: "alcohol",
+    name: "Aperol Spritz",
+    price: "3 500 ₸",
+    category: "cocktails",
     image: "images/placeholder.jpg",
-    ingredients: "Армянский коньяк, 50 мл."
+    ingredients: "Aperol, prosecco, soda, апельсин, мұз."
   },
   {
-    name: "Chivas Regal 12 YO",
-    price: "3 900 ₸",
-    category: "alcohol",
+    name: "Mojito",
+    price: "3 000 ₸",
+    category: "cocktails",
     image: "images/placeholder.jpg",
-    ingredients: "Виски, 50 мл."
+    ingredients: "Ром, лайм, жалбыз, қант сиропы, soda."
   },
-  {
-    name: "Jameson",
-    price: "2 900 ₸",
-    category: "alcohol",
-    image: "images/placeholder.jpg",
-    ingredients: "Ирландский виски, 50 мл."
-  },
-  {
-    name: "Baileys",
-    price: "2 300 ₸",
-    category: "alcohol",
-    image: "images/placeholder.jpg",
-    ingredients: "Ликер, 50 мл."
-  },
-  {
-    name: "Olmeca Blanco",
-    price: "2 000 ₸",
-    category: "alcohol",
-    image: "images/placeholder.jpg",
-    ingredients: "Текила, 50 мл."
-  },
-  {
-    name: "Bacardi Carta Blanca",
-    price: "2 000 ₸",
-    category: "alcohol",
-    image: "images/placeholder.jpg",
-    ingredients: "Ром, 50 мл."
-  },
-
   {
     name: "Jacob's Creek Sparkling Moscato",
     price: "17 000 ₸",
@@ -442,6 +426,90 @@ const menuItems = [
     category: "wine",
     image: "images/placeholder.jpg",
     ingredients: "Красное вино, 750 мл."
+  },
+  {
+    name: "Пиво разливное",
+    price: "1 500 ₸",
+    category: "beer_bar",
+    image: "images/placeholder.jpg",
+    ingredients: "Разливное пиво."
+  },
+  {
+    name: "Corona Extra",
+    price: "2 500 ₸",
+    category: "beer_bar",
+    image: "images/placeholder.jpg",
+    ingredients: "Бөтелкедегі пиво."
+  },
+  {
+    name: "Absolut",
+    price: "1 800 ₸",
+    category: "vodka",
+    image: "images/placeholder.jpg",
+    ingredients: "Водка, 50 мл."
+  },
+  {
+    name: "Grey Goose",
+    price: "3 500 ₸",
+    category: "vodka",
+    image: "images/placeholder.jpg",
+    ingredients: "Водка, 50 мл."
+  },
+  {
+    name: "Chivas Regal 12 YO",
+    price: "3 900 ₸",
+    category: "whiskey",
+    image: "images/placeholder.jpg",
+    ingredients: "Виски, 50 мл."
+  },
+  {
+    name: "Jameson",
+    price: "2 900 ₸",
+    category: "whiskey",
+    image: "images/placeholder.jpg",
+    ingredients: "Ирландский виски, 50 мл."
+  },
+  {
+    name: "Bacardi Carta Blanca",
+    price: "2 000 ₸",
+    category: "rum",
+    image: "images/placeholder.jpg",
+    ingredients: "Ром, 50 мл."
+  },
+  {
+    name: "Captain Morgan",
+    price: "2 200 ₸",
+    category: "rum",
+    image: "images/placeholder.jpg",
+    ingredients: "Ром, 50 мл."
+  },
+  {
+    name: "Olmeca Blanco",
+    price: "2 000 ₸",
+    category: "tequila",
+    image: "images/placeholder.jpg",
+    ingredients: "Текила, 50 мл."
+  },
+  {
+    name: "Olmeca Gold",
+    price: "2 200 ₸",
+    category: "tequila",
+    image: "images/placeholder.jpg",
+    ingredients: "Текила, 50 мл."
+  },
+  {
+    name: "Baileys",
+    price: "2 300 ₸",
+    category: "liqueur",
+    image: "images/placeholder.jpg",
+    ingredients: "Ликер, 50 мл."
+  },
+  {
+    name: "Jagermeister",
+    price: "2 400 ₸",
+    category: "liqueur",
+    image: "images/placeholder.jpg",
+    ingredients: "Ликер, 50 мл."
   }
 ];
 
@@ -455,9 +523,12 @@ const modalTitle = document.getElementById("modalTitle");
 const modalPrice = document.getElementById("modalPrice");
 const modalIngredients = document.getElementById("modalIngredients");
 
+let activeType = "kitchen";
 let activeCategory = "all";
 
 function renderCategories() {
+  const categories = categoryGroups[activeType];
+
   categoriesBox.innerHTML = categories.map(cat => `
     <button class="category-btn ${cat.id === activeCategory ? "active" : ""}" data-id="${cat.id}">
       ${cat.name}
@@ -474,11 +545,19 @@ function renderCategories() {
 }
 
 function renderMenu() {
-  const filtered = activeCategory === "all"
-    ? menuItems
-    : menuItems.filter(item => item.category === activeCategory);
+  const currentCategoryIds = categoryGroups[activeType]
+    .filter(cat => cat.id !== "all")
+    .map(cat => cat.id);
 
-  menuGrid.innerHTML = filtered.map((item, index) => `
+  const filtered = menuItems.filter(item => {
+    if (activeCategory === "all") {
+      return currentCategoryIds.includes(item.category);
+    }
+
+    return item.category === activeCategory;
+  });
+
+  menuGrid.innerHTML = filtered.map(item => `
     <div class="card">
       <img src="${item.image}" alt="${item.name}" onerror="this.src='images/placeholder.jpg'">
       <div class="card-body">
@@ -496,7 +575,10 @@ function openModal(index) {
   const item = menuItems[index];
 
   modalImg.src = item.image;
-  modalImg.onerror = () => modalImg.src = "images/placeholder.jpg";
+  modalImg.onerror = () => {
+    modalImg.src = "images/placeholder.jpg";
+  };
+
   modalTitle.textContent = item.name;
   modalPrice.textContent = item.price;
   modalIngredients.textContent = item.ingredients;
@@ -512,6 +594,19 @@ modal.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.classList.remove("active");
   }
+});
+
+document.querySelectorAll(".menu-tab").forEach(tab => {
+  tab.addEventListener("click", () => {
+    document.querySelectorAll(".menu-tab").forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    activeType = tab.dataset.type;
+    activeCategory = "all";
+
+    renderCategories();
+    renderMenu();
+  });
 });
 
 renderCategories();
