@@ -45,9 +45,9 @@ const menuItems = [
   { name: "Греческий", price: "2 000 ₸", category: "salads", image: "images/salad_greek.jpg", ingredients: "Қияр, қызанақ, сыр фета, зәйтүн." },
   { name: "Сытный папа", price: "3 000 ₸", category: "salads", image: "images/salad_sytyi_papa.png", ingredients: "Ет, картоп, жұмыртқа, көкөніс." },
   { name: "Азиатский с баклажанами", price: "3 000 ₸", category: "salads", image: "images/salad_asian_eggplant.jpg", ingredients: "Баклажан, көкөніс, азиялық соус." },
-  { name: "Цезарь с курицей", price: "3 000 ₸", category: "salads", image: placeholder, ingredients: "Тауық еті, салат, сыр, сухари, соус." },
-  { name: "Оливье", price: "2 500 ₸", category: "salads", image: placeholder, ingredients: "Картоп, сәбіз, жұмыртқа, қияр, майонез." },
-  { name: "Рукола с креветками", price: "4 000 ₸", category: "salads", image: placeholder, ingredients: "Рукола, креветка, көкөніс." },
+  { name: "Цезарь с курицей", price: "3 000 ₸", category: "salads", image: "images/salad_caesar_chicken.jpg", ingredients: "Тауық еті, салат, сыр, сухари, соус." },
+  { name: "Оливье", price: "2 500 ₸", category: "salads", image: "images/salad_olivie.jpg", ingredients: "Картоп, сәбіз, жұмыртқа, қияр, майонез." },
+  { name: "Рукола с креветками", price: "4 000 ₸", category: "salads", image: "images/salad_rucola_shrimp.jpg", ingredients: "Рукола, креветка, көкөніс." },
   { name: "Свежий по-домашнему", price: "2 000 ₸", category: "salads", image: placeholder, ingredients: "Қияр, қызанақ, көк шөп." },
   { name: "Фруктовый", price: "4 000 ₸", category: "salads", image: "images/fruit_assorti.png", ingredients: "Жеміс салаты." },
 
