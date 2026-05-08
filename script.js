@@ -1048,7 +1048,7 @@ const menuItems = [
     en: "Bacardi Mojito",
     price: "3 500 ₸",
     category: "long_drinks",
-    image: placeholder,
+    image:  "images/BACARDI MOJITO.png",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
