@@ -871,7 +871,7 @@ const menuItems = [
     en: "Schweppes Tonic 0.25",
     price: "1 300 ₸",
     category: "soft",
-    image: placeholder,
+    image: "images/Schweppes Tonic.png",
     ingRu: "Тоник."
   }),
   makeItem({
@@ -879,7 +879,7 @@ const menuItems = [
     en: "Red Bull 0.25",
     price: "2 000 ₸",
     category: "soft",
-    image: placeholder,
+    image: "images/Red Bull.png",
     ingRu: "Энергетический напиток."
   }),
   makeItem({
@@ -887,7 +887,7 @@ const menuItems = [
     en: "Piko Juice",
     price: "2 200 ₸",
     category: "soft",
-    image: placeholder,
+    image: "images/Piko.png",
     ingRu: "Сок Piko."
   }),
   makeItem({
@@ -906,7 +906,7 @@ const menuItems = [
     en: "Turan Natural Water 0.5",
     price: "1 200 ₸",
     category: "water",
-    image: placeholder,
+    image: "images/Turan.png",
     ingRu: "Природная вода."
   }),
   makeItem({
@@ -949,7 +949,7 @@ const menuItems = [
     en: "Tashkent Tea",
     price: "2 000 ₸",
     category: "tea",
-    image: placeholder,
+    image: "images/Tashkent Tea.png",
     ingRu: "Фирменный чай."
   }),
   makeItem({
@@ -958,7 +958,7 @@ const menuItems = [
     en: "Berry Tea",
     price: "2 000 ₸",
     category: "tea",
-    image: placeholder,
+    image: "images/Berry Tea.png",
     ingRu: "Ягодный чай."
   }),
 
@@ -998,7 +998,7 @@ const menuItems = [
     en: "Cuba Libre",
     price: "4 000 ₸",
     category: "cocktails",
-    image: placeholder,
+    image:  "images/Cuba Libre.png",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1006,7 +1006,7 @@ const menuItems = [
     en: "Long Island",
     price: "4 000 ₸",
     category: "cocktails",
-    image: placeholder,
+    image:  "images/Long Island.png",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1014,7 +1014,7 @@ const menuItems = [
     en: "Negroni",
     price: "4 000 ₸",
     category: "cocktails",
-    image: placeholder,
+    image:  "images/Negroni.png",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1022,7 +1022,7 @@ const menuItems = [
     en: "Pina Colada",
     price: "4 000 ₸",
     category: "cocktails",
-    image: placeholder,
+    image:  "images/Pina Colada.png",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1030,7 +1030,7 @@ const menuItems = [
     en: "Sex on the Beach",
     price: "4 000 ₸",
     category: "cocktails",
-    image: placeholder,
+    image:  "images/Sex on the Beach.png",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1038,7 +1038,7 @@ const menuItems = [
     en: "Tequila Sunrise",
     price: "4 000 ₸",
     category: "cocktails",
-    image: placeholder,
+    image:  "images/Borjomi.png",
     ingRu: "Алкогольный коктейль."
   }),
 
