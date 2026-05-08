@@ -1038,7 +1038,7 @@ const menuItems = [
     en: "Tequila Sunrise",
     price: "4 000 ₸",
     category: "cocktails",
-    image:  "images/Borjomi.png",
+    image:  "images/Tequila Sunrise.png",
     ingRu: "Алкогольный коктейль."
   }),
 
