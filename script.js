@@ -350,28 +350,28 @@ const menuItems = [
     name: { kz: "Күріш", ru: "Рис", en: "Rice" },
     price: "700 ₸",
     category: "garnish",
-    image: placeholder,
+    image:  "images/ris.png",
     ingredients: { kz: "Күріш.", ru: "Рис.", en: "Rice." }
   },
   {
     name: { kz: "Картоп дольки", ru: "Дольки", en: "Potato Wedges" },
     price: "800 ₸",
     category: "garnish",
-    image: placeholder,
+    image:  "images/dolki.png",
     ingredients: { kz: "Картоп дольки.", ru: "Картофельные дольки.", en: "Potato wedges." }
   },
   {
     name: { kz: "Фри", ru: "Фри", en: "French Fries" },
     price: "1 000 ₸",
     category: "garnish",
-    image: placeholder,
+    image:  "images/fri.png",
     ingredients: { kz: "Картоп фри.", ru: "Картофель фри.", en: "French fries." }
   },
   {
     name: { kz: "Гриль көкөністер", ru: "Овощи на гриле", en: "Grilled Vegetables" },
     price: "1 500 ₸",
     category: "garnish",
-    image: placeholder,
+    image:  "images/ovoshchi-na-grile.png",
     ingredients: { kz: "Гриль көкөністер.", ru: "Овощи на гриле.", en: "Grilled vegetables." }
   },
 
@@ -666,7 +666,7 @@ const menuItems = [
     name: { kz: "Olmeca Gold", ru: "Olmeca Gold", en: "Olmeca Gold" },
     price: "2 200 ₸",
     category: "tequila",
-    image: placeholder,
+    image:  "images/Olmeca Gold.png",
     ingredients: { kz: "Текила, 50 мл.", ru: "Текила, 50 мл.", en: "Tequila, 50 ml." }
   },
   {
