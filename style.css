@@ -17,7 +17,6 @@ body {
   color: #fff;
 }
 
-/* HERO */
 .hero {
   width: 100%;
   height: 100vh;
@@ -47,11 +46,11 @@ body {
   pointer-events: none;
 }
 
-/* TOP INFO */
 .top-info {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
   padding: 14px 22px;
   border-top: 1px solid rgba(196,155,86,.28);
   border-bottom: 1px solid rgba(196,155,86,.28);
@@ -60,12 +59,33 @@ body {
   background: rgba(0,0,0,.65);
 }
 
-/* MENU */
+.lang-switch {
+  display: flex;
+  gap: 7px;
+}
+
+.lang-btn {
+  border: 1px solid rgba(196,155,86,.45);
+  background: #070707;
+  color: #f5ead0;
+  padding: 8px 13px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: .25s;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  background: linear-gradient(135deg, #9b0011, #d71920);
+  color: #fff;
+  border-color: #d6a85d;
+}
+
 .menu-section {
   padding: 55px 18px;
   max-width: 1250px;
   margin: auto;
-  position: relative;
 }
 
 .menu-section h2 {
@@ -90,7 +110,6 @@ body {
   margin: 18px 0 28px;
 }
 
-/* KITCHEN / BAR */
 .menu-tabs {
   display: flex;
   justify-content: center;
@@ -118,19 +137,15 @@ body {
   box-shadow: 0 12px 30px rgba(170,0,20,.35);
 }
 
-/* CATEGORIES */
 .categories {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  overflow: visible;
-  padding: 0;
   margin-bottom: 30px;
 }
 
 .category-btn {
-  flex: 0 0 auto;
   border: 1px solid rgba(196,155,86,.35);
   background: linear-gradient(180deg, #111, #060606);
   color: #f5ead0;
@@ -151,14 +166,12 @@ body {
   box-shadow: 0 12px 28px rgba(170,0,20,.35);
 }
 
-/* GRID */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
-/* CARD */
 .card {
   background:
     linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.01)),
@@ -168,44 +181,30 @@ body {
   overflow: hidden;
   box-shadow: 0 20px 45px rgba(0,0,0,.5);
   transition: .28s ease;
-  position: relative;
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top right, rgba(205,0,26,.14), transparent 45%);
-  pointer-events: none;
 }
 
 .card:hover {
   transform: translateY(-6px);
   border-color: rgba(215,25,32,.8);
-  box-shadow: 0 28px 65px rgba(0,0,0,.75);
 }
 
 .card img {
   width: 100%;
-  height: 240px;
+  height: 230px;
   object-fit: cover;
   object-position: center;
   background: #050505;
   border-bottom: 1px solid rgba(196,155,86,.2);
-  padding: 0;
 }
 
 .card-body {
   padding: 17px;
-  position: relative;
-  z-index: 2;
 }
 
 .card h3 {
   font-size: 18px;
   margin-bottom: 9px;
   min-height: 42px;
-  color: #fff;
 }
 
 .price {
@@ -233,7 +232,6 @@ body {
   color: #fff;
 }
 
-/* MODAL */
 .modal {
   position: fixed;
   inset: 0;
@@ -260,18 +258,11 @@ body {
   padding: 18px;
   position: relative;
   animation: pop .25s ease;
-  box-shadow: 0 30px 90px rgba(0,0,0,.85);
 }
 
 @keyframes pop {
-  from {
-    transform: scale(.92);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+  from { transform: scale(.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 .close {
@@ -293,7 +284,6 @@ body {
   width: 100%;
   height: 235px;
   object-fit: contain;
-  object-position: center;
   background: #050505;
   border-radius: 20px;
   margin-bottom: 16px;
@@ -323,7 +313,6 @@ body {
   color: #d6a85d;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 40px 18px;
@@ -336,7 +325,6 @@ footer {
   font-size: 34px;
   font-weight: 900;
   letter-spacing: 4px;
-  color: #fff;
 }
 
 .footer-logo span {
@@ -353,7 +341,6 @@ footer {
   text-decoration: none;
 }
 
-/* RESPONSIVE */
 @media (max-width: 992px) {
   .menu-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -389,20 +376,12 @@ footer {
 
   .menu-tabs {
     gap: 10px;
-    margin: 20px 0;
   }
 
   .menu-tab {
     width: 50%;
     padding: 13px 10px;
     font-size: 15px;
-  }
-
-  .categories {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 9px;
-    margin-bottom: 24px;
   }
 
   .category-btn {
@@ -415,19 +394,8 @@ footer {
     gap: 15px;
   }
 
-  .card {
-    border-radius: 20px;
-  }
-
   .card img {
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
-    padding: 0;
-  }
-
-  .card-body {
-    padding: 13px;
+    height: 170px;
   }
 
   .card h3 {
@@ -443,26 +411,14 @@ footer {
     font-size: 13px;
     padding: 10px;
   }
-
-  .modal-box img {
-    height: 220px;
-    object-fit: contain;
-  }
 }
 
 @media (max-width: 420px) {
-  .category-btn {
-    padding: 9px 12px;
-    font-size: 11px;
-  }
-
   .menu-grid {
     grid-template-columns: 1fr;
   }
 
   .card img {
     height: 230px;
-    object-fit: cover;
-    object-position: center;
   }
 }
