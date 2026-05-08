@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VOX Lounge Bar | Digital Menu</title>
+  <title>VOX Lounge Bar | Menu</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header class="hero">
   <div class="hero-bg"></div>
-
-
 </header>
 
 <section class="top-info">
-  <p>Обслуживание +15%</p>
-  <p>Добро пожаловать!</p>
+  <p id="serviceText">Обслуживание +15%</p>
+  <div class="lang-switch">
+    <button class="lang-btn active" data-lang="kz">KZ</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
 </section>
 
 <main id="menu" class="menu-section">
-  <h2>VOX MENU</h2>
-  <p class="subtitle">Категорияны таңдаңыз</p>
+  <h2 id="menuTitle">VOX MENU</h2>
+  <p class="subtitle" id="subtitle">Категорияны таңдаңыз</p>
 
   <div class="menu-tabs">
-    <button class="menu-tab active" data-type="kitchen">Кухня</button>
-    <button class="menu-tab" data-type="bar">Бар</button>
+    <button class="menu-tab active" data-type="kitchen" id="kitchenTab">Кухня</button>
+    <button class="menu-tab" data-type="bar" id="barTab">Бар</button>
   </div>
 
   <div class="categories" id="categories"></div>
-
   <div class="menu-grid" id="menuGrid"></div>
 </main>
 
@@ -40,7 +41,7 @@
     <h3 id="modalTitle"></h3>
     <p id="modalPrice"></p>
     <div class="ingredients">
-      <b>Қоспасы:</b>
+      <b id="ingredientsTitle">Қоспасы:</b>
       <span id="modalIngredients"></span>
     </div>
   </div>
