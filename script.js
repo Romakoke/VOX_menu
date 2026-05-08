@@ -227,7 +227,7 @@ const menuItems = [
     name: { kz: "Паста Болоньезе", ru: "Паста Болоньезе", en: "Bolognese Pasta" },
     price: "3 800 ₸",
     category: "pasta",
-    image: "images/pizza_bolognese.jpg",
+    image: "images/Bolognese Pasta.png",
     ingredients: { kz: "Паста, фарш, томат соусы.", ru: "Паста, фарш, томатный соус.", en: "Pasta, minced meat, tomato sauce." }
   },
 
