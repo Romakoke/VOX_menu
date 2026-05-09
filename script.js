@@ -963,22 +963,22 @@ const menuItems = [
   }),
 
   // ===== БЕЗАЛКОГОЛЬНЫЕ КОКТЕЙЛИ =====
-  makeItem({
-    ru: "Руби краш",
-    kz: "Руби краш",
-    en: "Ruby Crush",
-    price: "2 500 ₸",
-    category: "mocktails",
-    image: placeholder,
-    ingRu: "Безалкогольный коктейль."
-  }),
+ // makeItem({
+  //  ru: "Руби краш",
+  //  kz: "Руби краш",
+  //  en: "Ruby Crush",
+   // price: "2 500 ₸",
+   // category: "mocktails",
+  //  image: placeholder,
+  //  ingRu: "Безалкогольный коктейль."
+///  }),
   makeItem({
     ru: "Пина колада",
     kz: "Пина колада",
     en: "Virgin Pina Colada",
     price: "2 500 ₸",
     category: "mocktails",
-    image: placeholder,
+    image: "images/Пина колада.png",
     ingRu: "Безалкогольный коктейль."
   }),
 
