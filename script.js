@@ -1378,42 +1378,42 @@ const menuItems = [
     ru: "Ballantine's Passion",
     price: "2 200 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/Ballantine's Passion.png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Dewar's Caribbean 8 Y.O.",
     price: "2 500 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/Dewar's Caribbean 8 Y.O..png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Dewar's Japanese 8 Y.O.",
     price: "2 500 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/Dewar's Japanese 8 Y.O..png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Dewar's Portuguese 8 Y.O.",
     price: "2 500 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/Dewar's Portuguese 8 Y.O..png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "William Lawson's",
     price: "2 100 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/William Lawson's.png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "William Lawson's Super Spiced",
     price: "2 100 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/William Lawson's Super Spiced.png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
@@ -1427,21 +1427,21 @@ const menuItems = [
     ru: "Jameson Crested",
     price: "3 200 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/Jameson Crested.png",
     ingRu: "Jameson Family, 50 мл."
   }),
   makeItem({
     ru: "Jameson Black Barrel",
     price: "3 500 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/Jameson Black Barrel.png",
     ingRu: "Jameson Family, 50 мл."
   }),
   makeItem({
     ru: "Jack Daniel's",
     price: "2 850 ₸",
     category: "whiskey",
-    image: placeholder,
+    image: "images/Jack Daniel's.png",
     ingRu: "Бурбон, 50 мл."
   }),
 
@@ -1450,7 +1450,7 @@ const menuItems = [
     ru: "Campari",
     price: "2 000 ₸",
     category: "infusion",
-    image: placeholder,
+    image:  "images/Campari.png",
     ingRu: "Настойка, 50 мл."
   }),
   makeItem({
@@ -1482,28 +1482,28 @@ const menuItems = [
     ru: "Beefeater",
     price: "2 000 ₸",
     category: "gin",
-    image: placeholder,
+    image:  "images/Beefeater.png",
     ingRu: "Джин, 50 мл."
   }),
   makeItem({
     ru: "Beefeater Pink Strawberry",
     price: "2 000 ₸",
     category: "gin",
-    image: placeholder,
+    image:  "images/Beefeater Pink Strawberry.png",
     ingRu: "Джин, 50 мл."
   }),
   makeItem({
     ru: "Beefeater Blood Orange",
     price: "2 000 ₸",
     category: "gin",
-    image: placeholder,
+    image:  "images/Beefeater Blood Orange.png",
     ingRu: "Джин, 50 мл."
   }),
   makeItem({
     ru: "Bombay Sapphire",
     price: "2 000 ₸",
     category: "gin",
-    image: placeholder,
+    image:  "images/Bombay Sapphire.png",
     ingRu: "Джин, 50 мл."
   }),
 
@@ -1512,21 +1512,21 @@ const menuItems = [
     ru: "Havana Club 3 Y.O.",
     price: "2 000 ₸",
     category: "rum",
-    image: placeholder,
+    image:  "images/Havana Club 3 Y.O..png",
     ingRu: "Кубинский ром, 50 мл."
   }),
   makeItem({
     ru: "Havana Club Especial",
     price: "2 200 ₸",
     category: "rum",
-    image: placeholder,
+    image:  "images/Havana Club Especial.png",
     ingRu: "Кубинский ром, 50 мл."
   }),
   makeItem({
     ru: "Havana Club Cuban Spiced",
     price: "2 000 ₸",
     category: "rum",
-    image: placeholder,
+    image:  "images/Havana Club Cuban Spiced.png",
     ingRu: "Кубинский ром, 50 мл."
   }),
   makeItem({
@@ -1540,21 +1540,21 @@ const menuItems = [
     ru: "Bacardi Carta Negra",
     price: "2 100 ₸",
     category: "rum",
-    image: placeholder,
+    image:  "images/Bacardi Carta Negra.png",
     ingRu: "Пуэрто-рико ром, 50 мл."
   }),
   makeItem({
     ru: "Bacardi Spiced",
     price: "2 100 ₸",
     category: "rum",
-    image: placeholder,
+    image:  "images/Bacardi Spiced.png",
     ingRu: "Пуэрто-рико ром, 50 мл."
   }),
   makeItem({
     ru: "Oakheart",
     price: "2 100 ₸",
     category: "rum",
-    image: placeholder,
+    image:  "images/Oakheart.png",
     ingRu: "Пуэрто-рико ром, 50 мл."
   })
 ];
