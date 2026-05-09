@@ -793,7 +793,7 @@ const menuItems = [
     en: "Tropical",
     price: "2 500 ₸",
     category: "lemonade",
-    image: placeholder,
+    image:  "images/Тропикалық.png",
     ingKz: "Лимонад, 1 л.",
     ingRu: "Лимонад, 1 л.",
     ingEn: "Lemonade, 1 L."
@@ -804,7 +804,7 @@ const menuItems = [
     en: "Classic Mojito",
     price: "2 500 ₸",
     category: "lemonade",
-    image: "images/mohito-klassicheskiy.png",
+    image: "images/Мохито классический.png",
     ingKz: "Лайм, жалбыз, сироп, газды су, мұз.",
     ingRu: "Лайм, мята, сироп, газированная вода, лед.",
     ingEn: "Lime, mint, syrup, sparkling water, ice."
@@ -815,7 +815,7 @@ const menuItems = [
     en: "Kiwi Lime",
     price: "2 500 ₸",
     category: "lemonade",
-    image: placeholder,
+    image:  "images/Киви-лайм.png",
     ingKz: "Киви, лайм, сироп, газды су.",
     ingRu: "Киви, лайм, сироп, газированная вода.",
     ingEn: "Kiwi, lime, syrup, sparkling water."
@@ -826,7 +826,7 @@ const menuItems = [
     en: "Mango Passion Fruit",
     price: "2 500 ₸",
     category: "lemonade",
-    image: placeholder,
+    image:  "images/Манго-маракуйя.png",
     ingKz: "Манго, маракуйя, сироп, газды су.",
     ingRu: "Манго, маракуйя, сироп, газированная вода.",
     ingEn: "Mango, passion fruit, syrup, sparkling water."
@@ -837,7 +837,7 @@ const menuItems = [
     en: "Berry",
     price: "2 500 ₸",
     category: "lemonade",
-    image: placeholder,
+    image:  "images/Ягодный.png",
     ingKz: "Жидек, сироп, газды су.",
     ingRu: "Ягоды, сироп, газированная вода.",
     ingEn: "Berries, syrup, sparkling water."
@@ -848,7 +848,7 @@ const menuItems = [
     en: "Strawberry Banana",
     price: "2 500 ₸",
     category: "lemonade",
-    image: placeholder,
+    image:  "images/Клубника-банан.png",
     ingKz: "Құлпынай, банан, сироп.",
     ingRu: "Клубника, банан, сироп.",
     ingEn: "Strawberry, banana, syrup."
@@ -861,7 +861,7 @@ const menuItems = [
     en: "Coca-Cola / Cola Zero / Sprite / Fanta 0.5",
     price: "1 000 ₸",
     category: "soft",
-    image: "images/Coca-Cola.png",
+    image: "images/Coca-Cola Cola Zero Sprite Fanta.png",
     ingKz: "Салқын сусын.",
     ingRu: "Прохладительный напиток.",
     ingEn: "Soft drink."
