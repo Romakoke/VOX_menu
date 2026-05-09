@@ -1257,28 +1257,28 @@ const menuItems = [
     ru: "Malibu Coconut Rum",
     price: "2 000 ₸",
     category: "liqueur",
-    image: placeholder,
+    image:  "images/Malibu Coconut Rum.png",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Kahlua",
     price: "2 200 ₸",
     category: "liqueur",
-    image: placeholder,
+    image:  "images/Kahlua.png",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Cointreau",
     price: "2 200 ₸",
     category: "liqueur",
-    image: placeholder,
+    image:  "images/Cointreau.png",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Absinthe Green",
     price: "2 700 ₸",
     category: "liqueur",
-    image: placeholder,
+    image:  "images/Absinthe Green.png",
     ingRu: "Абсент, 50 мл."
   }),
   makeItem({
@@ -1292,14 +1292,14 @@ const menuItems = [
     ru: "Sambuca",
     price: "2 350 ₸",
     category: "liqueur",
-    image: placeholder,
+    image:  "images/Sambuca.png",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Aperol",
     price: "1 600 ₸",
     category: "liqueur",
-    image: placeholder,
+    image:  "images/Aperol.png",
     ingRu: "Аперитив, 50 мл."
   }),
 
@@ -1308,35 +1308,35 @@ const menuItems = [
     ru: "The Glenlivet Founder's Reserve",
     price: "4 100 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/The Glenlivet Founder's Reserve.png",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "The Glenlivet Excellence 12 Y.O.",
     price: "5 800 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/The Glenlivet Excellence 12 Y.O..png",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "Glenmorangie Original",
     price: "5 500 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/Glenmorangie Original.png",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "Glenfiddich 12 Y.O.",
     price: "5 800 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/Glenfiddich 12 Y.O..png",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "Macallan 12 Y.O.",
     price: "8 500 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/Macallan 12 Y.O..png",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
@@ -1350,28 +1350,28 @@ const menuItems = [
     ru: "Chivas Regal 15 Y.O.",
     price: "5 200 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/Chivas Regal 15 Y.O..png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Chivas Regal 18 Y.O.",
     price: "7 800 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/Chivas Regal 18 Y.O..png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Ballantine's Finest",
     price: "2 400 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/Ballantine's Finest.png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Ballantine's 7 Y.O.",
     price: "2 200 ₸",
     category: "whiskey",
-    image: placeholder,
+    image:  "images/Ballantine's 7 Y.O..png",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
