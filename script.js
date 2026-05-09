@@ -963,15 +963,40 @@ const menuItems = [
   }),
 
   // ===== БЕЗАЛКОГОЛЬНЫЕ КОКТЕЙЛИ =====
- // makeItem({
-  //  ru: "Руби краш",
-  //  kz: "Руби краш",
-  //  en: "Ruby Crush",
-   // price: "2 500 ₸",
-   // category: "mocktails",
-  //  image: placeholder,
-  //  ingRu: "Безалкогольный коктейль."
-///  }),
+ // ===== БЕЗАЛКОГОЛЬНЫЕ КОКТЕЙЛИ =====
+makeItem({
+  ru: "Мохито",
+  kz: "Мохито",
+  en: "Mojito",
+  price: "2 500 ₸",
+  category: "mocktails",
+  image: "images/Мохито-коктейл.png",
+  ingKz: "Алкогольсіз коктейль.",
+  ingRu: "Безалкогольный коктейль.",
+  ingEn: "Non-alcoholic cocktail."
+}),
+makeItem({
+  ru: "Блю галакси",
+  kz: "Блю галакси",
+  en: "Blue Galaxy",
+  price: "2 500 ₸",
+  category: "mocktails",
+  image: "images/Блю галакси.png",
+  ingKz: "Алкогольсіз коктейль.",
+  ingRu: "Безалкогольный коктейль.",
+  ingEn: "Non-alcoholic cocktail."
+}),
+makeItem({
+  ru: "Бора-Бора",
+  kz: "Бора-Бора",
+  en: "Bora Bora",
+  price: "2 500 ₸",
+  category: "mocktails",
+  image: "images/Бора-Бора.png",
+  ingKz: "Алкогольсіз коктейль.",
+  ingRu: "Безалкогольный коктейль.",
+  ingEn: "Non-alcoholic cocktail."
+}),
   makeItem({
     ru: "Пина колада",
     kz: "Пина колада",
