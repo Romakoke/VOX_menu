@@ -861,7 +861,7 @@ const menuItems = [
     en: "Coca-Cola / Cola Zero / Sprite / Fanta 0.5",
     price: "1 000 ₸",
     category: "soft",
-    image: "images/Coca-Cola Cola Zero Sprite Fanta.png",
+    image: "images/Coca-Colafsz.png",
     ingKz: "Салқын сусын.",
     ingRu: "Прохладительный напиток.",
     ingEn: "Soft drink."
