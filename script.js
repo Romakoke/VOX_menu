@@ -1056,7 +1056,7 @@ const menuItems = [
     en: "Bombay & Tonic",
     price: "3 500 ₸",
     category: "long_drinks",
-    image: placeholder,
+    image:  "images/BOMBAY & TONIC.png",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1064,7 +1064,7 @@ const menuItems = [
     en: "Martini Fiero & Tonic",
     price: "3 500 ₸",
     category: "long_drinks",
-    image: placeholder,
+    image:  "images/MARTINI FIERO & TONIC.png",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1072,7 +1072,7 @@ const menuItems = [
     en: "Blue Hawaii",
     price: "3 500 ₸",
     category: "long_drinks",
-    image: placeholder,
+    image:  "images/Голубые Гавайи.png",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1080,7 +1080,7 @@ const menuItems = [
     en: "Margarita",
     price: "3 500 ₸",
     category: "long_drinks",
-    image: placeholder,
+    image:  "images/Маргарита-лонг дринк.png",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1088,7 +1088,7 @@ const menuItems = [
     en: "Beefeater Tonic",
     price: "3 500 ₸",
     category: "long_drinks",
-    image: placeholder,
+    image:  "images/Beefeater Tonic.png",
     ingRu: "Алкогольный лонг дринк."
   }),
 
@@ -1098,7 +1098,7 @@ const menuItems = [
     en: "B-52",
     price: "3 000 ₸",
     category: "shots",
-    image: placeholder,
+    image:  "images/B-52 шоты.png",
     ingRu: "Алкогольный шот, 50 мл."
   }),
   makeItem({
@@ -1106,7 +1106,7 @@ const menuItems = [
     en: "B-53",
     price: "3 000 ₸",
     category: "shots",
-    image: placeholder,
+    image:  "images/B-53 шоты.png",
     ingRu: "Алкогольный шот, 50 мл."
   }),
   makeItem({
@@ -1114,7 +1114,7 @@ const menuItems = [
     en: "B-54",
     price: "3 000 ₸",
     category: "shots",
-    image: placeholder,
+    image:  "images/B-54 шоты.png",
     ingRu: "Алкогольный шот, 50 мл."
   }),
 
@@ -1123,28 +1123,28 @@ const menuItems = [
     ru: "Martini Fiero",
     price: "2 500 ₸",
     category: "vermouth",
-    image: placeholder,
+    image:  "images/Martini Fiero.png",
     ingRu: "Вермут, 100 мл."
   }),
   makeItem({
     ru: "Martini Bianco",
     price: "2 500 ₸",
     category: "vermouth",
-    image: placeholder,
+    image:  "images/Martini Bianco.png",
     ingRu: "Вермут, 100 мл."
   }),
   makeItem({
     ru: "Martini Extra Dry",
     price: "2 500 ₸",
     category: "vermouth",
-    image: placeholder,
+    image:  "images/Martini Extra Dry.png",
     ingRu: "Вермут, 100 мл."
   }),
   makeItem({
     ru: "Martini Rosso",
     price: "2 500 ₸",
     category: "vermouth",
-    image: placeholder,
+    image:  "images/Martini Rosso.png",
     ingRu: "Вермут, 100 мл."
   }),
 
@@ -1153,21 +1153,21 @@ const menuItems = [
     ru: "Ararat 3 Y.O.",
     price: "1 400 ₸",
     category: "armenian_cognac",
-    image: placeholder,
+    image:  "images/Ararat3.png",
     ingRu: "Армянский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Ararat 5 Y.O.",
     price: "2 100 ₸",
     category: "armenian_cognac",
-    image: placeholder,
+    image:  "images/Ararat5.png",
     ingRu: "Армянский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Ahtamar 10 Y.O.",
     price: "2 700 ₸",
     category: "armenian_cognac",
-    image: placeholder,
+    image:  "images/Ararat10.png",
     ingRu: "Армянский коньяк, 50 мл."
   }),
 
@@ -1176,28 +1176,28 @@ const menuItems = [
     ru: "Martell V.S.",
     price: "3 500 ₸",
     category: "french_cognac",
-    image: placeholder,
+    image:  "images/Martell V.S..png",
     ingRu: "Французский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Martell V.S.O.P",
     price: "5 200 ₸",
     category: "french_cognac",
-    image: placeholder,
+    image:  "images/Martell V.S.O.P.png",
     ingRu: "Французский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Hennessy V.S.",
     price: "4 500 ₸",
     category: "french_cognac",
-    image: placeholder,
+    image:  "images/Hennessy V.S..png",
     ingRu: "Французский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Hennessy V.S.O.P",
     price: "7 000 ₸",
     category: "french_cognac",
-    image: placeholder,
+    image:  "images/Hennessy V.S.O.P.png",
     ingRu: "Французский коньяк, 50 мл."
   }),
 
@@ -1213,42 +1213,42 @@ const menuItems = [
     ru: "Kyzylzhar Legend 0.5",
     price: "10 000 ₸",
     category: "vodka",
-    image: placeholder,
+    image:  "images/Kyzylzhar Legend 0.5.png",
     ingRu: "Водка, 0.5 л."
   }),
   makeItem({
     ru: "Царская Оригинал",
     price: "1 500 ₸",
     category: "vodka",
-    image: placeholder,
+    image:  "images/Царская Оригинал.png",
     ingRu: "Водка, 50 мл."
   }),
   makeItem({
     ru: "SKYY California Vodka 0.7",
     price: "23 500 ₸",
     category: "vodka",
-    image: placeholder,
+    image:  "images/SKYY California.png",
     ingRu: "Водка, 0.7 л."
   }),
   makeItem({
     ru: "Онегин",
     price: "3 000 ₸",
     category: "vodka",
-    image: placeholder,
+    image:  "images/Онегин.png",
     ingRu: "Водка, 50 мл."
   }),
   makeItem({
     ru: "Beluga",
     price: "3 400 ₸",
     category: "vodka",
-    image: placeholder,
+    image:  "images/Beluga.png",
     ingRu: "Водка, 50 мл."
   }),
   makeItem({
     ru: "Belvedere",
     price: "4 000 ₸",
     category: "vodka",
-    image: placeholder,
+    image:  "images/Belvedere.png",
     ingRu: "Водка, 50 мл."
   }),
 
