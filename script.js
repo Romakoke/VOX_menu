@@ -1728,7 +1728,7 @@ makeItem({
   en: "Cuvee Special",
   price: "18 000 ₸",
   category: "red_wine",
-  image: "images/Cuvee Special Red.webp",
+  image: "images/Cuvee Special red.webp",
   ingRu: "Красное вино, 750 мл."
 }),
 makeItem({
@@ -1752,7 +1752,7 @@ makeItem({
   en: "Villa Antinori Toscana",
   price: "37 000 ₸",
   category: "red_wine",
-  image: "images/Villa Antinori Toscana Red.webp",
+  image: "images/Villa Antinori Toscana red.webp",
   ingRu: "Красное вино, 750 мл."
 }),
 makeItem({
@@ -1779,7 +1779,7 @@ makeItem({
   en: "Cuvee Special",
   price: "3 000 ₸",
   category: "draft_wine",
-  image: "images/Cuvee Special Draft.webp",
+  image: "images/Cuvee Special RED&WHITE.webp",
   ingRu: "Разливное вино, 150 мл."
 }),
 
