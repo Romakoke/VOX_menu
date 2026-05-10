@@ -254,6 +254,51 @@ const menuItems = [
 
   // ===== ЗАКУСКИ К ПИВУ =====
   makeItem({
+  ru: "Арахис",
+  kz: "Арахис",
+  en: "Peanuts",
+  price: "1 300 ₸",
+  category: "beer",
+  image: "images/Арахис.webp",
+  ingRu: "Закуска к пиву."
+}),
+makeItem({
+  ru: "Курт",
+  kz: "Құрт",
+  en: "Kurt",
+  price: "950 ₸",
+  category: "beer",
+  image: "images/Курт.webp",
+  ingRu: "Закуска к пиву."
+}),
+makeItem({
+  ru: "Фисташки",
+  kz: "Фисташки",
+  en: "Pistachios",
+  price: "1 600 ₸",
+  category: "beer",
+  image: "images/Фисташки.webp",
+  ingRu: "Закуска к пиву."
+}),
+makeItem({
+  ru: "Чечил",
+  kz: "Чечил",
+  en: "Chechil Cheese",
+  price: "1 600 ₸",
+  category: "beer",
+  image: "images/Чечил.webp",
+  ingRu: "Закуска к пиву."
+}),
+makeItem({
+  ru: "Чипсы",
+  kz: "Чипсы",
+  en: "Chips",
+  price: "1 500 ₸",
+  category: "beer",
+  image: "images/Чипсы.webp",
+  ingRu: "Закуска к пиву."
+}),
+  makeItem({
     ru: "Сет «Похрустим»",
     en: "Crunch Set",
     price: "6 000 ₸",
@@ -1802,6 +1847,57 @@ makeItem({
   image: "images/Чипсы.webp",
   ingRu: "Закуска к пиву."
 }),
+   makeItem({
+    ru: "Сет «Похрустим»",
+    en: "Crunch Set",
+    price: "6 000 ₸",
+    category: "bar_snacks",
+    image: "images/snack_samsa_baursak_pelmeni.webp",
+    ingKz: "Пиволық закуска ассорти.",
+    ingRu: "Ассорти закусок к пиву.",
+    ingEn: "Assorted beer snacks."
+  }),
+  makeItem({
+    ru: "Сет «Добрый»",
+    en: "Dobry Set",
+    price: "7 000 ₸",
+    category: "bar_snacks",
+    image:  "images/Сет добрый.webp",
+    ingKz: "Пиволық закуска ассорти.",
+    ingRu: "Ассорти закусок к пиву.",
+    ingEn: "Assorted beer snacks."
+  }),
+  makeItem({
+    ru: "Креветки к пиву",
+    kz: "Сыраға креветка",
+    en: "Shrimp for Beer",
+    price: "5 200 ₸",
+    category: "bar_snacks",
+    image:  "images/Криветки.webp",
+    ingKz: "Креветка, лимон, соус.",
+    ingRu: "Креветки, лимон, соус.",
+    ingEn: "Shrimp, lemon, sauce."
+  }),
+  makeItem({
+    ru: "Колбаски",
+    en: "Sausages",
+    price: "3 000 ₸",
+    category: "bar_snacks",
+    image:  "images/Калбоски.webp",
+    ingKz: "Гриль колбаски.",
+    ingRu: "Колбаски гриль.",
+    ingEn: "Grilled sausages."
+  }),
+  makeItem({
+    ru: "Наггетсы",
+    en: "Nuggets",
+    price: "1 500 ₸",
+    category: "bar_snacks",
+    image: "images/nuggets.webp",
+    ingKz: "Тауық наггетсы, соус.",
+    ingRu: "Куриные наггетсы, соус.",
+    ingEn: "Chicken nuggets, sauce."
+  }),
   // ===== РОМ =====
   makeItem({
     ru: "Havana Club 3 Y.O.",
