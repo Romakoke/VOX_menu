@@ -46,7 +46,8 @@ const categoryGroups = {
     { id: "pizza", name: { kz: "Пицца", ru: "Пицца", en: "Pizza" } },
     { id: "rolls", name: { kz: "Роллдар", ru: "Роллы", en: "Rolls" } },
     { id: "shashlyk", name: { kz: "Шашлыктар", ru: "Шашлыки", en: "Shashlik" } },
-    { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } } { id: "warning", name: { kz: "Ескерту", ru: "Предупреждение", en: "Warning" } },
+    { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } } ,
+    { id: "warning", name: { kz: "Ескерту", ru: "Предупреждение", en: "Warning" } }
   ],
 
   bar: [{ id: "warning", name: { kz: "Ескерту", ru: "Предупреждение", en: "Warning" } },
