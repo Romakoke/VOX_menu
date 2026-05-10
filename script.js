@@ -98,7 +98,7 @@ const menuItems = [
     en: "Meat Platter",
     price: "7 000 ₸",
     category: "cold",
-    image: placeholder,
+    image:  "images/Мясная нарезка.png",
     ingKz: "Ет ассорти, қазы, шұжық, көкөніс.",
     ingRu: "Мясное ассорти, казы, колбаса, овощи.",
     ingEn: "Assorted meat, kazy, sausage, vegetables."
@@ -109,7 +109,7 @@ const menuItems = [
     en: "Vegetable Platter",
     price: "5 000 ₸",
     category: "cold",
-    image: placeholder,
+    image:  "images/Нарезка из овощей.png",
     ingKz: "Көкөніс ассорти.",
     ingRu: "Ассорти из свежих овощей.",
     ingEn: "Assorted fresh vegetables."
@@ -119,7 +119,7 @@ const menuItems = [
     en: "Russian-Style Herring",
     price: "5 000 ₸",
     category: "cold",
-    image: placeholder,
+    image:  "images/Сельдь по-русски.png",
     ingKz: "Сельдь, картоп, пияз.",
     ingRu: "Сельдь, картофель, лук.",
     ingEn: "Herring, potatoes, onion."
@@ -130,7 +130,7 @@ const menuItems = [
     en: "Pickles",
     price: "4 500 ₸",
     category: "cold",
-    image: placeholder,
+    image:  "images/Соленья.png",
     ingKz: "Тұздалған көкөністер.",
     ingRu: "Ассорти из солений.",
     ingEn: "Assorted pickled vegetables."
@@ -154,7 +154,7 @@ const menuItems = [
     en: "Chef Salad",
     price: "4 000 ₸",
     category: "salads",
-    image: placeholder,
+    image:  "images/Салат от шефа.png",
     ingKz: "Фирмалық салат.",
     ingRu: "Фирменный салат.",
     ingEn: "Signature salad."
@@ -229,7 +229,7 @@ const menuItems = [
     en: "Fresh Homemade Salad",
     price: "2 000 ₸",
     category: "salads",
-    image: placeholder,
+    image:  "images/nuggets.jpg",
     ingKz: "Қияр, қызанақ, көк шөп.",
     ingRu: "Огурцы, помидоры, зелень.",
     ingEn: "Cucumber, tomatoes, greens."
@@ -262,7 +262,7 @@ const menuItems = [
     en: "Dobry Set",
     price: "7 000 ₸",
     category: "beer",
-    image: placeholder,
+    image:  "images/Сет добрый.png",
     ingKz: "Пиволық закуска ассорти.",
     ingRu: "Ассорти закусок к пиву.",
     ingEn: "Assorted beer snacks."
@@ -273,7 +273,7 @@ const menuItems = [
     en: "Shrimp for Beer",
     price: "5 200 ₸",
     category: "beer",
-    image: placeholder,
+    image:  "images/Криветки.png",
     ingKz: "Креветка, лимон, соус.",
     ingRu: "Креветки, лимон, соус.",
     ingEn: "Shrimp, lemon, sauce."
@@ -283,7 +283,7 @@ const menuItems = [
     en: "Sausages",
     price: "3 000 ₸",
     category: "beer",
-    image: placeholder,
+    image:  "images/Калбоски.png",
     ingKz: "Гриль колбаски.",
     ingRu: "Колбаски гриль.",
     ingEn: "Grilled sausages."
@@ -507,7 +507,7 @@ const menuItems = [
     en: "Medallions with Vegetables",
     price: "6 500 ₸",
     category: "steaks",
-    image: "images/medalony-s-ovoshami.png",
+    image: "images/Медальон.png",
     ingKz: "Ет медальоны, көкөністер.",
     ingRu: "Мясные медальоны, овощи.",
     ingEn: "Meat medallions, vegetables."
