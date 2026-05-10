@@ -59,6 +59,15 @@ body {
   background: rgba(0,0,0,.65);
 }
 
+
+.warning-text {
+  color: #d6c29a;
+  font-size: 13px;
+  text-align: center;
+  flex: 1;
+  line-height: 1.5;
+}
+
 .lang-switch {
   display: flex;
   gap: 7px;
@@ -420,5 +429,19 @@ footer {
 
   .card img {
     height: 230px;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .top-info {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .warning-text {
+    font-size: 12px;
+    max-width: 340px;
   }
 }
