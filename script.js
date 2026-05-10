@@ -68,7 +68,13 @@ const categoryGroups = {
     { id: "infusion", name: { kz: "Настойкалар", ru: "Настойки", en: "Infusions" } },
     { id: "tequila", name: { kz: "Текила", ru: "Текила", en: "Tequila" } },
     { id: "gin", name: { kz: "Джин", ru: "Джин", en: "Gin" } },
-    { id: "rum", name: { kz: "Ром", ru: "Ром", en: "Rum" } }
+    { id: "rum", name: { kz: "Ром", ru: "Ром", en: "Rum" } },
+    { id: "sparkling_wine", name: { kz: "Игристые вина", ru: "Игристые вина", en: "Sparkling Wines" } },
+{ id: "white_wine", name: { kz: "Ақ шараптар", ru: "Белые вина", en: "White Wines" } },
+{ id: "red_wine", name: { kz: "Қызыл шараптар", ru: "Красные вина", en: "Red Wines" } },
+{ id: "draft_wine", name: { kz: "Разливные вина", ru: "Разливные вина", en: "Draft Wines" } },
+{ id: "bottle_beer", name: { kz: "Бөтелкедегі сыра", ru: "Бутылочное пиво", en: "Bottled Beer" } },
+{ id: "bar_snacks", name: { kz: "Сыраға тіскебасар", ru: "Закуски к пиву", en: "Beer Snacks" } }
   ]
 };
 
@@ -1531,7 +1537,271 @@ makeItem({
     image:  "images/Bombay Sapphire.webp",
     ingRu: "Джин, 50 мл."
   }),
+// ===== ИГРИСТЫЕ ВИНА =====
+makeItem({
+  ru: "Jacob’s Creek Sparkling Moscato",
+  en: "Jacob’s Creek Sparkling Moscato",
+  price: "17 000 ₸",
+  category: "sparkling_wine",
+  image: "images/Jacob’s Creek Sparkling Moscato.webp",
+  ingRu: "Игристое вино, 750 мл."
+}),
+makeItem({
+  ru: "Martini Asti D.O.C.G",
+  en: "Martini Asti D.O.C.G",
+  price: "21 000 ₸",
+  category: "sparkling_wine",
+  image: "images/Martini Asti D.O.C.G.webp",
+  ingRu: "Игристое вино, 750 мл."
+}),
+makeItem({
+  ru: "Martini Prosecco D.O.C",
+  en: "Martini Prosecco D.O.C",
+  price: "21 000 ₸",
+  category: "sparkling_wine",
+  image: "images/Martini Prosecco D.O.C.webp",
+  ingRu: "Игристое вино, 750 мл."
+}),
+makeItem({
+  ru: "Martini Brut",
+  en: "Martini Brut",
+  price: "21 000 ₸",
+  category: "sparkling_wine",
+  image: "images/Martini Brut.webp",
+  ingRu: "Игристое вино, 750 мл."
+}),
+makeItem({
+  ru: "Cinzano Prosecco",
+  en: "Cinzano Prosecco",
+  price: "15 000 ₸",
+  category: "sparkling_wine",
+  image: "images/Cinzano Prosecco.webp",
+  ingRu: "Игристое вино, 750 мл."
+}),
+makeItem({
+  ru: "Tavernello Lambrusco Emilia",
+  en: "Tavernello Lambrusco Emilia",
+  price: "12 000 ₸",
+  category: "sparkling_wine",
+  image: "images/Tavernello Lambrusco Emilia.webp",
+  ingRu: "Игристое вино, 750 мл."
+}),
+makeItem({
+  ru: "Chandon Brut",
+  en: "Chandon Brut",
+  price: "35 000 ₸",
+  category: "sparkling_wine",
+  image: "images/Chandon Brut.webp",
+  ingRu: "Игристое вино, 750 мл."
+}),
 
+// ===== БЕЛЫЕ ВИНА =====
+makeItem({
+  ru: "Brancott Estate Sauvignon Blanc",
+  en: "Brancott Estate Sauvignon Blanc",
+  price: "18 000 ₸",
+  category: "white_wine",
+  image: "images/Brancott Estate Sauvignon Blanc.webp",
+  ingRu: "Белое вино, 750 мл."
+}),
+makeItem({
+  ru: "Jacob’s Creek Classic Sauvignon Blanc",
+  en: "Jacob’s Creek Classic Sauvignon Blanc",
+  price: "12 000 ₸",
+  category: "white_wine",
+  image: "images/Jacob’s Creek Classic Sauvignon Blanc.webp",
+  ingRu: "Белое вино, 750 мл."
+}),
+makeItem({
+  ru: "Tavernello Pinot Grigio",
+  en: "Tavernello Pinot Grigio",
+  price: "15 000 ₸",
+  category: "white_wine",
+  image: "images/Tavernello Pinot Grigio.webp",
+  ingRu: "Белое вино, 750 мл."
+}),
+makeItem({
+  ru: "Cuvee Special",
+  en: "Cuvee Special",
+  price: "15 000 ₸",
+  category: "white_wine",
+  image: "images/Cuvee Special White.webp",
+  ingRu: "Белое вино, 750 мл."
+}),
+makeItem({
+  ru: "Villa Antinori Toscana",
+  en: "Villa Antinori Toscana",
+  price: "18 000 ₸",
+  category: "white_wine",
+  image: "images/Villa Antinori Toscana White.webp",
+  ingRu: "Белое вино, 750 мл."
+}),
+makeItem({
+  ru: "San Valentin",
+  en: "San Valentin",
+  price: "16 000 ₸",
+  category: "white_wine",
+  image: "images/San Valentin.webp",
+  ingRu: "Белое вино, 750 мл."
+}),
+makeItem({
+  ru: "Tocornal Sauvignon Blanc",
+  en: "Tocornal Sauvignon Blanc",
+  price: "15 000 ₸",
+  category: "white_wine",
+  image: "images/Tocornal Sauvignon Blanc.webp",
+  ingRu: "Белое вино, 750 мл."
+}),
+makeItem({
+  ru: "Tavernello Avernello",
+  en: "Tavernello Avernello",
+  price: "12 000 ₸",
+  category: "white_wine",
+  image: "images/Tavernello Avernello.webp",
+  ingRu: "Белое вино, 750 мл."
+}),
+
+// ===== КРАСНЫЕ ВИНА =====
+makeItem({
+  ru: "Brancott Estate Pinot Noir",
+  en: "Brancott Estate Pinot Noir",
+  price: "20 000 ₸",
+  category: "red_wine",
+  image: "images/Brancott Estate Pinot Noir.webp",
+  ingRu: "Красное вино, 750 мл."
+}),
+makeItem({
+  ru: "Jacob’s Creek Shiraz Reserva",
+  en: "Jacob’s Creek Shiraz Reserva",
+  price: "16 500 ₸",
+  category: "red_wine",
+  image: "images/Jacob’s Creek Shiraz Reserva.webp",
+  ingRu: "Красное вино, 750 мл."
+}),
+makeItem({
+  ru: "Cuvee Special",
+  en: "Cuvee Special",
+  price: "18 000 ₸",
+  category: "red_wine",
+  image: "images/Cuvee Special Red.webp",
+  ingRu: "Красное вино, 750 мл."
+}),
+makeItem({
+  ru: "Tavernello Amabile",
+  en: "Tavernello Amabile",
+  price: "14 000 ₸",
+  category: "red_wine",
+  image: "images/Tavernello Amabile.webp",
+  ingRu: "Красное вино, 750 мл."
+}),
+makeItem({
+  ru: "Tocornal Cabernet Sauvignon",
+  en: "Tocornal Cabernet Sauvignon",
+  price: "13 000 ₸",
+  category: "red_wine",
+  image: "images/Tocornal Cabernet Sauvignon.webp",
+  ingRu: "Красное вино, 750 мл."
+}),
+makeItem({
+  ru: "Villa Antinori Toscana",
+  en: "Villa Antinori Toscana",
+  price: "37 000 ₸",
+  category: "red_wine",
+  image: "images/Villa Antinori Toscana Red.webp",
+  ingRu: "Красное вино, 750 мл."
+}),
+makeItem({
+  ru: "Киндзмараули",
+  kz: "Киндзмараули",
+  en: "Kindzmarauli",
+  price: "12 000 ₸",
+  category: "red_wine",
+  image: "images/Киндзмараули.webp",
+  ingRu: "Красное вино, 750 мл."
+}),
+
+// ===== РАЗЛИВНЫЕ ВИНА =====
+makeItem({
+  ru: "Tavernello RED&WHITE",
+  en: "Tavernello RED&WHITE",
+  price: "3 000 ₸",
+  category: "draft_wine",
+  image: "images/Tavernello RED&WHITE.webp",
+  ingRu: "Разливное вино, 150 мл."
+}),
+makeItem({
+  ru: "Cuvee Special",
+  en: "Cuvee Special",
+  price: "3 000 ₸",
+  category: "draft_wine",
+  image: "images/Cuvee Special Draft.webp",
+  ingRu: "Разливное вино, 150 мл."
+}),
+
+// ===== БУТЫЛОЧНОЕ ПИВО =====
+makeItem({
+  ru: "Corona Extra",
+  en: "Corona Extra",
+  price: "3 200 ₸",
+  category: "bottle_beer",
+  image: "images/Corona Extra.webp",
+  ingRu: "Бутылочное пиво, 0.35 л."
+}),
+makeItem({
+  ru: "Miller",
+  en: "Miller",
+  price: "2 100 ₸",
+  category: "bottle_beer",
+  image: "images/Miller.webp",
+  ingRu: "Бутылочное пиво, 0.33 л."
+}),
+
+// ===== ЗАКУСКИ К ПИВУ / БАР =====
+makeItem({
+  ru: "Арахис",
+  kz: "Арахис",
+  en: "Peanuts",
+  price: "1 300 ₸",
+  category: "bar_snacks",
+  image: "images/Арахис.webp",
+  ingRu: "Закуска к пиву."
+}),
+makeItem({
+  ru: "Курт",
+  kz: "Құрт",
+  en: "Kurt",
+  price: "950 ₸",
+  category: "bar_snacks",
+  image: "images/Курт.webp",
+  ingRu: "Закуска к пиву."
+}),
+makeItem({
+  ru: "Фисташки",
+  kz: "Фисташки",
+  en: "Pistachios",
+  price: "1 600 ₸",
+  category: "bar_snacks",
+  image: "images/Фисташки.webp",
+  ingRu: "Закуска к пиву."
+}),
+makeItem({
+  ru: "Чечил",
+  kz: "Чечил",
+  en: "Chechil Cheese",
+  price: "1 600 ₸",
+  category: "bar_snacks",
+  image: "images/Чечил.webp",
+  ingRu: "Закуска к пиву."
+}),
+makeItem({
+  ru: "Чипсы",
+  kz: "Чипсы",
+  en: "Chips",
+  price: "1 500 ₸",
+  category: "bar_snacks",
+  image: "images/Чипсы.webp",
+  ingRu: "Закуска к пиву."
+}),
   // ===== РОМ =====
   makeItem({
     ru: "Havana Club 3 Y.O.",
