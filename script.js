@@ -46,10 +46,10 @@ const categoryGroups = {
     { id: "pizza", name: { kz: "Пицца", ru: "Пицца", en: "Pizza" } },
     { id: "rolls", name: { kz: "Роллдар", ru: "Роллы", en: "Rolls" } },
     { id: "shashlyk", name: { kz: "Шашлыктар", ru: "Шашлыки", en: "Shashlik" } },
-    { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } }
+    { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } } { id: "warning", name: { kz: "Ескерту", ru: "Предупреждение", en: "Warning" } },
   ],
 
-  bar: [
+  bar: [{ id: "warning", name: { kz: "Ескерту", ru: "Предупреждение", en: "Warning" } },
     { id: "all", name: { kz: "Барлығы", ru: "Все", en: "All" } },
     { id: "lemonade", name: { kz: "Лимонадтар", ru: "Лимонады", en: "Lemonades" } },
     { id: "soft", name: { kz: "Салқын сусындар", ru: "Прохладительные напитки", en: "Soft Drinks" } },
@@ -1106,7 +1106,7 @@ makeItem({
     en: "Sex on the Beach",
     price: "4 000 ₸",
     category: "cocktails",
-    image:  "images/Sex on the Beach.webp",
+    image:  "images/Beach.webp",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1124,7 +1124,7 @@ makeItem({
     en: "Bacardi Mojito",
     price: "3 500 ₸",
     category: "long_drinks",
-    image:  "images/BACARDI MOJITO.webp",
+    image:  "images/BACARDI MOJ.webp",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1898,7 +1898,85 @@ makeItem({
     ingRu: "Куриные наггетсы, соус.",
     ingEn: "Chicken nuggets, sauce."
   }),
-  // ===== РОМ =====
+  // ===== ҚОСЫМША / БАР =====
+makeItem({
+  ru: "Циндао пиво",
+  kz: "Циндао пиво",
+  en: "Tsingtao Beer",
+  price: "2 500 ₸",
+  category: "bottle_beer",
+  image: "images/Циндао пиво.webp",
+  ingKz: "Бөтелкедегі сыра.",
+  ingRu: "Бутылочное пиво.",
+  ingEn: "Bottled beer."
+}),
+makeItem({
+  ru: "Разливное пиво Прага",
+  kz: "Разливное пиво Прага",
+  en: "Praga Draft Beer",
+  price: "1 000 ₸",
+  category: "beer_bar",
+  image: "images/Разливное пиво Прага.webp",
+  ingKz: "Разливное сыра.",
+  ingRu: "Разливное пиво.",
+  ingEn: "Draft beer."
+}),
+makeItem({
+  ru: "Сигареты в ассортименте",
+  kz: "Сигареттер ассортиментте",
+  en: "Cigarettes Assorted",
+  price: "2 500 ₸",
+  category: "bar_snacks",
+  image: "images/Сигареты в ассортименте.webp",
+  ingKz: "Ассортиментте.",
+  ingRu: "В ассортименте.",
+  ingEn: "Assorted."
+}),
+makeItem({
+  ru: "Зажигалка",
+  kz: "Зажигалка",
+  en: "Lighter",
+  price: "800 ₸",
+  category: "bar_snacks",
+  image: "images/Зажигалка.webp",
+  ingKz: "Зажигалка.",
+  ingRu: "Зажигалка.",
+  ingEn: "Lighter."
+}),
+makeItem({
+  ru: "Orbit",
+  kz: "Orbit",
+  en: "Orbit",
+  price: "800 ₸",
+  category: "bar_snacks",
+  image: "images/Orbit.webp",
+  ingKz: "Сағыз.",
+  ingRu: "Жевательная резинка.",
+  ingEn: "Chewing gum."
+}),
+  // ===== ЕСКЕРТУ =====
+makeItem({
+  ru: "Бой посуды",
+  kz: "Ыдыс сындыру",
+  en: "Broken Dishes",
+  price: "3 000 ₸",
+  category: "warning",
+  image: "images/Ескерту.webp",
+  ingKz: "Ыдыс сындырылған жағдайда төлем алынады.",
+  ingRu: "При повреждении посуды взимается оплата.",
+  ingEn: "A fee is charged for broken dishes."
+}),
+makeItem({
+  ru: "Порча имущества",
+  kz: "Мүлікті бүлдіру",
+  en: "Property Damage",
+  price: "10 000 ₸ және жоғары",
+  category: "warning",
+  image: "images/Ескерту.webp",
+  ingKz: "Мүлік бүлінген жағдайда шығын көлеміне қарай төлем алынады.",
+  ingRu: "При порче имущества оплата взимается по размеру ущерба.",
+  ingEn: "For property damage, the fee depends on the amount of damage."
+}),// ===== РОМ =====
   makeItem({
     ru: "Havana Club 3 Y.O.",
     price: "2 000 ₸",
