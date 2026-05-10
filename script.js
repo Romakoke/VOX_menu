@@ -1,4 +1,4 @@
-const placeholder = "images/placeholder.jpg";
+const placeholder = "images/placeholder.webp";
 
 let currentLang = "kz";
 let activeType = "kitchen";
@@ -98,7 +98,7 @@ const menuItems = [
     en: "Meat Platter",
     price: "7 000 ₸",
     category: "cold",
-    image:  "images/Мясная нарезка.png",
+    image:  "images/Мясная нарезка.webp",
     ingKz: "Ет ассорти, қазы, шұжық, көкөніс.",
     ingRu: "Мясное ассорти, казы, колбаса, овощи.",
     ingEn: "Assorted meat, kazy, sausage, vegetables."
@@ -109,7 +109,7 @@ const menuItems = [
     en: "Vegetable Platter",
     price: "5 000 ₸",
     category: "cold",
-    image:  "images/Нарезка из овощей.png",
+    image:  "images/Нарезка из овощей.webp",
     ingKz: "Көкөніс ассорти.",
     ingRu: "Ассорти из свежих овощей.",
     ingEn: "Assorted fresh vegetables."
@@ -119,7 +119,7 @@ const menuItems = [
     en: "Russian-Style Herring",
     price: "5 000 ₸",
     category: "cold",
-    image:  "images/Сельдь по-русски.png",
+    image:  "images/Сельдь по-русски.webp",
     ingKz: "Сельдь, картоп, пияз.",
     ingRu: "Сельдь, картофель, лук.",
     ingEn: "Herring, potatoes, onion."
@@ -130,7 +130,7 @@ const menuItems = [
     en: "Pickles",
     price: "4 500 ₸",
     category: "cold",
-    image:  "images/Соленья.png",
+    image:  "images/Соленья.webp",
     ingKz: "Тұздалған көкөністер.",
     ingRu: "Ассорти из солений.",
     ingEn: "Assorted pickled vegetables."
@@ -141,7 +141,7 @@ const menuItems = [
     en: "Fruit Platter",
     price: "8 000 ₸",
     category: "cold",
-    image: "images/fruit_assorti.png",
+    image: "images/fruit_assorti.webp",
     ingKz: "Маусымдық жемістер.",
     ingRu: "Сезонные фрукты.",
     ingEn: "Seasonal fruits."
@@ -154,7 +154,7 @@ const menuItems = [
     en: "Chef Salad",
     price: "4 000 ₸",
     category: "salads",
-    image:  "images/Салат от шефа.png",
+    image:  "images/Салат от шефа.webp",
     ingKz: "Фирмалық салат.",
     ingRu: "Фирменный салат.",
     ingEn: "Signature salad."
@@ -165,7 +165,7 @@ const menuItems = [
     en: "Greek Salad",
     price: "2 000 ₸",
     category: "salads",
-    image: "images/salad_greek.jpg",
+    image: "images/salad_greek.webp",
     ingKz: "Қияр, қызанақ, фета, зәйтүн.",
     ingRu: "Огурцы, помидоры, фета, оливки.",
     ingEn: "Cucumber, tomatoes, feta, olives."
@@ -175,7 +175,7 @@ const menuItems = [
     en: "Hearty Papa",
     price: "3 000 ₸",
     category: "salads",
-    image: "images/salad_sytyi_papa.png",
+    image: "images/salad_sytyi_papa.webp",
     ingKz: "Ет, картоп, жұмыртқа, көкөніс.",
     ingRu: "Мясо, картофель, яйцо, овощи.",
     ingEn: "Meat, potatoes, egg, vegetables."
@@ -186,7 +186,7 @@ const menuItems = [
     en: "Asian Eggplant Salad",
     price: "3 000 ₸",
     category: "salads",
-    image: "images/salad_asian_eggplant.jpg",
+    image: "images/salad_asian_eggplant.webp",
     ingKz: "Баклажан, көкөніс, азиялық соус.",
     ingRu: "Баклажан, овощи, азиатский соус.",
     ingEn: "Eggplant, vegetables, Asian sauce."
@@ -197,7 +197,7 @@ const menuItems = [
     en: "Chicken Caesar",
     price: "3 000 ₸",
     category: "salads",
-    image: "images/salad_caesar_chicken.jpg",
+    image: "images/salad_caesar_chicken.webp",
     ingKz: "Тауық, салат, сыр, сухари, соус.",
     ingRu: "Курица, салат, сыр, сухари, соус.",
     ingEn: "Chicken, lettuce, cheese, croutons, sauce."
@@ -207,7 +207,7 @@ const menuItems = [
     en: "Olivier Salad",
     price: "2 500 ₸",
     category: "salads",
-    image: "images/salad_olivie.jpg",
+    image: "images/salad_olivie.webp",
     ingKz: "Картоп, сәбіз, жұмыртқа, қияр, майонез.",
     ingRu: "Картофель, морковь, яйцо, огурец, майонез.",
     ingEn: "Potato, carrot, egg, cucumber, mayonnaise."
@@ -218,7 +218,7 @@ const menuItems = [
     en: "Arugula with Shrimp",
     price: "4 000 ₸",
     category: "salads",
-    image: "images/salad_rucola_shrimp.jpg",
+    image: "images/salad_rucola_shrimp.webp",
     ingKz: "Рукола, креветка, көкөніс, соус.",
     ingRu: "Рукола, креветки, овощи, соус.",
     ingEn: "Arugula, shrimp, vegetables, sauce."
@@ -229,7 +229,7 @@ const menuItems = [
     en: "Fresh Homemade Salad",
     price: "2 000 ₸",
     category: "salads",
-    image:  "images/nuggets.jpg",
+    image:  "images/nuggets.webp",
     ingKz: "Қияр, қызанақ, көк шөп.",
     ingRu: "Огурцы, помидоры, зелень.",
     ingEn: "Cucumber, tomatoes, greens."
@@ -240,7 +240,7 @@ const menuItems = [
     en: "Fruit Salad",
     price: "4 000 ₸",
     category: "salads",
-    image: "images/fruit_assorti.png",
+    image: "images/fruit_assorti.webp",
     ingKz: "Жеміс ассорти.",
     ingRu: "Фруктовое ассорти.",
     ingEn: "Assorted fruits."
@@ -252,7 +252,7 @@ const menuItems = [
     en: "Crunch Set",
     price: "6 000 ₸",
     category: "beer",
-    image: "images/snack_samsa_baursak_pelmeni.png",
+    image: "images/snack_samsa_baursak_pelmeni.webp",
     ingKz: "Пиволық закуска ассорти.",
     ingRu: "Ассорти закусок к пиву.",
     ingEn: "Assorted beer snacks."
@@ -262,7 +262,7 @@ const menuItems = [
     en: "Dobry Set",
     price: "7 000 ₸",
     category: "beer",
-    image:  "images/Сет добрый.png",
+    image:  "images/Сет добрый.webp",
     ingKz: "Пиволық закуска ассорти.",
     ingRu: "Ассорти закусок к пиву.",
     ingEn: "Assorted beer snacks."
@@ -273,7 +273,7 @@ const menuItems = [
     en: "Shrimp for Beer",
     price: "5 200 ₸",
     category: "beer",
-    image:  "images/Криветки.png",
+    image:  "images/Криветки.webp",
     ingKz: "Креветка, лимон, соус.",
     ingRu: "Креветки, лимон, соус.",
     ingEn: "Shrimp, lemon, sauce."
@@ -283,7 +283,7 @@ const menuItems = [
     en: "Sausages",
     price: "3 000 ₸",
     category: "beer",
-    image:  "images/Калбоски.png",
+    image:  "images/Калбоски.webp",
     ingKz: "Гриль колбаски.",
     ingRu: "Колбаски гриль.",
     ingEn: "Grilled sausages."
@@ -293,7 +293,7 @@ const menuItems = [
     en: "Nuggets",
     price: "1 500 ₸",
     category: "beer",
-    image: "images/nuggets.jpg",
+    image: "images/nuggets.webp",
     ingKz: "Тауық наггетсы, соус.",
     ingRu: "Куриные наггетсы, соус.",
     ingEn: "Chicken nuggets, sauce."
@@ -306,7 +306,7 @@ const menuItems = [
     en: "Garlic Sauce",
     price: "500 ₸",
     category: "sauces",
-    image: "images/sauce_garlic.jpg",
+    image: "images/sauce_garlic.webp",
     ingKz: "Сарымсақ соусы.",
     ingRu: "Чесночный соус.",
     ingEn: "Garlic sauce."
@@ -317,7 +317,7 @@ const menuItems = [
     en: "Cheese Sauce",
     price: "500 ₸",
     category: "sauces",
-    image: "images/sauce_cheese.jpg",
+    image: "images/sauce_cheese.webp",
     ingKz: "Сыр соусы.",
     ingRu: "Сырный соус.",
     ingEn: "Cheese sauce."
@@ -329,7 +329,7 @@ const menuItems = [
     en: "Alfredo Pasta",
     price: "3 500 ₸",
     category: "pasta",
-    image: "images/pasta_alfredo.png",
+    image: "images/pasta_alfredo.webp",
     ingKz: "Паста, тауық еті, кілегейлі соус.",
     ingRu: "Паста, курица, сливочный соус.",
     ingEn: "Pasta, chicken, creamy sauce."
@@ -339,7 +339,7 @@ const menuItems = [
     en: "Bolognese Pasta",
     price: "3 800 ₸",
     category: "pasta",
-    image: "images/Bolognese Pasta.png",
+    image: "images/Bolognese Pasta.webp",
     ingKz: "Паста, фарш, томат соусы.",
     ingRu: "Паста, фарш, томатный соус.",
     ingEn: "Pasta, minced meat, tomato sauce."
@@ -352,7 +352,7 @@ const menuItems = [
     en: "Veal with Vegetables",
     price: "3 500 ₸",
     category: "second",
-    image: "images/telyatina-s-ovoshami.png",
+    image: "images/telyatina-s-ovoshami.webp",
     ingKz: "Бұзау еті, көкөністер.",
     ingRu: "Телятина, овощи.",
     ingEn: "Veal, vegetables."
@@ -363,7 +363,7 @@ const menuItems = [
     en: "Kuyrdak",
     price: "4 500 ₸",
     category: "second",
-    image: "images/kuyrdak_gaviadina.png",
+    image: "images/kuyrdak_gaviadina.webp",
     ingKz: "Сиыр етінен қуырдақ.",
     ingRu: "Куырдак из говядины.",
     ingEn: "Beef kuyrdak."
@@ -374,7 +374,7 @@ const menuItems = [
     en: "Veal with Mushrooms",
     price: "3 500 ₸",
     category: "second",
-    image: "images/telyatina-s-gribami-v-slivochnom-souse.png",
+    image: "images/telyatina-s-gribami-v-slivochnom-souse.webp",
     ingKz: "Бұзау еті, саңырауқұлақ, кілегейлі соус.",
     ingRu: "Телятина, грибы, сливочный соус.",
     ingEn: "Veal, mushrooms, creamy sauce."
@@ -385,7 +385,7 @@ const menuItems = [
     en: "Lamb Kuyrdak",
     price: "4 000 ₸",
     category: "second",
-    image: "images/kuyrdak_baranina.png",
+    image: "images/kuyrdak_baranina.webp",
     ingKz: "Қой етінен қуырдақ.",
     ingRu: "Куырдак из баранины.",
     ingEn: "Lamb kuyrdak."
@@ -396,7 +396,7 @@ const menuItems = [
     en: "Chicken Fillet with Vegetables",
     price: "3 000 ₸",
     category: "second",
-    image: "images/kurinoe-file-s-ovoshami.png",
+    image: "images/kurinoe-file-s-ovoshami.webp",
     ingKz: "Тауық филесі, көкөністер.",
     ingRu: "Куриное филе, овощи.",
     ingEn: "Chicken fillet, vegetables."
@@ -407,7 +407,7 @@ const menuItems = [
     en: "Chicken with Mushrooms",
     price: "3 500 ₸",
     category: "second",
-    image: "images/chicken_mushroom_cream.png",
+    image: "images/chicken_mushroom_cream.webp",
     ingKz: "Тауық еті, саңырауқұлақ, кілегейлі соус.",
     ingRu: "Курица, грибы, сливочный соус.",
     ingEn: "Chicken, mushrooms, creamy sauce."
@@ -418,7 +418,7 @@ const menuItems = [
     en: "Fried Fish",
     price: "4 500 ₸",
     category: "second",
-    image: "images/zharenaya-ryba.png",
+    image: "images/zharenaya-ryba.webp",
     ingKz: "Қуырылған балық.",
     ingRu: "Жареная рыба.",
     ingEn: "Fried fish."
@@ -431,7 +431,7 @@ const menuItems = [
     en: "Lamb Shurpa",
     price: "2 000 ₸",
     category: "soups",
-    image: "images/shurpa-iz-baraniny.png",
+    image: "images/shurpa-iz-baraniny.webp",
     ingKz: "Қой еті, көкөніс, сорпа.",
     ingRu: "Баранина, овощи, бульон.",
     ingEn: "Lamb, vegetables, broth."
@@ -442,7 +442,7 @@ const menuItems = [
     en: "Beef Shurpa",
     price: "2 500 ₸",
     category: "soups",
-    image: "images/shurpa-iz-govyadiny.png",
+    image: "images/shurpa-iz-govyadiny.webp",
     ingKz: "Сиыр еті, көкөніс, сорпа.",
     ingRu: "Говядина, овощи, бульон.",
     ingEn: "Beef, vegetables, broth."
@@ -452,7 +452,7 @@ const menuItems = [
     en: "Tsoman",
     price: "3 000 ₸",
     category: "soups",
-    image: "images/tsomyan.png",
+    image: "images/tsomyan.webp",
     ingKz: "Цомян.",
     ingRu: "Цомян.",
     ingEn: "Tsoman."
@@ -463,7 +463,7 @@ const menuItems = [
     en: "Chicken Ramen",
     price: "2 000 ₸",
     category: "soups",
-    image: "images/ramen_chicken.jpg",
+    image: "images/ramen_chicken.webp",
     ingKz: "Рамен, тауық еті, жұмыртқа.",
     ingRu: "Рамен, курица, яйцо.",
     ingEn: "Ramen, chicken, egg."
@@ -474,7 +474,7 @@ const menuItems = [
     en: "Beef Ramen",
     price: "2 500 ₸",
     category: "soups",
-    image: "images/ramen_beef.jpg",
+    image: "images/ramen_beef.webp",
     ingKz: "Рамен, сиыр еті, жұмыртқа.",
     ingRu: "Рамен, говядина, яйцо.",
     ingEn: "Ramen, beef, egg."
@@ -486,7 +486,7 @@ const menuItems = [
     en: "Ribeye",
     price: "7 000 ₸",
     category: "steaks",
-    image: "images/steak_ribeye.png",
+    image: "images/steak_ribeye.webp",
     ingKz: "Рибай стейк.",
     ingRu: "Стейк рибай.",
     ingEn: "Ribeye steak."
@@ -496,7 +496,7 @@ const menuItems = [
     en: "T-Bone",
     price: "7 000 ₸",
     category: "steaks",
-    image: "images/steak_tbone.jpg",
+    image: "images/steak_tbone.webp",
     ingKz: "T-bone стейк.",
     ingRu: "Стейк T-bone.",
     ingEn: "T-bone steak."
@@ -507,7 +507,7 @@ const menuItems = [
     en: "Medallions with Vegetables",
     price: "6 500 ₸",
     category: "steaks",
-    image: "images/Медальон.png",
+    image: "images/Медальон.webp",
     ingKz: "Ет медальоны, көкөністер.",
     ingRu: "Мясные медальоны, овощи.",
     ingEn: "Meat medallions, vegetables."
@@ -518,7 +518,7 @@ const menuItems = [
     en: "Salmon Steak",
     price: "7 500 ₸",
     category: "steaks",
-    image: "images/steyk-iz-lososya.png",
+    image: "images/steyk-iz-lososya.webp",
     ingKz: "Лосось стейк.",
     ingRu: "Стейк из лосося.",
     ingEn: "Salmon steak."
@@ -531,7 +531,7 @@ const menuItems = [
     en: "Rice",
     price: "700 ₸",
     category: "garnish",
-    image: "images/ris.png",
+    image: "images/ris.webp",
     ingKz: "Күріш.",
     ingRu: "Рис.",
     ingEn: "Rice."
@@ -542,7 +542,7 @@ const menuItems = [
     en: "Potato Wedges",
     price: "800 ₸",
     category: "garnish",
-    image: "images/dolki.png",
+    image: "images/dolki.webp",
     ingKz: "Картоп дольки.",
     ingRu: "Картофельные дольки.",
     ingEn: "Potato wedges."
@@ -552,7 +552,7 @@ const menuItems = [
     en: "French Fries",
     price: "1 000 ₸",
     category: "garnish",
-    image: "images/fri.png",
+    image: "images/fri.webp",
     ingKz: "Картоп фри.",
     ingRu: "Картофель фри.",
     ingEn: "French fries."
@@ -563,7 +563,7 @@ const menuItems = [
     en: "Grilled Vegetables",
     price: "1 500 ₸",
     category: "garnish",
-    image: "images/ovoshchi-na-grile.png",
+    image: "images/ovoshchi-na-grile.webp",
     ingKz: "Гриль көкөністер.",
     ingRu: "Овощи на гриле.",
     ingEn: "Grilled vegetables."
@@ -576,7 +576,7 @@ const menuItems = [
     en: "Kazakhstan Pizza",
     price: "4 500 ₸",
     category: "pizza",
-    image: "images/pizza_kazakhstan.jpg",
+    image: "images/pizza_kazakhstan.webp",
     ingKz: "Қазы, сыр, томат соусы.",
     ingRu: "Казы, сыр, томатный соус.",
     ingEn: "Kazy, cheese, tomato sauce."
@@ -586,7 +586,7 @@ const menuItems = [
     en: "Pepperoni",
     price: "3 500 ₸",
     category: "pizza",
-    image: "images/peperoni.jpg",
+    image: "images/peperoni.webp",
     ingKz: "Пепперони, моцарелла, томат соусы.",
     ingRu: "Пепперони, моцарелла, томатный соус.",
     ingEn: "Pepperoni, mozzarella, tomato sauce."
@@ -596,7 +596,7 @@ const menuItems = [
     en: "Alfredo",
     price: "3 800 ₸",
     category: "pizza",
-    image: "images/pizza_alfredo.jpg",
+    image: "images/pizza_alfredo.webp",
     ingKz: "Тауық еті, сыр, кілегейлі соус.",
     ingRu: "Курица, сыр, сливочный соус.",
     ingEn: "Chicken, cheese, creamy sauce."
@@ -606,7 +606,7 @@ const menuItems = [
     en: "Bolognese",
     price: "4 000 ₸",
     category: "pizza",
-    image: "images/pizza_bolognese.jpg",
+    image: "images/pizza_bolognese.webp",
     ingKz: "Фарш, томат соусы, сыр.",
     ingRu: "Фарш, томатный соус, сыр.",
     ingEn: "Minced meat, tomato sauce, cheese."
@@ -618,7 +618,7 @@ const menuItems = [
     en: "Philadelphia",
     price: "3 800 ₸",
     category: "rolls",
-    image: "images/roll_philadelphia.jpg",
+    image: "images/roll_philadelphia.webp",
     ingKz: "Лосось, күріш, сыр, нори.",
     ingRu: "Лосось, рис, сыр, нори.",
     ingEn: "Salmon, rice, cheese, nori."
@@ -629,7 +629,7 @@ const menuItems = [
     en: "Caesar Roll",
     price: "3 300 ₸",
     category: "rolls",
-    image: "images/roll_caesar_fried.jpg",
+    image: "images/roll_caesar_fried.webp",
     ingKz: "Тауық еті, күріш, сыр, соус.",
     ingRu: "Курица, рис, сыр, соус.",
     ingEn: "Chicken, rice, cheese, sauce."
@@ -639,7 +639,7 @@ const menuItems = [
     en: "America Tempura",
     price: "3 500 ₸",
     category: "rolls",
-    image: "images/roll_america_tempura.jpg",
+    image: "images/roll_america_tempura.webp",
     ingKz: "Темпура ролл.",
     ingRu: "Темпура ролл.",
     ingEn: "Tempura roll."
@@ -649,7 +649,7 @@ const menuItems = [
     en: "Unagi Tempura",
     price: "3 000 ₸",
     category: "rolls",
-    image: "images/roll_unagi_tempura.jpg",
+    image: "images/roll_unagi_tempura.webp",
     ingKz: "Унаги темпура ролл.",
     ingRu: "Ролл унаги темпура.",
     ingEn: "Unagi tempura roll."
@@ -662,7 +662,7 @@ const menuItems = [
     en: "Beef Shashlik",
     price: "1 150 ₸",
     category: "shashlyk",
-    image: "images/kuskovaya-govyadina.png",
+    image: "images/kuskovaya-govyadina.webp",
     ingKz: "Сиыр етінен шашлык.",
     ingRu: "Шашлык из говядины.",
     ingEn: "Beef shashlik."
@@ -672,7 +672,7 @@ const menuItems = [
     en: "Lula Kebab",
     price: "1 250 ₸",
     category: "shashlyk",
-    image: "images/lyulya-kebab.png",
+    image: "images/lyulya-kebab.webp",
     ingKz: "Люля кебаб.",
     ingRu: "Люля кебаб.",
     ingEn: "Lula kebab."
@@ -682,7 +682,7 @@ const menuItems = [
     en: "Chicken Leg Shashlik",
     price: "1 050 ₸",
     category: "shashlyk",
-    image: "images/okorochka-kebab.png",
+    image: "images/okorochka-kebab.webp",
     ingKz: "Тауық окорочка.",
     ingRu: "Куриные окорочка.",
     ingEn: "Chicken legs."
@@ -693,7 +693,7 @@ const menuItems = [
     en: "Liver in Caul Fat",
     price: "1 300 ₸",
     category: "shashlyk",
-    image: "images/pechen-v-obolochke-kebab.png",
+    image: "images/pechen-v-obolochke-kebab.webp",
     ingKz: "Бауыр шашлык.",
     ingRu: "Шашлык из печени.",
     ingEn: "Liver shashlik."
@@ -704,7 +704,7 @@ const menuItems = [
     en: "Duck",
     price: "2 000 ₸",
     category: "shashlyk",
-    image: "images/utka-shashlyk.png",
+    image: "images/utka-shashlyk.webp",
     ingKz: "Үйрек еті.",
     ingRu: "Утиное мясо.",
     ingEn: "Duck meat."
@@ -717,7 +717,7 @@ const menuItems = [
     en: "FOX Set for 6–8 People",
     price: "38 000 ₸",
     category: "company",
-    image: "images/set_fox.png",
+    image: "images/set_fox.webp",
     ingKz: "Рибай, тибон, қуырдақ, цыпленок табака, колбаски, салат, дольки, көкөніс.",
     ingRu: "Рибай, тибон, куырдак, цыпленок табака, колбаски, салат, дольки, овощи.",
     ingEn: "Ribeye, T-bone, kuyrdak, chicken tabaka, sausages, salad, wedges, vegetables."
@@ -739,7 +739,7 @@ const menuItems = [
     en: "Kuyrdak",
     price: "30 000 ₸",
     category: "company",
-    image: "images/kuyrdak.png",
+    image: "images/kuyrdak.webp",
     ingKz: "Компанияға арналған қуырдақ.",
     ingRu: "Куырдак на компанию.",
     ingEn: "Kuyrdak for a company."
@@ -750,7 +750,7 @@ const menuItems = [
     en: "Beshbarmak",
     price: "25 000 ₸",
     category: "company",
-    image: "images/beshbarmak.png",
+    image: "images/beshbarmak.webp",
     ingKz: "Компанияға арналған бешбармақ.",
     ingRu: "Бешбармак на компанию.",
     ingEn: "Beshbarmak for a company."
@@ -760,7 +760,7 @@ const menuItems = [
     en: "Sushi Mix",
     price: "18 000 ₸",
     category: "company",
-    image: "images/mix_sushi_1200x800.png",
+    image: "images/mix_sushi_1200x800.webp",
     ingKz: "Суши сет ассорти, соус, имбирь, васаби.",
     ingRu: "Суши сет ассорти, соус, имбирь, васаби.",
     ingEn: "Assorted sushi set, sauce, ginger, wasabi."
@@ -770,7 +770,7 @@ const menuItems = [
     en: "Meat Mix",
     price: "25 000 ₸",
     category: "company",
-    image: "images/meat_mix_1200x800.png",
+    image: "images/meat_mix_1200x800.webp",
     ingKz: "Ет ассорти, гарнир, көкөніс, соустар.",
     ingRu: "Мясное ассорти, гарнир, овощи, соусы.",
     ingEn: "Assorted meat, side dish, vegetables, sauces."
@@ -780,7 +780,7 @@ const menuItems = [
     en: "Chicken Assorted",
     price: "8 000 ₸",
     category: "company",
-    image: "images/chicken_assorti_1200x800.png",
+    image: "images/chicken_assorti_1200x800.webp",
     ingKz: "Тауық ассорти, соус.",
     ingRu: "Куриное ассорти, соус.",
     ingEn: "Assorted chicken, sauce."
@@ -793,7 +793,7 @@ const menuItems = [
     en: "Tropical",
     price: "2 500 ₸",
     category: "lemonade",
-    image:  "images/Тропикалық.png",
+    image:  "images/Тропикалық.webp",
     ingKz: "Лимонад, 1 л.",
     ingRu: "Лимонад, 1 л.",
     ingEn: "Lemonade, 1 L."
@@ -804,7 +804,7 @@ const menuItems = [
     en: "Classic Mojito",
     price: "2 500 ₸",
     category: "lemonade",
-    image: "images/Мохито классический.png",
+    image: "images/Мохито классический.webp",
     ingKz: "Лайм, жалбыз, сироп, газды су, мұз.",
     ingRu: "Лайм, мята, сироп, газированная вода, лед.",
     ingEn: "Lime, mint, syrup, sparkling water, ice."
@@ -815,7 +815,7 @@ const menuItems = [
     en: "Kiwi Lime",
     price: "2 500 ₸",
     category: "lemonade",
-    image:  "images/Киви-лайм.png",
+    image:  "images/Киви-лайм.webp",
     ingKz: "Киви, лайм, сироп, газды су.",
     ingRu: "Киви, лайм, сироп, газированная вода.",
     ingEn: "Kiwi, lime, syrup, sparkling water."
@@ -826,7 +826,7 @@ const menuItems = [
     en: "Mango Passion Fruit",
     price: "2 500 ₸",
     category: "lemonade",
-    image:  "images/Манго-маракуйя.png",
+    image:  "images/Манго-маракуйя.webp",
     ingKz: "Манго, маракуйя, сироп, газды су.",
     ingRu: "Манго, маракуйя, сироп, газированная вода.",
     ingEn: "Mango, passion fruit, syrup, sparkling water."
@@ -837,7 +837,7 @@ const menuItems = [
     en: "Berry",
     price: "2 500 ₸",
     category: "lemonade",
-    image:  "images/Ягодный.png",
+    image:  "images/Ягодный.webp",
     ingKz: "Жидек, сироп, газды су.",
     ingRu: "Ягоды, сироп, газированная вода.",
     ingEn: "Berries, syrup, sparkling water."
@@ -848,7 +848,7 @@ const menuItems = [
     en: "Strawberry Banana",
     price: "2 500 ₸",
     category: "lemonade",
-    image:  "images/Клубника-банан.png",
+    image:  "images/Клубника-банан.webp",
     ingKz: "Құлпынай, банан, сироп.",
     ingRu: "Клубника, банан, сироп.",
     ingEn: "Strawberry, banana, syrup."
@@ -861,7 +861,7 @@ const menuItems = [
     en: "Coca-Cola / Cola Zero / Sprite / Fanta 0.5",
     price: "1 000 ₸",
     category: "soft",
-    image: "images/Coca-Colafsz.png",
+    image: "images/Coca-Colafsz.webp",
     ingKz: "Салқын сусын.",
     ingRu: "Прохладительный напиток.",
     ingEn: "Soft drink."
@@ -871,7 +871,7 @@ const menuItems = [
     en: "Schweppes Tonic 0.25",
     price: "1 300 ₸",
     category: "soft",
-    image: "images/Schweppes Tonic.png",
+    image: "images/Schweppes Tonic.webp",
     ingRu: "Тоник."
   }),
   makeItem({
@@ -879,7 +879,7 @@ const menuItems = [
     en: "Red Bull 0.25",
     price: "2 000 ₸",
     category: "soft",
-    image: "images/Red Bull.png",
+    image: "images/Red Bull.webp",
     ingRu: "Энергетический напиток."
   }),
   makeItem({
@@ -887,7 +887,7 @@ const menuItems = [
     en: "Piko Juice",
     price: "2 200 ₸",
     category: "soft",
-    image: "images/Piko.png",
+    image: "images/Piko.webp",
     ingRu: "Сок Piko."
   }),
   makeItem({
@@ -895,7 +895,7 @@ const menuItems = [
     en: "Coca-Cola 1L",
     price: "1 200 ₸",
     category: "soft",
-    image: "images/Coca-Cola.png",
+    image: "images/Coca-Cola.webp",
     ingRu: "Coca-Cola, 1 л."
   }),
 
@@ -906,7 +906,7 @@ const menuItems = [
     en: "Turan Natural Water 0.5",
     price: "1 200 ₸",
     category: "water",
-    image: "images/Turan.png",
+    image: "images/Turan.webp",
     ingRu: "Природная вода."
   }),
   makeItem({
@@ -914,7 +914,7 @@ const menuItems = [
     en: "Borjomi 0.5",
     price: "1 600 ₸",
     category: "water",
-    image: "images/Borjomi.png",
+    image: "images/Borjomi.webp",
     ingKz: "Минералды су.",
     ingRu: "Минеральная вода.",
     ingEn: "Mineral water."
@@ -927,7 +927,7 @@ const menuItems = [
     en: "Black Tea",
     price: "1 000 ₸",
     category: "tea",
-    image: "images/chai-chernyy.png",
+    image: "images/chai-chernyy.webp",
     ingKz: "Қара шай.",
     ingRu: "Черный чай.",
     ingEn: "Black tea."
@@ -938,7 +938,7 @@ const menuItems = [
     en: "Green Tea",
     price: "1 000 ₸",
     category: "tea",
-    image: "images/chai-zelenyy.png",
+    image: "images/chai-zelenyy.webp",
     ingKz: "Көк шай.",
     ingRu: "Зеленый чай.",
     ingEn: "Green tea."
@@ -949,7 +949,7 @@ const menuItems = [
     en: "Tashkent Tea",
     price: "2 000 ₸",
     category: "tea",
-    image: "images/Tashkent Tea.png",
+    image: "images/Tashkent Tea.webp",
     ingRu: "Фирменный чай."
   }),
   makeItem({
@@ -958,7 +958,7 @@ const menuItems = [
     en: "Berry Tea",
     price: "2 000 ₸",
     category: "tea",
-    image: "images/Berry Tea.png",
+    image: "images/Berry Tea.webp",
     ingRu: "Ягодный чай."
   }),
 
@@ -970,7 +970,7 @@ makeItem({
   en: "Mojito",
   price: "2 500 ₸",
   category: "mocktails",
-  image: "images/Мохито-коктейл.png",
+  image: "images/Мохито-коктейл.webp",
   ingKz: "Алкогольсіз коктейль.",
   ingRu: "Безалкогольный коктейль.",
   ingEn: "Non-alcoholic cocktail."
@@ -981,7 +981,7 @@ makeItem({
   en: "Blue Galaxy",
   price: "2 500 ₸",
   category: "mocktails",
-  image: "images/Блю галакси.png",
+  image: "images/Блю галакси.webp",
   ingKz: "Алкогольсіз коктейль.",
   ingRu: "Безалкогольный коктейль.",
   ingEn: "Non-alcoholic cocktail."
@@ -992,7 +992,7 @@ makeItem({
   en: "Bora Bora",
   price: "2 500 ₸",
   category: "mocktails",
-  image: "images/Бора-Бора.png",
+  image: "images/Бора-Бора.webp",
   ingKz: "Алкогольсіз коктейль.",
   ingRu: "Безалкогольный коктейль.",
   ingEn: "Non-alcoholic cocktail."
@@ -1003,7 +1003,7 @@ makeItem({
     en: "Virgin Pina Colada",
     price: "2 500 ₸",
     category: "mocktails",
-    image: "images/Пина колада.png",
+    image: "images/Пина колада.webp",
     ingRu: "Безалкогольный коктейль."
   }),
 
@@ -1013,7 +1013,7 @@ makeItem({
     en: "Aperol Spritz",
     price: "4 000 ₸",
     category: "cocktails",
-    image: "images/Aperol Spritz.png",
+    image: "images/Aperol Spritz.webp",
     ingKz: "Aperol, prosecco, soda, апельсин, мұз.",
     ingRu: "Aperol, prosecco, soda, апельсин, лед.",
     ingEn: "Aperol, prosecco, soda, orange, ice."
@@ -1023,7 +1023,7 @@ makeItem({
     en: "Cuba Libre",
     price: "4 000 ₸",
     category: "cocktails",
-    image:  "images/Cuba Libre.png",
+    image:  "images/Cuba Libre.webp",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1031,7 +1031,7 @@ makeItem({
     en: "Long Island",
     price: "4 000 ₸",
     category: "cocktails",
-    image:  "images/Long Island.png",
+    image:  "images/Long Island.webp",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1039,7 +1039,7 @@ makeItem({
     en: "Negroni",
     price: "4 000 ₸",
     category: "cocktails",
-    image:  "images/Negroni.png",
+    image:  "images/Negroni.webp",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1047,7 +1047,7 @@ makeItem({
     en: "Pina Colada",
     price: "4 000 ₸",
     category: "cocktails",
-    image:  "images/Pina Colada.png",
+    image:  "images/Pina Colada.webp",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1055,7 +1055,7 @@ makeItem({
     en: "Sex on the Beach",
     price: "4 000 ₸",
     category: "cocktails",
-    image:  "images/Sex on the Beach.png",
+    image:  "images/Sex on the Beach.webp",
     ingRu: "Алкогольный коктейль."
   }),
   makeItem({
@@ -1063,7 +1063,7 @@ makeItem({
     en: "Tequila Sunrise",
     price: "4 000 ₸",
     category: "cocktails",
-    image:  "images/Tequila Sunrise.png",
+    image:  "images/Tequila Sunrise.webp",
     ingRu: "Алкогольный коктейль."
   }),
 
@@ -1073,7 +1073,7 @@ makeItem({
     en: "Bacardi Mojito",
     price: "3 500 ₸",
     category: "long_drinks",
-    image:  "images/BACARDI MOJITO.png",
+    image:  "images/BACARDI MOJITO.webp",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1081,7 +1081,7 @@ makeItem({
     en: "Bombay & Tonic",
     price: "3 500 ₸",
     category: "long_drinks",
-    image:  "images/BOMBAY & TONIC.png",
+    image:  "images/BOMBAY & TONIC.webp",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1089,7 +1089,7 @@ makeItem({
     en: "Martini Fiero & Tonic",
     price: "3 500 ₸",
     category: "long_drinks",
-    image:  "images/MARTINI FIERO & TONIC.png",
+    image:  "images/MARTINI FIERO & TONIC.webp",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1097,7 +1097,7 @@ makeItem({
     en: "Blue Hawaii",
     price: "3 500 ₸",
     category: "long_drinks",
-    image:  "images/Голубые Гавайи.png",
+    image:  "images/Голубые Гавайи.webp",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1105,7 +1105,7 @@ makeItem({
     en: "Margarita",
     price: "3 500 ₸",
     category: "long_drinks",
-    image:  "images/Маргарита-лонг дринк.png",
+    image:  "images/Маргарита-лонг дринк.webp",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1113,7 +1113,7 @@ makeItem({
     en: "Beefeater Tonic",
     price: "3 500 ₸",
     category: "long_drinks",
-    image:  "images/Beefeater Tonic.png",
+    image:  "images/Beefeater Tonic.webp",
     ingRu: "Алкогольный лонг дринк."
   }),
 
@@ -1123,7 +1123,7 @@ makeItem({
     en: "B-52",
     price: "3 000 ₸",
     category: "shots",
-    image:  "images/B-52 шоты.png",
+    image:  "images/B-52 шоты.webp",
     ingRu: "Алкогольный шот, 50 мл."
   }),
   makeItem({
@@ -1131,7 +1131,7 @@ makeItem({
     en: "B-53",
     price: "3 000 ₸",
     category: "shots",
-    image:  "images/B-53 шоты.png",
+    image:  "images/B-53 шоты.webp",
     ingRu: "Алкогольный шот, 50 мл."
   }),
   makeItem({
@@ -1139,7 +1139,7 @@ makeItem({
     en: "B-54",
     price: "3 000 ₸",
     category: "shots",
-    image:  "images/B-54 шоты.png",
+    image:  "images/B-54 шоты.webp",
     ingRu: "Алкогольный шот, 50 мл."
   }),
 
@@ -1148,28 +1148,28 @@ makeItem({
     ru: "Martini Fiero",
     price: "2 500 ₸",
     category: "vermouth",
-    image:  "images/Martini Fiero.png",
+    image:  "images/Martini Fiero.webp",
     ingRu: "Вермут, 100 мл."
   }),
   makeItem({
     ru: "Martini Bianco",
     price: "2 500 ₸",
     category: "vermouth",
-    image:  "images/Martini Bianco.png",
+    image:  "images/Martini Bianco.webp",
     ingRu: "Вермут, 100 мл."
   }),
   makeItem({
     ru: "Martini Extra Dry",
     price: "2 500 ₸",
     category: "vermouth",
-    image:  "images/Martini Extra Dry.png",
+    image:  "images/Martini Extra Dry.webp",
     ingRu: "Вермут, 100 мл."
   }),
   makeItem({
     ru: "Martini Rosso",
     price: "2 500 ₸",
     category: "vermouth",
-    image:  "images/Martini Rosso.png",
+    image:  "images/Martini Rosso.webp",
     ingRu: "Вермут, 100 мл."
   }),
 
@@ -1178,21 +1178,21 @@ makeItem({
     ru: "Ararat 3 Y.O.",
     price: "1 400 ₸",
     category: "armenian_cognac",
-    image:  "images/Ararat3.png",
+    image:  "images/Ararat3.webp",
     ingRu: "Армянский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Ararat 5 Y.O.",
     price: "2 100 ₸",
     category: "armenian_cognac",
-    image:  "images/Ararat5.png",
+    image:  "images/Ararat5.webp",
     ingRu: "Армянский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Ahtamar 10 Y.O.",
     price: "2 700 ₸",
     category: "armenian_cognac",
-    image:  "images/Ararat10.png",
+    image:  "images/Ararat10.webp",
     ingRu: "Армянский коньяк, 50 мл."
   }),
 
@@ -1201,28 +1201,28 @@ makeItem({
     ru: "Martell V.S.",
     price: "3 500 ₸",
     category: "french_cognac",
-    image:  "images/Martell V.S..png",
+    image:  "images/Martell V.S..webp",
     ingRu: "Французский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Martell V.S.O.P",
     price: "5 200 ₸",
     category: "french_cognac",
-    image:  "images/Martell V.S.O.P.png",
+    image:  "images/Martell V.S.O.P.webp",
     ingRu: "Французский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Hennessy V.S.",
     price: "4 500 ₸",
     category: "french_cognac",
-    image:  "images/Hennessy V.S..png",
+    image:  "images/Hennessy V.S..webp",
     ingRu: "Французский коньяк, 50 мл."
   }),
   makeItem({
     ru: "Hennessy V.S.O.P",
     price: "7 000 ₸",
     category: "french_cognac",
-    image:  "images/Hennessy V.S.O.P.png",
+    image:  "images/Hennessy V.S.O.P.webp",
     ingRu: "Французский коньяк, 50 мл."
   }),
 
@@ -1231,49 +1231,49 @@ makeItem({
     ru: "Absolut",
     price: "1 700 ₸",
     category: "vodka",
-    image: "images/Absolut.png",
+    image: "images/Absolut.webp",
     ingRu: "Водка, 50 мл."
   }),
   makeItem({
     ru: "Kyzylzhar Legend 0.5",
     price: "10 000 ₸",
     category: "vodka",
-    image:  "images/Kyzylzhar Legend 0.5.png",
+    image:  "images/Kyzylzhar Legend 0.5.webp",
     ingRu: "Водка, 0.5 л."
   }),
   makeItem({
     ru: "Царская Оригинал",
     price: "1 500 ₸",
     category: "vodka",
-    image:  "images/Царская Оригинал.png",
+    image:  "images/Царская Оригинал.webp",
     ingRu: "Водка, 50 мл."
   }),
   makeItem({
     ru: "SKYY California Vodka 0.7",
     price: "23 500 ₸",
     category: "vodka",
-    image:  "images/SKYY California.png",
+    image:  "images/SKYY California.webp",
     ingRu: "Водка, 0.7 л."
   }),
   makeItem({
     ru: "Онегин",
     price: "3 000 ₸",
     category: "vodka",
-    image:  "images/Онегин.png",
+    image:  "images/Онегин.webp",
     ingRu: "Водка, 50 мл."
   }),
   makeItem({
     ru: "Beluga",
     price: "3 400 ₸",
     category: "vodka",
-    image:  "images/Beluga.png",
+    image:  "images/Beluga.webp",
     ingRu: "Водка, 50 мл."
   }),
   makeItem({
     ru: "Belvedere",
     price: "4 000 ₸",
     category: "vodka",
-    image:  "images/Belvedere.png",
+    image:  "images/Belvedere.webp",
     ingRu: "Водка, 50 мл."
   }),
 
@@ -1282,49 +1282,49 @@ makeItem({
     ru: "Malibu Coconut Rum",
     price: "2 000 ₸",
     category: "liqueur",
-    image:  "images/Malibu Coconut Rum.png",
+    image:  "images/Malibu Coconut Rum.webp",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Kahlua",
     price: "2 200 ₸",
     category: "liqueur",
-    image:  "images/Kahlua.png",
+    image:  "images/Kahlua.webp",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Cointreau",
     price: "2 200 ₸",
     category: "liqueur",
-    image:  "images/Cointreau.png",
+    image:  "images/Cointreau.webp",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Absinthe Green",
     price: "2 700 ₸",
     category: "liqueur",
-    image:  "images/Absinthe Green.png",
+    image:  "images/Absinthe Green.webp",
     ingRu: "Абсент, 50 мл."
   }),
   makeItem({
     ru: "Baileys",
     price: "2 000 ₸",
     category: "liqueur",
-    image: "images/Baileys.png",
+    image: "images/Baileys.webp",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Sambuca",
     price: "2 350 ₸",
     category: "liqueur",
-    image:  "images/Sambuca.png",
+    image:  "images/Sambuca.webp",
     ingRu: "Ликер, 50 мл."
   }),
   makeItem({
     ru: "Aperol",
     price: "1 600 ₸",
     category: "liqueur",
-    image:  "images/Aperol.png",
+    image:  "images/Aperol.webp",
     ingRu: "Аперитив, 50 мл."
   }),
 
@@ -1333,140 +1333,140 @@ makeItem({
     ru: "The Glenlivet Founder's Reserve",
     price: "4 100 ₸",
     category: "whiskey",
-    image:  "images/The Glenlivet Founder's Reserve.png",
+    image:  "images/The Glenlivet Founder's Reserve.webp",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "The Glenlivet Excellence 12 Y.O.",
     price: "5 800 ₸",
     category: "whiskey",
-    image:  "images/The Glenlivet Excellence 12 Y.O..png",
+    image:  "images/The Glenlivet Excellence 12 Y.O..webp",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "Glenmorangie Original",
     price: "5 500 ₸",
     category: "whiskey",
-    image:  "images/Glenmorangie Original.png",
+    image:  "images/Glenmorangie Original.webp",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "Glenfiddich 12 Y.O.",
     price: "5 800 ₸",
     category: "whiskey",
-    image:  "images/Glenfiddich 12 Y.O..png",
+    image:  "images/Glenfiddich 12 Y.O..webp",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "Macallan 12 Y.O.",
     price: "8 500 ₸",
     category: "whiskey",
-    image:  "images/Macallan 12 Y.O..png",
+    image:  "images/Macallan 12 Y.O..webp",
     ingRu: "Односолодовый виски, 50 мл."
   }),
   makeItem({
     ru: "Chivas Regal 12 Y.O.",
     price: "3 900 ₸",
     category: "whiskey",
-    image: "images/Chivas Regal 12 YO.png",
+    image: "images/Chivas Regal 12 YO.webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Chivas Regal 15 Y.O.",
     price: "5 200 ₸",
     category: "whiskey",
-    image:  "images/Chivas Regal 15 Y.O..png",
+    image:  "images/Chivas Regal 15 Y.O..webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Chivas Regal 18 Y.O.",
     price: "7 800 ₸",
     category: "whiskey",
-    image:  "images/Chivas Regal 18 Y.O..png",
+    image:  "images/Chivas Regal 18 Y.O..webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Ballantine's Finest",
     price: "2 400 ₸",
     category: "whiskey",
-    image:  "images/Ballantine's Finest.png",
+    image:  "images/Ballantine's Finest.webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Ballantine's 7 Y.O.",
     price: "2 200 ₸",
     category: "whiskey",
-    image:  "images/Ballantine's 7 Y.O..png",
+    image:  "images/Ballantine's 7 Y.O..webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Ballantine's Passion",
     price: "2 200 ₸",
     category: "whiskey",
-    image: "images/Ballantine's Passion.png",
+    image: "images/Ballantine's Passion.webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Dewar's Caribbean 8 Y.O.",
     price: "2 500 ₸",
     category: "whiskey",
-    image: "images/Dewar's Caribbean 8 Y.O..png",
+    image: "images/Dewar's Caribbean 8 Y.O..webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Dewar's Japanese 8 Y.O.",
     price: "2 500 ₸",
     category: "whiskey",
-    image: "images/Dewar's Japanese 8 Y.O..png",
+    image: "images/Dewar's Japanese 8 Y.O..webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Dewar's Portuguese 8 Y.O.",
     price: "2 500 ₸",
     category: "whiskey",
-    image: "images/Dewar's Portuguese 8 Y.O..png",
+    image: "images/Dewar's Portuguese 8 Y.O..webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "William Lawson's",
     price: "2 100 ₸",
     category: "whiskey",
-    image: "images/William Lawson's.png",
+    image: "images/William Lawson's.webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "William Lawson's Super Spiced",
     price: "2 100 ₸",
     category: "whiskey",
-    image: "images/William Lawson's Super Spiced.png",
+    image: "images/William Lawson's Super Spiced.webp",
     ingRu: "Купажированный виски, 50 мл."
   }),
   makeItem({
     ru: "Jameson Original",
     price: "2 900 ₸",
     category: "whiskey",
-    image: "images/Jameson.png",
+    image: "images/Jameson.webp",
     ingRu: "Jameson Family, 50 мл."
   }),
   makeItem({
     ru: "Jameson Crested",
     price: "3 200 ₸",
     category: "whiskey",
-    image: "images/Jameson Crested.png",
+    image: "images/Jameson Crested.webp",
     ingRu: "Jameson Family, 50 мл."
   }),
   makeItem({
     ru: "Jameson Black Barrel",
     price: "3 500 ₸",
     category: "whiskey",
-    image: "images/Jameson Black Barrel.png",
+    image: "images/Jameson Black Barrel.webp",
     ingRu: "Jameson Family, 50 мл."
   }),
   makeItem({
     ru: "Jack Daniel's",
     price: "2 850 ₸",
     category: "whiskey",
-    image: "images/Jack Daniel's.png",
+    image: "images/Jack Daniel's.webp",
     ingRu: "Бурбон, 50 мл."
   }),
 
@@ -1475,14 +1475,14 @@ makeItem({
     ru: "Campari",
     price: "2 000 ₸",
     category: "infusion",
-    image:  "images/Campari.png",
+    image:  "images/Campari.webp",
     ingRu: "Настойка, 50 мл."
   }),
   makeItem({
     ru: "Jagermeister",
     price: "2 400 ₸",
     category: "infusion",
-    image: "images/Jagermeister.png",
+    image: "images/Jagermeister.webp",
     ingRu: "Настойка, 50 мл."
   }),
 
@@ -1491,14 +1491,14 @@ makeItem({
     ru: "Olmeca Blanco",
     price: "2 200 ₸",
     category: "tequila",
-    image: "images/Olmeca Blanco.png",
+    image: "images/Olmeca Blanco.webp",
     ingRu: "Текила, 50 мл."
   }),
   makeItem({
     ru: "Olmeca Gold",
     price: "2 200 ₸",
     category: "tequila",
-    image: "images/Olmeca Gold.png",
+    image: "images/Olmeca Gold.webp",
     ingRu: "Текила, 50 мл."
   }),
 
@@ -1507,28 +1507,28 @@ makeItem({
     ru: "Beefeater",
     price: "2 000 ₸",
     category: "gin",
-    image:  "images/Beefeater.png",
+    image:  "images/Beefeater.webp",
     ingRu: "Джин, 50 мл."
   }),
   makeItem({
     ru: "Beefeater Pink Strawberry",
     price: "2 000 ₸",
     category: "gin",
-    image:  "images/Beefeater Pink Strawberry.png",
+    image:  "images/Beefeater Pink Strawberry.webp",
     ingRu: "Джин, 50 мл."
   }),
   makeItem({
     ru: "Beefeater Blood Orange",
     price: "2 000 ₸",
     category: "gin",
-    image:  "images/Beefeater Blood Orange.png",
+    image:  "images/Beefeater Blood Orange.webp",
     ingRu: "Джин, 50 мл."
   }),
   makeItem({
     ru: "Bombay Sapphire",
     price: "2 000 ₸",
     category: "gin",
-    image:  "images/Bombay Sapphire.png",
+    image:  "images/Bombay Sapphire.webp",
     ingRu: "Джин, 50 мл."
   }),
 
@@ -1537,49 +1537,49 @@ makeItem({
     ru: "Havana Club 3 Y.O.",
     price: "2 000 ₸",
     category: "rum",
-    image:  "images/Havana Club 3 Y.O..png",
+    image:  "images/Havana Club 3 Y.O..webp",
     ingRu: "Кубинский ром, 50 мл."
   }),
   makeItem({
     ru: "Havana Club Especial",
     price: "2 200 ₸",
     category: "rum",
-    image:  "images/Havana Club Especial.png",
+    image:  "images/Havana Club Especial.webp",
     ingRu: "Кубинский ром, 50 мл."
   }),
   makeItem({
     ru: "Havana Club Cuban Spiced",
     price: "2 000 ₸",
     category: "rum",
-    image:  "images/Havana Club Cuban Spiced.png",
+    image:  "images/Havana Club Cuban Spiced.webp",
     ingRu: "Кубинский ром, 50 мл."
   }),
   makeItem({
     ru: "Bacardi Carta Blanca",
     price: "2 100 ₸",
     category: "rum",
-    image: "images/Bacardi Carta Blanca.png",
+    image: "images/Bacardi Carta Blanca.webp",
     ingRu: "Пуэрто-рико ром, 50 мл."
   }),
   makeItem({
     ru: "Bacardi Carta Negra",
     price: "2 100 ₸",
     category: "rum",
-    image:  "images/Bacardi Carta Negra.png",
+    image:  "images/Bacardi Carta Negra.webp",
     ingRu: "Пуэрто-рико ром, 50 мл."
   }),
   makeItem({
     ru: "Bacardi Spiced",
     price: "2 100 ₸",
     category: "rum",
-    image:  "images/Bacardi Spiced.png",
+    image:  "images/Bacardi Spiced.webp",
     ingRu: "Пуэрто-рико ром, 50 мл."
   }),
   makeItem({
     ru: "Oakheart",
     price: "2 100 ₸",
     category: "rum",
-    image:  "images/Oakheart.png",
+    image:  "images/Oakheart.webp",
     ingRu: "Пуэрто-рико ром, 50 мл."
   })
 ];
