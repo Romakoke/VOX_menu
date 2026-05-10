@@ -11,7 +11,8 @@ const text = {
     kitchen: "Кухня",
     bar: "Бар",
     more: "Қоспасы",
-    ingredients: "Қоспасы:"
+    ingredients: "Қоспасы:",
+    warningTop: "Ескерту: ыдыс сындыру — 3 000 ₸, мүлікті бүлдіру — 10 000 ₸ және жоғары"
   },
   ru: {
     service: "Обслуживание +15%",
@@ -19,7 +20,8 @@ const text = {
     kitchen: "Кухня",
     bar: "Бар",
     more: "Состав",
-    ingredients: "Состав:"
+    ingredients: "Состав:",
+    warningTop: "Внимание: бой посуды — 3 000 ₸, порча имущества — от 10 000 ₸"
   },
   en: {
     service: "Service +15%",
@@ -27,7 +29,8 @@ const text = {
     kitchen: "Kitchen",
     bar: "Bar",
     more: "Ingredients",
-    ingredients: "Ingredients:"
+    ingredients: "Ingredients:",
+    warningTop: "Notice: broken dishes — 3 000 ₸, property damage — from 10 000 ₸"
   }
 };
 
@@ -46,11 +49,10 @@ const categoryGroups = {
     { id: "pizza", name: { kz: "Пицца", ru: "Пицца", en: "Pizza" } },
     { id: "rolls", name: { kz: "Роллдар", ru: "Роллы", en: "Rolls" } },
     { id: "shashlyk", name: { kz: "Шашлыктар", ru: "Шашлыки", en: "Shashlik" } },
-    { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } } ,
-    { id: "warning", name: { kz: "Ескерту", ru: "Предупреждение", en: "Warning" } }
+    { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } }
   ],
 
-  bar: [{ id: "warning", name: { kz: "Ескерту", ru: "Предупреждение", en: "Warning" } },
+  bar: [
     { id: "all", name: { kz: "Барлығы", ru: "Все", en: "All" } },
     { id: "lemonade", name: { kz: "Лимонадтар", ru: "Лимонады", en: "Lemonades" } },
     { id: "soft", name: { kz: "Салқын сусындар", ru: "Прохладительные напитки", en: "Soft Drinks" } },
@@ -74,6 +76,7 @@ const categoryGroups = {
 { id: "white_wine", name: { kz: "Ақ шараптар", ru: "Белые вина", en: "White Wines" } },
 { id: "red_wine", name: { kz: "Қызыл шараптар", ru: "Красные вина", en: "Red Wines" } },
 { id: "draft_wine", name: { kz: "Разливные вина", ru: "Разливные вина", en: "Draft Wines" } },
+{ id: "beer_bar", name: { kz: "Разливное пиво", ru: "Разливное пиво", en: "Draft Beer" } },
 { id: "bottle_beer", name: { kz: "Бөтелкедегі сыра", ru: "Бутылочное пиво", en: "Bottled Beer" } },
 { id: "bar_snacks", name: { kz: "Сыраға тіскебасар", ru: "Закуски к пиву", en: "Beer Snacks" } }
   ]
@@ -1955,29 +1958,7 @@ makeItem({
   ingRu: "Жевательная резинка.",
   ingEn: "Chewing gum."
 }),
-  // ===== ЕСКЕРТУ =====
-makeItem({
-  ru: "Бой посуды",
-  kz: "Ыдыс сындыру",
-  en: "Broken Dishes",
-  price: "3 000 ₸",
-  category: "warning",
-  image: "images/Ескерту.webp",
-  ingKz: "Ыдыс сындырылған жағдайда төлем алынады.",
-  ingRu: "При повреждении посуды взимается оплата.",
-  ingEn: "A fee is charged for broken dishes."
-}),
-makeItem({
-  ru: "Порча имущества",
-  kz: "Мүлікті бүлдіру",
-  en: "Property Damage",
-  price: "10 000 ₸ және жоғары",
-  category: "warning",
-  image: "images/Ескерту.webp",
-  ingKz: "Мүлік бүлінген жағдайда шығын көлеміне қарай төлем алынады.",
-  ingRu: "При порче имущества оплата взимается по размеру ущерба.",
-  ingEn: "For property damage, the fee depends on the amount of damage."
-}),// ===== РОМ =====
+  // ===== РОМ =====
   makeItem({
     ru: "Havana Club 3 Y.O.",
     price: "2 000 ₸",
@@ -2044,6 +2025,7 @@ function updateStaticText() {
   document.getElementById("kitchenTab").textContent = text[currentLang].kitchen;
   document.getElementById("barTab").textContent = text[currentLang].bar;
   document.getElementById("ingredientsTitle").textContent = text[currentLang].ingredients;
+  document.getElementById("warningTopText").textContent = text[currentLang].warningTop;
 }
 
 function renderCategories() {
