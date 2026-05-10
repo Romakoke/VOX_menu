@@ -229,7 +229,7 @@ const menuItems = [
     en: "Fresh Homemade Salad",
     price: "2 000 ₸",
     category: "salads",
-    image:  "images/nuggets.webp",
+    image:  "images/Свежий салат.webp",
     ingKz: "Қияр, қызанақ, көк шөп.",
     ingRu: "Огурцы, помидоры, зелень.",
     ingEn: "Cucumber, tomatoes, greens."
