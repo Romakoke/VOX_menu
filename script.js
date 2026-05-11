@@ -12,7 +12,6 @@ const text = {
     bar: "Бар",
     more: "Қоспасы",
     ingredients: "Қоспасы:",
-    warningTop: "Ескерту: ыдыс сындыру — 3 000 ₸, мүлікті бүлдіру — 10 000 ₸ және жоғары"
   },
   ru: {
     service: "Обслуживание +15%",
@@ -21,7 +20,6 @@ const text = {
     bar: "Бар",
     more: "Состав",
     ingredients: "Состав:",
-    warningTop: "Внимание: бой посуды — 3 000 ₸, порча имущества — от 10 000 ₸"
   },
   en: {
     service: "Service +15%",
@@ -30,7 +28,6 @@ const text = {
     bar: "Bar",
     more: "Ingredients",
     ingredients: "Ingredients:",
-    warningTop: "Notice: broken dishes — 3 000 ₸, property damage — from 10 000 ₸"
   }
 };
 
@@ -50,10 +47,8 @@ const categoryGroups = {
     { id: "shashlyk", name: { kz: "Шашлыктар", ru: "Шашлыки", en: "Shashlik" } },
     { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } }
   ],
-other:[
-      { id: "other", name: { kz: "Басқа", ru: "Прочее", en: "Other" } }
 
-],
+
   bar: [
     { id: "all", name: { kz: "Барлығы", ru: "Все", en: "All" } },
     { id: "lemonade", name: { kz: "Лимонадтар", ru: "Лимонады", en: "Lemonades" } },
@@ -80,7 +75,9 @@ other:[
 { id: "draft_wine", name: { kz: "Разливные вина", ru: "Разливные вина", en: "Draft Wines" } },
 { id: "beer_bar", name: { kz: "Разливное пиво", ru: "Разливное пиво", en: "Draft Beer" } },
 { id: "bottle_beer", name: { kz: "Бөтелкедегі сыра", ru: "Бутылочное пиво", en: "Bottled Beer" } },
-{ id: "bar_snacks", name: { kz: "Сыраға тіскебасар", ru: "Закуски к пиву", en: "Beer Snacks" } }
+{ id: "bar_snacks", name: { kz: "Сыраға тіскебасар", ru: "Закуски к пиву", en: "Beer Snacks" } },
+          { id: "other", name: { kz: "Басқа", ru: "Прочее", en: "Other" } }
+
   ]
 };
 
