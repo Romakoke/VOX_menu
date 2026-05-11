@@ -2006,7 +2006,7 @@ makeItem({
     category: "rum",
     image:  "images/Oakheart.webp",
     ingRu: "Пуэрто-рико ром, 50 мл."
-  })
+  }),
   
   makeItem({
   ru: "Бой посуды",
