@@ -12,6 +12,7 @@ const text = {
     bar: "Бар",
     more: "Қоспасы",
     ingredients: "Қоспасы:",
+    warningTop: "ЕСКЕРТУ: Бой посуда — 3 000 ₸ | Мүлікті бүлдіру — 10 000 ₸ және жоғары"
   },
   ru: {
     service: "Обслуживание +15%",
@@ -20,6 +21,7 @@ const text = {
     bar: "Бар",
     more: "Состав",
     ingredients: "Состав:",
+    warningTop: "ВНИМАНИЕ: бой посуды — 3 000 ₸ | порча имущества — от 10 000 ₸"
   },
   en: {
     service: "Service +15%",
@@ -28,6 +30,7 @@ const text = {
     bar: "Bar",
     more: "Ingredients",
     ingredients: "Ingredients:",
+    warningTop: "WARNING: broken dishes — 3 000 ₸ | property damage — from 10 000 ₸"
   }
 };
 
@@ -1938,6 +1941,7 @@ makeItem({
 
 const categoriesBox = document.getElementById("categories");
 const menuGrid = document.getElementById("menuGrid");
+
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("closeModal");
 const modalImg = document.getElementById("modalImg");
@@ -1945,21 +1949,46 @@ const modalTitle = document.getElementById("modalTitle");
 const modalPrice = document.getElementById("modalPrice");
 const modalIngredients = document.getElementById("modalIngredients");
 
+function getText(value) {
+  if (value && typeof value === "object") {
+    return value[currentLang] || value.ru || value.kz || value.en || "";
+  }
+
+  return value || "";
+}
+
+function setText(id, value) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = value;
+}
+
 function updateStaticText() {
-  document.getElementById("serviceText").textContent = text[currentLang].service;
-  document.getElementById("subtitle").textContent = text[currentLang].subtitle;
-  document.getElementById("kitchenTab").textContent = text[currentLang].kitchen;
-  document.getElementById("barTab").textContent = text[currentLang].bar;
-  document.getElementById("ingredientsTitle").textContent = text[currentLang].ingredients;
-  document.getElementById("warningTopText").textContent = text[currentLang].warningTop;
+  setText("serviceText", text[currentLang].service);
+  setText("subtitle", text[currentLang].subtitle);
+  setText("kitchenTab", text[currentLang].kitchen);
+  setText("barTab", text[currentLang].bar);
+  setText("ingredientsTitle", text[currentLang].ingredients);
+  setText("warningTopText", text[currentLang].warningTop);
+
+  document.documentElement.lang = currentLang;
+
+  document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.lang === currentLang);
+  });
+
+  document.querySelectorAll(".menu-tab").forEach(tab => {
+    tab.classList.toggle("active", tab.dataset.type === activeType);
+  });
 }
 
 function renderCategories() {
-  const categories = categoryGroups[activeType];
+  if (!categoriesBox) return;
+
+  const categories = categoryGroups[activeType] || [];
 
   categoriesBox.innerHTML = categories.map(cat => `
     <button class="category-btn ${cat.id === activeCategory ? "active" : ""}" data-id="${cat.id}">
-      ${cat.name[currentLang]}
+      ${getText(cat.name)}
     </button>
   `).join("");
 
@@ -1973,7 +2002,9 @@ function renderCategories() {
 }
 
 function renderMenu() {
-  const currentCategoryIds = categoryGroups[activeType]
+  if (!menuGrid) return;
+
+  const currentCategoryIds = (categoryGroups[activeType] || [])
     .filter(cat => cat.id !== "all")
     .map(cat => cat.id);
 
@@ -1982,51 +2013,73 @@ function renderMenu() {
     return item.category === activeCategory;
   });
 
-  menuGrid.innerHTML = filtered.map(item => `
-    <div class="card">
-      <img src="${item.image}" alt="${item.name[currentLang]}" onerror="this.src='${placeholder}'">
-      <div class="card-body">
-        <h3>${item.name[currentLang]}</h3>
-        <div class="price">${item.price}</div>
-        <button class="more-btn" onclick="openModal(${menuItems.indexOf(item)})">
-          ${text[currentLang].more}
-        </button>
+  if (!filtered.length) {
+    menuGrid.innerHTML = `
+      <div class="empty-menu">
+        ${currentLang === "ru" ? "В этой категории пока нет позиций." :
+          currentLang === "en" ? "There are no items in this category yet." :
+          "Бұл категорияда әзірге позициялар жоқ."}
       </div>
-    </div>
-  `).join("");
+    `;
+    return;
+  }
+
+  menuGrid.innerHTML = filtered.map(item => {
+    const itemIndex = menuItems.indexOf(item);
+    const itemName = getText(item.name);
+    const itemPrice = getText(item.price);
+
+    return `
+      <div class="card">
+        <img src="${item.image}" alt="${itemName}" loading="lazy" onerror="this.src='${placeholder}'">
+        <div class="card-body">
+          <h3>${itemName}</h3>
+          <div class="price">${itemPrice}</div>
+          <button class="more-btn" onclick="openModal(${itemIndex})">
+            ${text[currentLang].more}
+          </button>
+        </div>
+      </div>
+    `;
+  }).join("");
 }
 
 function openModal(index) {
   const item = menuItems[index];
+  if (!item || !modal) return;
 
-  modalImg.src = item.image;
-  modalImg.onerror = () => {
-    modalImg.src = placeholder;
-  };
+  if (modalImg) {
+    modalImg.src = item.image || placeholder;
+    modalImg.onerror = () => {
+      modalImg.src = placeholder;
+    };
+  }
 
-  modalTitle.textContent = item.name[currentLang];
-  modalPrice.textContent = item.price;
-  modalIngredients.textContent = item.ingredients[currentLang];
+  if (modalTitle) modalTitle.textContent = getText(item.name);
+  if (modalPrice) modalPrice.textContent = getText(item.price);
+  if (modalIngredients) modalIngredients.textContent = getText(item.ingredients);
 
   modal.classList.add("active");
 }
 
-closeModal.addEventListener("click", () => {
-  modal.classList.remove("active");
-});
+if (closeModal && modal) {
+  closeModal.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+}
 
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) modal.classList.remove("active");
-});
+if (modal) {
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.classList.remove("active");
+  });
+}
 
 document.querySelectorAll(".menu-tab").forEach(tab => {
   tab.addEventListener("click", () => {
-    document.querySelectorAll(".menu-tab").forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
-
-    activeType = tab.dataset.type;
+    activeType = tab.dataset.type || "kitchen";
     activeCategory = "all";
 
+    updateStaticText();
     renderCategories();
     renderMenu();
   });
@@ -2034,16 +2087,19 @@ document.querySelectorAll(".menu-tab").forEach(tab => {
 
 document.querySelectorAll(".lang-btn").forEach(btn => {
   btn.addEventListener("click", () => {
-    document.querySelectorAll(".lang-btn").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    currentLang = btn.dataset.lang;
+    currentLang = btn.dataset.lang || "kz";
+    localStorage.setItem("voxMenuLang", currentLang);
 
     updateStaticText();
     renderCategories();
     renderMenu();
   });
 });
+
+const savedLang = localStorage.getItem("voxMenuLang");
+if (savedLang && text[savedLang]) {
+  currentLang = savedLang;
+}
 
 updateStaticText();
 renderCategories();
