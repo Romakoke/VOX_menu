@@ -51,7 +51,7 @@ const categoryGroups = {
     { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } }
   ],
 other:[
-      { id: "warning", name: { kz: "Басқа", ru: "Прочее", en: "Other" } }
+      { id: "other", name: { kz: "Басқа", ru: "Прочее", en: "Other" } }
 
 ],
   bar: [
