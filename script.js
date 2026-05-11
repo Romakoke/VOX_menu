@@ -39,7 +39,6 @@ const categoryGroups = {
     { id: "all", name: { kz: "Барлығы", ru: "Все", en: "All" } },
     { id: "cold", name: { kz: "Салқын тағамдар", ru: "Холодные закуски", en: "Cold Starters" } },
     { id: "salads", name: { kz: "Салаттар", ru: "Салаты", en: "Salads" } },
-    { id: "beer", name: { kz: "Сыраға тіскебасар", ru: "Закуски к пиву", en: "Beer Snacks" } },
     { id: "sauces", name: { kz: "Соустар", ru: "Соусы", en: "Sauces" } },
     { id: "pasta", name: { kz: "Паста", ru: "Паста", en: "Pasta" } },
     { id: "second", name: { kz: "Екінші тағамдар", ru: "Вторые блюда", en: "Main Dishes" } },
@@ -51,7 +50,10 @@ const categoryGroups = {
     { id: "shashlyk", name: { kz: "Шашлыктар", ru: "Шашлыки", en: "Shashlik" } },
     { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } }
   ],
+other:[
+      { id: "warning", name: { kz: "Басқа", ru: "Прочее", en: "Other" } }
 
+],
   bar: [
     { id: "all", name: { kz: "Барлығы", ru: "Все", en: "All" } },
     { id: "lemonade", name: { kz: "Лимонадтар", ru: "Лимонады", en: "Lemonades" } },
@@ -108,7 +110,7 @@ const menuItems = [
     en: "Meat Platter",
     price: "7 000 ₸",
     category: "cold",
-    image:  "images/Мясная нарезка.webp",
+    image:  "images/Мясной.webp",
     ingKz: "Ет ассорти, қазы, шұжық, көкөніс.",
     ingRu: "Мясное ассорти, казы, колбаса, овощи.",
     ingEn: "Assorted meat, kazy, sausage, vegetables."
@@ -250,7 +252,7 @@ const menuItems = [
     en: "Fruit Salad",
     price: "4 000 ₸",
     category: "salads",
-    image: "images/fruit_assorti.webp",
+    image: "images/Фруктовый салат.webp",
     ingKz: "Жеміс ассорти.",
     ingRu: "Фруктовое ассорти.",
     ingEn: "Assorted fruits."
@@ -1152,7 +1154,7 @@ makeItem({
     en: "Blue Hawaii",
     price: "3 500 ₸",
     category: "long_drinks",
-    image:  "images/Голубые Гавайи.webp",
+    image:  "images/Голубые.webp",
     ingRu: "Алкогольный лонг дринк."
   }),
   makeItem({
@@ -1856,7 +1858,7 @@ makeItem({
     en: "Crunch Set",
     price: "6 000 ₸",
     category: "bar_snacks",
-    image: "images/snack_samsa_baursak_pelmeni.webp",
+    image: "images/Сет по хрустим.webp",
     ingKz: "Пиволық закуска ассорти.",
     ingRu: "Ассорти закусок к пиву.",
     ingEn: "Assorted beer snacks."
@@ -1930,7 +1932,7 @@ makeItem({
   kz: "Сигареттер ассортиментте",
   en: "Cigarettes Assorted",
   price: "2 500 ₸",
-  category: "bar_snacks",
+  category: "other",
   image: "images/Сигареты в ассортименте.webp",
   ingKz: "Ассортиментте.",
   ingRu: "В ассортименте.",
@@ -1941,7 +1943,7 @@ makeItem({
   kz: "Зажигалка",
   en: "Lighter",
   price: "800 ₸",
-  category: "bar_snacks",
+  category: "other",
   image: "images/Зажигалка.webp",
   ingKz: "Зажигалка.",
   ingRu: "Зажигалка.",
@@ -1952,7 +1954,7 @@ makeItem({
   kz: "Orbit",
   en: "Orbit",
   price: "800 ₸",
-  category: "bar_snacks",
+  category: "other",
   image: "images/Orbit.webp",
   ingKz: "Сағыз.",
   ingRu: "Жевательная резинка.",
@@ -2008,6 +2010,29 @@ makeItem({
     image:  "images/Oakheart.webp",
     ingRu: "Пуэрто-рико ром, 50 мл."
   })
+  
+  makeItem({
+  ru: "Бой посуды",
+  kz: "Ыдыс сындыру",
+  en: "Broken Dishes",
+  price: "3 000 ₸",
+  category: "other",
+  image: "images/Ескерту.webp",
+  ingKz: "Ыдыс сындырылған жағдайда төлем алынады.",
+  ingRu: "При повреждении посуды взимается оплата.",
+  ingEn: "A fee is charged for broken dishes."
+}),
+makeItem({
+  ru: "Порча имущества",
+  kz: "Мүлікті бүлдіру",
+  en: "Property Damage",
+  price: "10 000 ₸ және жоғары",
+  category: "other",
+  image: "images/Ескерту.webp",
+  ingKz: "Мүлік бүлінген жағдайда шығын көлеміне қарай төлем алынады.",
+  ingRu: "При порче имущества оплата взимается по размеру ущерба.",
+  ingEn: "For property damage, the fee depends on the amount of damage."
+}),
 ];
 
 const categoriesBox = document.getElementById("categories");
