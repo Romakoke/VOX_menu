@@ -414,7 +414,7 @@ const menuItems = [
     en: "Tsoman",
     price: "3 000 ₸",
     category: "soups",
-    image: "images/tsomyan.webp",
+    image: "images/tsomyan.png",
     ingKz: "Цомян.",
     ingRu: "Цомян.",
     ingEn: "Tsoman."
@@ -833,7 +833,7 @@ const menuItems = [
     en: "Schweppes Tonic 0.25",
     price: "1 300 ₸",
     category: "soft",
-    image: "images/Schweppes Tonic.webp",
+    image: "images/Schweppes Tonic.png",
     ingRu: "Тоник."
   }),
   makeItem({
