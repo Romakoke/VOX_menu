@@ -37,19 +37,18 @@ const text = {
 const categoryGroups = {
   kitchen: [
     { id: "all", name: { kz: "Барлығы", ru: "Все", en: "All" } },
-    { id: "cold", name: { kz: "Салқын тағамдар", ru: "Холодные закуски", en: "Cold Starters" } },
     { id: "salads", name: { kz: "Салаттар", ru: "Салаты", en: "Salads" } },
-    { id: "sauces", name: { kz: "Соустар", ru: "Соусы", en: "Sauces" } },
     { id: "pasta", name: { kz: "Паста", ru: "Паста", en: "Pasta" } },
+    { id: "sauces", name: { kz: "Соустар", ru: "Соус", en: "Sauces" } },
+    { id: "cold", name: { kz: "Салқын тағамдар", ru: "Холодные закуски", en: "Cold Starters" } },
+    { id: "beer", name: { kz: "Сыраға тіскебасар", ru: "Закуски к пиву", en: "Beer Snacks" } },
+    { id: "soups", name: { kz: "Бірінші тағамдар", ru: "Первые блюда", en: "First Courses" } },
     { id: "second", name: { kz: "Екінші тағамдар", ru: "Вторые блюда", en: "Main Dishes" } },
-    { id: "soups", name: { kz: "Сорпалар", ru: "Супы", en: "Soups" } },
     { id: "steaks", name: { kz: "Стейктер", ru: "Стейки", en: "Steaks" } },
     { id: "garnish", name: { kz: "Гарнирлер", ru: "Гарниры", en: "Side Dishes" } },
     { id: "pizza", name: { kz: "Пицца", ru: "Пицца", en: "Pizza" } },
-    { id: "rolls", name: { kz: "Роллдар", ru: "Роллы", en: "Rolls" } },
-    { id: "shashlyk", name: { kz: "Шашлыктар", ru: "Шашлыки", en: "Shashlik" } },
-        { id: "beer", name: { kz: "Сыраға тіскебасар", ru: "Закуски к пиву", en: "Beer Snacks" } },
-    { id: "company", name: { kz: "Компанияға сеттер", ru: "Сеты на компанию", en: "Company Sets" } }
+    { id: "rolls", name: { kz: "Суши ролл", ru: "Суши ролл", en: "Sushi Roll" } },
+    { id: "shashlyk", name: { kz: "Шашлық", ru: "Шашлык", en: "Shashlik" } }
   ],
 
 
@@ -104,79 +103,12 @@ function makeItem({ ru, kz, en, price, category, image = placeholder, ingRu = ""
 }
 
 const menuItems = [
-  // ===== КУХНЯ: ХОЛОДНЫЕ ЗАКУСКИ =====
+  // ===== КУХНЯ: САЛАТЫ =====
   makeItem({
-    ru: "Мясная нарезка",
-    kz: "Мясная нарезка",
-    en: "Meat Platter",
-    price: "7 000 ₸",
-    category: "cold",
-    image:  "images/Мясной.webp",
-    ingKz: "Ет ассорти, қазы, шұжық, көкөніс.",
-    ingRu: "Мясное ассорти, казы, колбаса, овощи.",
-    ingEn: "Assorted meat, kazy, sausage, vegetables."
-  }),
-  makeItem({
-    ru: "Нарезка из овощей",
-    kz: "Көкөніс нарезкасы",
-    en: "Vegetable Platter",
-    price: "5 000 ₸",
-    category: "cold",
-    image:  "images/Нарезка из овощей.webp",
-    ingKz: "Көкөніс ассорти.",
-    ingRu: "Ассорти из свежих овощей.",
-    ingEn: "Assorted fresh vegetables."
-  }),
-  makeItem({
-    ru: "Сельдь по-русски",
-    en: "Russian-Style Herring",
-    price: "5 000 ₸",
-    category: "cold",
-    image:  "images/Сельдь по-русски.webp",
-    ingKz: "Сельдь, картоп, пияз.",
-    ingRu: "Сельдь, картофель, лук.",
-    ingEn: "Herring, potatoes, onion."
-  }),
-  makeItem({
-    ru: "Соленья",
-    kz: "Тұздалған көкөністер",
-    en: "Pickles",
-    price: "4 500 ₸",
-    category: "cold",
-    image:  "images/Соленья.webp",
-    ingKz: "Тұздалған көкөністер.",
-    ingRu: "Ассорти из солений.",
-    ingEn: "Assorted pickled vegetables."
-  }),
-  makeItem({
-    ru: "Фруктовое ассорти",
-    kz: "Жеміс ассорти",
-    en: "Fruit Platter",
-    price: "8 000 ₸",
-    category: "cold",
-    image: "images/fruit_assorti.webp",
-    ingKz: "Маусымдық жемістер.",
-    ingRu: "Сезонные фрукты.",
-    ingEn: "Seasonal fruits."
-  }),
-
-  // ===== САЛАТЫ =====
-  makeItem({
-    ru: "Салат от шефа",
-    kz: "Шеф салаты",
-    en: "Chef Salad",
-    price: "4 000 ₸",
-    category: "salads",
-    image:  "images/Салат от шефа.webp",
-    ingKz: "Фирмалық салат.",
-    ingRu: "Фирменный салат.",
-    ingEn: "Signature salad."
-  }),
-  makeItem({
-    ru: "Греческий",
+    ru: "Греческий салат",
     kz: "Грек салаты",
     en: "Greek Salad",
-    price: "2 000 ₸",
+    price: "2 290 ₸",
     category: "salads",
     image: "images/salad_greek.webp",
     ingKz: "Қияр, қызанақ, фета, зәйтүн.",
@@ -184,31 +116,10 @@ const menuItems = [
     ingEn: "Cucumber, tomatoes, feta, olives."
   }),
   makeItem({
-    ru: "Сытный папа",
-    en: "Hearty Papa",
-    price: "3 000 ₸",
-    category: "salads",
-    image: "images/salad_sytyi_papa.webp",
-    ingKz: "Ет, картоп, жұмыртқа, көкөніс.",
-    ingRu: "Мясо, картофель, яйцо, овощи.",
-    ingEn: "Meat, potatoes, egg, vegetables."
-  }),
-  makeItem({
-    ru: "Азиатский с баклажанами",
-    kz: "Баклажанмен азиялық салат",
-    en: "Asian Eggplant Salad",
-    price: "3 000 ₸",
-    category: "salads",
-    image: "images/salad_asian_eggplant.webp",
-    ingKz: "Баклажан, көкөніс, азиялық соус.",
-    ingRu: "Баклажан, овощи, азиатский соус.",
-    ingEn: "Eggplant, vegetables, Asian sauce."
-  }),
-  makeItem({
-    ru: "Цезарь с курицей",
+    ru: "Цезарь курица",
     kz: "Тауықпен Цезарь",
     en: "Chicken Caesar",
-    price: "3 000 ₸",
+    price: "2 590 ₸",
     category: "salads",
     image: "images/salad_caesar_chicken.webp",
     ingKz: "Тауық, салат, сыр, сухари, соус.",
@@ -216,9 +127,21 @@ const menuItems = [
     ingEn: "Chicken, lettuce, cheese, croutons, sauce."
   }),
   makeItem({
+    ru: "Мухабби каприз",
+    kz: "Мухабби каприз",
+    en: "Muhabbi Caprice",
+    price: "2 390 ₸",
+    category: "salads",
+    image: placeholder,
+    ingKz: "Қоспасы кейін қосылады.",
+    ingRu: "Состав будет добавлен позже.",
+    ingEn: "Ingredients will be added later."
+  }),
+  makeItem({
     ru: "Оливье",
+    kz: "Оливье",
     en: "Olivier Salad",
-    price: "2 500 ₸",
+    price: "2 000 ₸",
     category: "salads",
     image: "images/salad_olivie.webp",
     ingKz: "Картоп, сәбіз, жұмыртқа, қияр, майонез.",
@@ -226,10 +149,43 @@ const menuItems = [
     ingEn: "Potato, carrot, egg, cucumber, mayonnaise."
   }),
   makeItem({
+    ru: "Свежий салат",
+    kz: "Жаңа салат",
+    en: "Fresh Salad",
+    price: "1 500 ₸",
+    category: "salads",
+    image: "images/Свежий салат.webp",
+    ingKz: "Қияр, қызанақ, көк шөп.",
+    ingRu: "Огурцы, помидоры, зелень.",
+    ingEn: "Cucumber, tomatoes, greens."
+  }),
+  makeItem({
+    ru: "Хрустящий баклажан",
+    kz: "Қытырлақ баклажан",
+    en: "Crispy Eggplant",
+    price: "2 390 ₸",
+    category: "salads",
+    image: "images/salad_asian_eggplant.webp",
+    ingKz: "Баклажан, көкөніс, соус.",
+    ingRu: "Баклажан, овощи, соус.",
+    ingEn: "Eggplant, vegetables, sauce."
+  }),
+  makeItem({
+    ru: "Буррата с помидор",
+    kz: "Буррата қызанақпен",
+    en: "Burrata with Tomatoes",
+    price: "3 850 ₸",
+    category: "salads",
+    image: placeholder,
+    ingKz: "Буррата, қызанақ, зейтүн майы.",
+    ingRu: "Буррата, помидоры, оливковое масло.",
+    ingEn: "Burrata, tomatoes, olive oil."
+  }),
+  makeItem({
     ru: "Рукола с креветками",
     kz: "Креветкамен рукола",
     en: "Arugula with Shrimp",
-    price: "4 000 ₸",
+    price: "3 000 ₸",
     category: "salads",
     image: "images/salad_rucola_shrimp.webp",
     ingKz: "Рукола, креветка, көкөніс, соус.",
@@ -237,59 +193,34 @@ const menuItems = [
     ingEn: "Arugula, shrimp, vegetables, sauce."
   }),
   makeItem({
-    ru: "Свежий по-домашнему",
-    kz: "Үйше жаңа салат",
-    en: "Fresh Homemade Salad",
-    price: "2 000 ₸",
-    category: "salads",
-    image:  "images/Свежий салат.webp",
-    ingKz: "Қияр, қызанақ, көк шөп.",
-    ingRu: "Огурцы, помидоры, зелень.",
-    ingEn: "Cucumber, tomatoes, greens."
-  }),
-  makeItem({
-    ru: "Фруктовый",
+    ru: "Фруктовый салат",
     kz: "Жеміс салаты",
     en: "Fruit Salad",
-    price: "4 000 ₸",
+    price: "2 200 ₸",
     category: "salads",
     image: "images/Фруктовый салат.webp",
     ingKz: "Жеміс ассорти.",
     ingRu: "Фруктовое ассорти.",
     ingEn: "Assorted fruits."
   }),
-
-  // ===== ЗАКУСКИ К ПИВУ =====
-
-  // ===== СОУСЫ =====
   makeItem({
-    ru: "Чесночный",
-    kz: "Сарымсақ соусы",
-    en: "Garlic Sauce",
-    price: "500 ₸",
-    category: "sauces",
-    image: "images/sauce_garlic.webp",
-    ingKz: "Сарымсақ соусы.",
-    ingRu: "Чесночный соус.",
-    ingEn: "Garlic sauce."
-  }),
-  makeItem({
-    ru: "Сырный",
-    kz: "Сыр соусы",
-    en: "Cheese Sauce",
-    price: "500 ₸",
-    category: "sauces",
-    image: "images/sauce_cheese.webp",
-    ingKz: "Сыр соусы.",
-    ingRu: "Сырный соус.",
-    ingEn: "Cheese sauce."
+    ru: "Салат от Шефа",
+    kz: "Шеф салаты",
+    en: "Chef Salad",
+    price: "3 290 ₸",
+    category: "salads",
+    image: "images/Салат от шефа.webp",
+    ingKz: "Фирмалық салат.",
+    ingRu: "Фирменный салат.",
+    ingEn: "Signature salad."
   }),
 
-  // ===== ПАСТА =====
+  // ===== КУХНЯ: ПАСТА =====
   makeItem({
-    ru: "Паста Альфредо",
+    ru: "Альфредо",
+    kz: "Альфредо паста",
     en: "Alfredo Pasta",
-    price: "3 500 ₸",
+    price: "3 190 ₸",
     category: "pasta",
     image: "images/pasta_alfredo.webp",
     ingKz: "Паста, тауық еті, кілегейлі соус.",
@@ -297,133 +228,282 @@ const menuItems = [
     ingEn: "Pasta, chicken, creamy sauce."
   }),
   makeItem({
-    ru: "Паста Болоньезе",
+    ru: "Болоньезе",
+    kz: "Болоньезе паста",
     en: "Bolognese Pasta",
-    price: "3 800 ₸",
+    price: "3 190 ₸",
     category: "pasta",
     image: "images/Bolognese Pasta.webp",
     ingKz: "Паста, фарш, томат соусы.",
     ingRu: "Паста, фарш, томатный соус.",
     ingEn: "Pasta, minced meat, tomato sauce."
   }),
-
-  // ===== ВТОРЫЕ БЛЮДА =====
   makeItem({
-    ru: "Телятина с овощами",
-    kz: "Көкөніспен телятина",
-    en: "Veal with Vegetables",
-    price: "3 500 ₸",
-    category: "second",
-    image: "images/telyatina-s-ovoshami.webp",
-    ingKz: "Бұзау еті, көкөністер.",
-    ingRu: "Телятина, овощи.",
-    ingEn: "Veal, vegetables."
-  }),
-  makeItem({
-    ru: "Куырдак",
-    kz: "Қуырдақ",
-    en: "Kuyrdak",
-    price: "4 500 ₸",
-    category: "second",
-    image: "images/kuyrdak_gaviadina.webp",
-    ingKz: "Сиыр етінен қуырдақ.",
-    ingRu: "Куырдак из говядины.",
-    ingEn: "Beef kuyrdak."
-  }),
-  makeItem({
-    ru: "Телятина с грибами в сливочном соусе",
-    kz: "Саңырауқұлақпен телятина",
-    en: "Veal with Mushrooms",
-    price: "3 500 ₸",
-    category: "second",
-    image: "images/telyatina-s-gribami-v-slivochnom-souse.webp",
-    ingKz: "Бұзау еті, саңырауқұлақ, кілегейлі соус.",
-    ingRu: "Телятина, грибы, сливочный соус.",
-    ingEn: "Veal, mushrooms, creamy sauce."
-  }),
-  makeItem({
-    ru: "Куырдак из баранины",
-    kz: "Қой етінен қуырдақ",
-    en: "Lamb Kuyrdak",
-    price: "4 000 ₸",
-    category: "second",
-    image: "images/kuyrdak_baranina.webp",
-    ingKz: "Қой етінен қуырдақ.",
-    ingRu: "Куырдак из баранины.",
-    ingEn: "Lamb kuyrdak."
-  }),
-  makeItem({
-    ru: "Куриное филе с овощами",
-    kz: "Көкөніспен тауық филесі",
-    en: "Chicken Fillet with Vegetables",
-    price: "3 000 ₸",
-    category: "second",
-    image: "images/kurinoe-file-s-ovoshami.webp",
-    ingKz: "Тауық филесі, көкөністер.",
-    ingRu: "Куриное филе, овощи.",
-    ingEn: "Chicken fillet, vegetables."
-  }),
-  makeItem({
-    ru: "Курица с грибами в сливочном соусе",
-    kz: "Саңырауқұлақпен тауық",
-    en: "Chicken with Mushrooms",
-    price: "3 500 ₸",
-    category: "second",
+    ru: "Курица с грибами",
+    kz: "Саңырауқұлақпен тауық паста",
+    en: "Chicken with Mushrooms Pasta",
+    price: "2 790 ₸",
+    category: "pasta",
     image: "images/chicken_mushroom_cream.webp",
-    ingKz: "Тауық еті, саңырауқұлақ, кілегейлі соус.",
-    ingRu: "Курица, грибы, сливочный соус.",
-    ingEn: "Chicken, mushrooms, creamy sauce."
+    ingKz: "Паста, тауық еті, саңырауқұлақ, кілегейлі соус.",
+    ingRu: "Паста, курица, грибы, сливочный соус.",
+    ingEn: "Pasta, chicken, mushrooms, creamy sauce."
   }),
   makeItem({
-    ru: "Жареная рыба",
-    kz: "Қуырылған балық",
-    en: "Fried Fish",
-    price: "4 500 ₸",
-    category: "second",
-    image: "images/zharenaya-ryba.webp",
-    ingKz: "Қуырылған балық.",
-    ingRu: "Жареная рыба.",
-    ingEn: "Fried fish."
+    ru: "Паста с лососем",
+    kz: "Лосось паста",
+    en: "Salmon Pasta",
+    price: "3 490 ₸",
+    category: "pasta",
+    image: placeholder,
+    ingKz: "Паста, лосось, кілегейлі соус.",
+    ingRu: "Паста, лосось, сливочный соус.",
+    ingEn: "Pasta, salmon, creamy sauce."
   }),
 
-  // ===== СУПЫ =====
+  // ===== КУХНЯ: СОУС =====
   makeItem({
-    ru: "Шурпа из баранины",
-    kz: "Қой етінен шурпа",
-    en: "Lamb Shurpa",
-    price: "2 000 ₸",
-    category: "soups",
-    image: "images/shurpa-iz-baraniny.webp",
-    ingKz: "Қой еті, көкөніс, сорпа.",
-    ingRu: "Баранина, овощи, бульон.",
-    ingEn: "Lamb, vegetables, broth."
+    ru: "Тар тар",
+    kz: "Тар тар соусы",
+    en: "Tartar Sauce",
+    price: "450 ₸",
+    category: "sauces",
+    image: placeholder,
+    ingKz: "Тар тар соусы.",
+    ingRu: "Соус тар тар.",
+    ingEn: "Tartar sauce."
   }),
   makeItem({
-    ru: "Шурпа из говядины",
-    kz: "Сиыр етінен шурпа",
-    en: "Beef Shurpa",
-    price: "2 500 ₸",
-    category: "soups",
-    image: "images/shurpa-iz-govyadiny.webp",
-    ingKz: "Сиыр еті, көкөніс, сорпа.",
-    ingRu: "Говядина, овощи, бульон.",
-    ingEn: "Beef, vegetables, broth."
+    ru: "Сырный",
+    kz: "Сыр соусы",
+    en: "Cheese Sauce",
+    price: "450 ₸",
+    category: "sauces",
+    image: "images/sauce_cheese.webp",
+    ingKz: "Сыр соусы.",
+    ingRu: "Сырный соус.",
+    ingEn: "Cheese sauce."
   }),
   makeItem({
-    ru: "Цомян",
-    en: "Tsoman",
-    price: "3 000 ₸",
-    category: "soups",
-    image: "images/tsomyan.png",
-    ingKz: "Цомян.",
-    ingRu: "Цомян.",
-    ingEn: "Tsoman."
+    ru: "Кетчуп",
+    kz: "Кетчуп",
+    en: "Ketchup",
+    price: "450 ₸",
+    category: "sauces",
+    image: placeholder,
+    ingKz: "Кетчуп соусы.",
+    ingRu: "Кетчуп.",
+    ingEn: "Ketchup."
   }),
   makeItem({
-    ru: "Рамен с курицей",
+    ru: "Майонез",
+    kz: "Майонез",
+    en: "Mayonnaise",
+    price: "450 ₸",
+    category: "sauces",
+    image: placeholder,
+    ingKz: "Майонез.",
+    ingRu: "Майонез.",
+    ingEn: "Mayonnaise."
+  }),
+  makeItem({
+    ru: "BBQ-соус",
+    kz: "BBQ соусы",
+    en: "BBQ Sauce",
+    price: "500 ₸",
+    category: "sauces",
+    image: placeholder,
+    ingKz: "BBQ соусы.",
+    ingRu: "Соус BBQ.",
+    ingEn: "BBQ sauce."
+  }),
+
+  // ===== КУХНЯ: ХОЛОДНЫЕ ЗАКУСКИ =====
+  makeItem({
+    ru: "Мясная нарезка",
+    kz: "Ет нарезкасы",
+    en: "Meat Platter",
+    price: "6 490 ₸",
+    category: "cold",
+    image: "images/Мясной.webp",
+    ingKz: "Ет ассорти, қазы, шұжық, көкөніс.",
+    ingRu: "Мясное ассорти, казы, колбаса, овощи.",
+    ingEn: "Assorted meat, kazy, sausage, vegetables."
+  }),
+  makeItem({
+    ru: "Сырная тарелка",
+    kz: "Сыр тарелкасы",
+    en: "Cheese Plate",
+    price: "4 590 ₸",
+    category: "cold",
+    image: placeholder,
+    ingKz: "Сыр ассорти.",
+    ingRu: "Ассорти сыров.",
+    ingEn: "Assorted cheeses."
+  }),
+  makeItem({
+    ru: "Овощная нарезка",
+    kz: "Көкөніс нарезкасы",
+    en: "Vegetable Platter",
+    price: "3 790 ₸",
+    category: "cold",
+    image: "images/Нарезка из овощей.webp",
+    ingKz: "Көкөніс ассорти.",
+    ingRu: "Ассорти из свежих овощей.",
+    ingEn: "Assorted fresh vegetables."
+  }),
+  makeItem({
+    ru: "Фруктовое ассорти",
+    kz: "Жеміс ассорти",
+    en: "Fruit Platter",
+    price: "6 590 ₸",
+    category: "cold",
+    image: "images/fruit_assorti.webp",
+    ingKz: "Маусымдық жемістер.",
+    ingRu: "Сезонные фрукты.",
+    ingEn: "Seasonal fruits."
+  }),
+  makeItem({
+    ru: "Соленья микс",
+    kz: "Тұздалған көкөністер микс",
+    en: "Pickles Mix",
+    price: "3 990 ₸",
+    category: "cold",
+    image: "images/Соленья.webp",
+    ingKz: "Тұздалған көкөністер ассорти.",
+    ingRu: "Ассорти из солений.",
+    ingEn: "Assorted pickled vegetables."
+  }),
+
+  // ===== КУХНЯ: ЗАКУСКИ К ПИВУ =====
+  makeItem({
+    ru: "Сет (похрустим)",
+    kz: "Сет (қытырлақ)",
+    en: "Crunch Set",
+    price: "5 390 ₸",
+    category: "beer",
+    image: "images/Сет по хрустим.webp",
+    ingKz: "Пиволық закуска ассорти.",
+    ingRu: "Ассорти закусок к пиву.",
+    ingEn: "Assorted beer snacks."
+  }),
+  makeItem({
+    ru: "Сельдь по русский",
+    kz: "Орысша сельдь",
+    en: "Russian-Style Herring",
+    price: "3 900 ₸",
+    category: "beer",
+    image: "images/Сельдь по-русски.webp",
+    ingKz: "Сельдь, картоп, пияз.",
+    ingRu: "Сельдь, картофель, лук.",
+    ingEn: "Herring, potatoes, onion."
+  }),
+  makeItem({
+    ru: "Креветки к пиву",
+    kz: "Сыраға креветка",
+    en: "Shrimp for Beer",
+    price: "2 900 ₸",
+    category: "beer",
+    image: "images/Криветки.webp",
+    ingKz: "Креветка, лимон, соус.",
+    ingRu: "Креветки, лимон, соус.",
+    ingEn: "Shrimp, lemon, sauce."
+  }),
+  makeItem({
+    ru: "Колбаски",
+    kz: "Колбаски",
+    en: "Sausages",
+    price: "2 990 ₸",
+    category: "beer",
+    image: "images/Калбоски.webp",
+    ingKz: "Гриль колбаски.",
+    ingRu: "Колбаски гриль.",
+    ingEn: "Grilled sausages."
+  }),
+  makeItem({
+    ru: "Наггетсы",
+    kz: "Наггетсы",
+    en: "Nuggets",
+    price: "1 500 ₸",
+    category: "beer",
+    image: "images/nuggets.webp",
+    ingKz: "Тауық наггетсы, соус.",
+    ingRu: "Куриные наггетсы, соус.",
+    ingEn: "Chicken nuggets, sauce."
+  }),
+  makeItem({
+    ru: "Пивной сет Классика",
+    kz: "Классика сыра сеті",
+    en: "Classic Beer Set",
+    price: "3 900 ₸",
+    category: "beer",
+    image: placeholder,
+    ingKz: "Пиволық закуска классика сеті.",
+    ingRu: "Классический пивной сет.",
+    ingEn: "Classic beer snack set."
+  }),
+
+  // ===== КУХНЯ: ПЕРВЫЕ БЛЮДА =====
+  makeItem({
+    ru: "Пельменный суп",
+    kz: "Пельмен сорпасы",
+    en: "Dumpling Soup",
+    price: "1 600 ₸",
+    category: "soups",
+    image: placeholder,
+    ingKz: "Пельмен, сорпа, көкөніс.",
+    ingRu: "Пельмени, бульон, овощи.",
+    ingEn: "Dumplings, broth, vegetables."
+  }),
+  makeItem({
+    ru: "Суп куриная лапша",
+    kz: "Тауық кеспе сорпасы",
+    en: "Chicken Noodle Soup",
+    price: "1 600 ₸",
+    category: "soups",
+    image: placeholder,
+    ingKz: "Тауық еті, кеспе, сорпа.",
+    ingRu: "Курица, лапша, бульон.",
+    ingEn: "Chicken, noodles, broth."
+  }),
+  makeItem({
+    ru: "Чечевичный суп",
+    kz: "Жасымық сорпасы",
+    en: "Lentil Soup",
+    price: "1 500 ₸",
+    category: "soups",
+    image: placeholder,
+    ingKz: "Жасымық, көкөніс, дәмдеуіштер.",
+    ingRu: "Чечевица, овощи, специи.",
+    ingEn: "Lentils, vegetables, spices."
+  }),
+  makeItem({
+    ru: "Суп грибной крем",
+    kz: "Саңырауқұлақ крем сорпасы",
+    en: "Mushroom Cream Soup",
+    price: "1 690 ₸",
+    category: "soups",
+    image: placeholder,
+    ingKz: "Саңырауқұлақ, кілегей, сорпа.",
+    ingRu: "Грибы, сливки, бульон.",
+    ingEn: "Mushrooms, cream, broth."
+  }),
+  makeItem({
+    ru: "Том ям",
+    kz: "Том ям",
+    en: "Tom Yum",
+    price: "3 190 ₸",
+    category: "soups",
+    image: placeholder,
+    ingKz: "Кокос сүті, қарақұйрық, лемонграсс.",
+    ingRu: "Кокосовое молоко, креветки, лемонграсс.",
+    ingEn: "Coconut milk, shrimp, lemongrass."
+  }),
+  makeItem({
+    ru: "Рамен из курицы",
     kz: "Тауықпен рамен",
     en: "Chicken Ramen",
-    price: "2 000 ₸",
+    price: "2 390 ₸",
     category: "soups",
     image: "images/ramen_chicken.webp",
     ingKz: "Рамен, тауық еті, жұмыртқа.",
@@ -431,22 +511,146 @@ const menuItems = [
     ingEn: "Ramen, chicken, egg."
   }),
   makeItem({
-    ru: "Рамен с говядиной",
+    ru: "Рамен из говядины",
     kz: "Сиыр етімен рамен",
     en: "Beef Ramen",
-    price: "2 500 ₸",
+    price: "2 690 ₸",
     category: "soups",
     image: "images/ramen_beef.webp",
     ingKz: "Рамен, сиыр еті, жұмыртқа.",
     ingRu: "Рамен, говядина, яйцо.",
     ingEn: "Ramen, beef, egg."
   }),
+  makeItem({
+    ru: "Солянка",
+    kz: "Солянка",
+    en: "Solyanka",
+    price: "2 090 ₸",
+    category: "soups",
+    image: placeholder,
+    ingKz: "Ет, шұжық, зәйтүн, лимон.",
+    ingRu: "Мясо, колбаса, оливки, лимон.",
+    ingEn: "Meat, sausage, olives, lemon."
+  }),
+  makeItem({
+    ru: "Гуйру лагман",
+    kz: "Гуйру лағман",
+    en: "Guiru Lagman",
+    price: "1 890 ₸",
+    category: "soups",
+    image: placeholder,
+    ingKz: "Қолмен жайылған кеспе, ет, көкөніс.",
+    ingRu: "Лагман тянутый, мясо, овощи.",
+    ingEn: "Hand-pulled noodles, meat, vegetables."
+  }),
+  makeItem({
+    ru: "Шурпа из говядины",
+    kz: "Сиыр етінен шурпа",
+    en: "Beef Shurpa",
+    price: "1 990 ₸",
+    category: "soups",
+    image: "images/shurpa-iz-govyadiny.webp",
+    ingKz: "Сиыр еті, көкөніс, сорпа.",
+    ingRu: "Говядина, овощи, бульон.",
+    ingEn: "Beef, vegetables, broth."
+  }),
 
-  // ===== СТЕЙКИ =====
+  // ===== КУХНЯ: ВТОРЫЕ БЛЮДА =====
+  makeItem({
+    ru: "Телятина с овощами",
+    kz: "Көкөніспен телятина",
+    en: "Veal with Vegetables",
+    price: "2 290 ₸",
+    category: "second",
+    image: "images/telyatina-s-ovoshami.webp",
+    ingKz: "Бұзау еті, көкөністер.",
+    ingRu: "Телятина, овощи.",
+    ingEn: "Veal, vegetables."
+  }),
+  makeItem({
+    ru: "Курица с овощами",
+    kz: "Көкөніспен тауық",
+    en: "Chicken with Vegetables",
+    price: "2 090 ₸",
+    category: "second",
+    image: "images/kurinoe-file-s-ovoshami.webp",
+    ingKz: "Тауық еті, көкөністер.",
+    ingRu: "Курица, овощи.",
+    ingEn: "Chicken, vegetables."
+  }),
+  makeItem({
+    ru: "Чахохбили",
+    kz: "Чахохбили",
+    en: "Chakhokhbili",
+    price: "2 190 ₸",
+    category: "second",
+    image: placeholder,
+    ingKz: "Тауық еті, қызанақ, дәмдеуіштер.",
+    ingRu: "Курица, томаты, специи.",
+    ingEn: "Chicken, tomatoes, spices."
+  }),
+  makeItem({
+    ru: "Бефстроганов",
+    kz: "Бефстроганов",
+    en: "Beef Stroganoff",
+    price: "2 490 ₸",
+    category: "second",
+    image: placeholder,
+    ingKz: "Сиыр еті, кілегейлі соус, саңырауқұлақ.",
+    ingRu: "Говядина, сливочный соус, грибы.",
+    ingEn: "Beef, creamy sauce, mushrooms."
+  }),
+  makeItem({
+    ru: "Курица в соусе",
+    kz: "Соустағы тауық",
+    en: "Chicken in Sauce",
+    price: "2 390 ₸",
+    category: "second",
+    image: "images/chicken_mushroom_cream.webp",
+    ingKz: "Тауық еті, соус.",
+    ingRu: "Курица в соусе.",
+    ingEn: "Chicken in sauce."
+  }),
+  makeItem({
+    ru: "Куырдак из говядины",
+    kz: "Сиыр етінен қуырдақ",
+    en: "Beef Kuyrdak",
+    price: "3 990 ₸",
+    category: "second",
+    image: "images/kuyrdak_gaviadina.webp",
+    ingKz: "Сиыр етінен қуырдақ.",
+    ingRu: "Куырдак из говядины.",
+    ingEn: "Beef kuyrdak."
+  }),
+  makeItem({
+    ru: "Куырдак из баранины",
+    kz: "Қой етінен қуырдақ",
+    en: "Lamb Kuyrdak",
+    price: "4 090 ₸",
+    category: "second",
+    image: "images/kuyrdak_baranina.webp",
+    ingKz: "Қой етінен қуырдақ.",
+    ingRu: "Куырдак из баранины.",
+    ingEn: "Lamb kuyrdak."
+  }),
+  makeItem({
+    ru: "Лагман Цомян",
+    kz: "Лағман Цомян",
+    en: "Lagman Tsomyan",
+    price: "2 190 ₸",
+    category: "second",
+    image: "images/tsomyan.png",
+    ingKz: "Лағман, ет, көкөніс.",
+    ingRu: "Лагман, мясо, овощи.",
+    ingEn: "Lagman, meat, vegetables."
+  }),
+
+  // ===== КУХНЯ: СТЕЙКИ =====
   makeItem({
     ru: "Рибай",
+    kz: "Рибай стейк",
     en: "Ribeye",
-    price: "7 000 ₸",
+    price: "5 990 ₸",
     category: "steaks",
     image: "images/steak_ribeye.webp",
     ingKz: "Рибай стейк.",
@@ -455,8 +659,9 @@ const menuItems = [
   }),
   makeItem({
     ru: "Тибон",
+    kz: "Тибон стейк",
     en: "T-Bone",
-    price: "7 000 ₸",
+    price: "5 990 ₸",
     category: "steaks",
     image: "images/steak_tbone.webp",
     ingKz: "T-bone стейк.",
@@ -467,7 +672,7 @@ const menuItems = [
     ru: "Медальоны с овощами",
     kz: "Көкөніспен медальондар",
     en: "Medallions with Vegetables",
-    price: "6 500 ₸",
+    price: "4 990 ₸",
     category: "steaks",
     image: "images/Медальон.webp",
     ingKz: "Ет медальоны, көкөністер.",
@@ -475,10 +680,21 @@ const menuItems = [
     ingEn: "Meat medallions, vegetables."
   }),
   makeItem({
+    ru: "Куриный стейк с овощами",
+    kz: "Тауық стейкі көкөніспен",
+    en: "Chicken Steak with Vegetables",
+    price: "4 090 ₸",
+    category: "steaks",
+    image: placeholder,
+    ingKz: "Тауық стейк, көкөністер.",
+    ingRu: "Куриный стейк, овощи.",
+    ingEn: "Chicken steak, vegetables."
+  }),
+  makeItem({
     ru: "Стейк из лосося",
     kz: "Лосось стейкі",
     en: "Salmon Steak",
-    price: "7 500 ₸",
+    price: "5 990 ₸",
     category: "steaks",
     image: "images/steyk-iz-lososya.webp",
     ingKz: "Лосось стейк.",
@@ -486,33 +702,34 @@ const menuItems = [
     ingEn: "Salmon steak."
   }),
 
-  // ===== ГАРНИРЫ =====
+  // ===== КУХНЯ: ГАРНИРЫ =====
   makeItem({
-    ru: "Рис",
-    kz: "Күріш",
-    en: "Rice",
-    price: "700 ₸",
+    ru: "Рис с овощами",
+    kz: "Көкөніспен күріш",
+    en: "Rice with Vegetables",
+    price: "1 090 ₸",
     category: "garnish",
     image: "images/ris.webp",
-    ingKz: "Күріш.",
-    ingRu: "Рис.",
-    ingEn: "Rice."
+    ingKz: "Күріш, көкөніс.",
+    ingRu: "Рис, овощи.",
+    ingEn: "Rice, vegetables."
   }),
   makeItem({
-    ru: "Дольки",
-    kz: "Картоп дольки",
-    en: "Potato Wedges",
-    price: "800 ₸",
+    ru: "Овощи на гриле",
+    kz: "Гриль көкөністер",
+    en: "Grilled Vegetables",
+    price: "1 290 ₸",
     category: "garnish",
-    image: "images/dolki.webp",
-    ingKz: "Картоп дольки.",
-    ingRu: "Картофельные дольки.",
-    ingEn: "Potato wedges."
+    image: "images/ovoshchi-na-grile.webp",
+    ingKz: "Гриль көкөністер.",
+    ingRu: "Овощи на гриле.",
+    ingEn: "Grilled vegetables."
   }),
   makeItem({
     ru: "Фри",
+    kz: "Картоп фри",
     en: "French Fries",
-    price: "1 000 ₸",
+    price: "950 ₸",
     category: "garnish",
     image: "images/fri.webp",
     ingKz: "Картоп фри.",
@@ -520,33 +737,23 @@ const menuItems = [
     ingEn: "French fries."
   }),
   makeItem({
-    ru: "Овощи на гриле",
-    kz: "Гриль көкөністер",
-    en: "Grilled Vegetables",
-    price: "1 500 ₸",
+    ru: "Дольки",
+    kz: "Картоп дольки",
+    en: "Potato Wedges",
+    price: "950 ₸",
     category: "garnish",
-    image: "images/ovoshchi-na-grile.webp",
-    ingKz: "Гриль көкөністер.",
-    ingRu: "Овощи на гриле.",
-    ingEn: "Grilled vegetables."
+    image: "images/dolki.webp",
+    ingKz: "Картоп дольки.",
+    ingRu: "Картофельные дольки.",
+    ingEn: "Potato wedges."
   }),
 
-  // ===== ПИЦЦА =====
-  makeItem({
-    ru: "Казахстан",
-    kz: "Қазақстан",
-    en: "Kazakhstan Pizza",
-    price: "4 500 ₸",
-    category: "pizza",
-    image: "images/pizza_kazakhstan.webp",
-    ingKz: "Қазы, сыр, томат соусы.",
-    ingRu: "Казы, сыр, томатный соус.",
-    ingEn: "Kazy, cheese, tomato sauce."
-  }),
+  // ===== КУХНЯ: ПИЦЦА =====
   makeItem({
     ru: "Пепперони",
+    kz: "Пепперони пицца",
     en: "Pepperoni",
-    price: "3 500 ₸",
+    price: "3 090 ₸",
     category: "pizza",
     image: "images/peperoni.webp",
     ingKz: "Пепперони, моцарелла, томат соусы.",
@@ -554,31 +761,111 @@ const menuItems = [
     ingEn: "Pepperoni, mozzarella, tomato sauce."
   }),
   makeItem({
-    ru: "Альфредо",
-    en: "Alfredo",
-    price: "3 800 ₸",
+    ru: "Маргарита",
+    kz: "Маргарита пицца",
+    en: "Margherita",
+    price: "2 800 ₸",
     category: "pizza",
-    image: "images/pizza_alfredo.webp",
-    ingKz: "Тауық еті, сыр, кілегейлі соус.",
-    ingRu: "Курица, сыр, сливочный соус.",
-    ingEn: "Chicken, cheese, creamy sauce."
+    image: placeholder,
+    ingKz: "Моцарелла, қызанақ, базилик.",
+    ingRu: "Моцарелла, томаты, базилик.",
+    ingEn: "Mozzarella, tomatoes, basil."
   }),
   makeItem({
     ru: "Болоньезе",
-    en: "Bolognese",
-    price: "4 000 ₸",
+    kz: "Болоньезе пицца",
+    en: "Bolognese Pizza",
+    price: "3 190 ₸",
     category: "pizza",
     image: "images/pizza_bolognese.webp",
     ingKz: "Фарш, томат соусы, сыр.",
     ingRu: "Фарш, томатный соус, сыр.",
     ingEn: "Minced meat, tomato sauce, cheese."
   }),
+  makeItem({
+    ru: "Казахстан",
+    kz: "Қазақстан пицца",
+    en: "Kazakhstan Pizza",
+    price: "3 490 ₸",
+    category: "pizza",
+    image: "images/pizza_kazakhstan.webp",
+    ingKz: "Қазы, сыр, томат соусы.",
+    ingRu: "Казы, сыр, томатный соус.",
+    ingEn: "Kazy, cheese, tomato sauce."
+  }),
+  makeItem({
+    ru: "Курица с грибами",
+    kz: "Саңырауқұлақпен тауық пицца",
+    en: "Chicken with Mushrooms Pizza",
+    price: "3 000 ₸",
+    category: "pizza",
+    image: placeholder,
+    ingKz: "Тауық еті, саңырауқұлақ, сыр.",
+    ingRu: "Курица, грибы, сыр.",
+    ingEn: "Chicken, mushrooms, cheese."
+  }),
+  makeItem({
+    ru: "Пицца с лососем",
+    kz: "Лосось пицца",
+    en: "Salmon Pizza",
+    price: "3 300 ₸",
+    category: "pizza",
+    image: placeholder,
+    ingKz: "Лосось, кілегейлі соус, сыр.",
+    ingRu: "Лосось, сливочный соус, сыр.",
+    ingEn: "Salmon, creamy sauce, cheese."
+  }),
+  makeItem({
+    ru: "Хачапури по Аджарски",
+    kz: "Аджарлық хачапури",
+    en: "Adjarian Khachapuri",
+    price: "3 000 ₸",
+    category: "pizza",
+    image: placeholder,
+    ingKz: "Хачапури, жұмыртқа, сыр.",
+    ingRu: "Хачапури, яйцо, сыр.",
+    ingEn: "Khachapuri, egg, cheese."
+  }),
+  makeItem({
+    ru: "Хачапури по Мегрельски",
+    kz: "Мегрелдік хачапури",
+    en: "Megrelian Khachapuri",
+    price: "3 000 ₸",
+    category: "pizza",
+    image: placeholder,
+    ingKz: "Хачапури, сыр.",
+    ingRu: "Хачапури, сыр.",
+    ingEn: "Khachapuri, cheese."
+  }),
+  makeItem({
+    ru: "Хлебная корзинка",
+    kz: "Нан себеті",
+    en: "Bread Basket",
+    price: "1 190 ₸",
+    category: "pizza",
+    image: placeholder,
+    ingKz: "Нан, соус.",
+    ingRu: "Хлеб, соус.",
+    ingEn: "Bread, sauce."
+  }),
+  makeItem({
+    ru: "Лепешка",
+    kz: "Жалпақ нан",
+    en: "Flatbread",
+    price: "300 ₸",
+    category: "pizza",
+    image: placeholder,
+    ingKz: "Жалпақ нан.",
+    ingRu: "Лепешка.",
+    ingEn: "Flatbread."
+  }),
 
-  // ===== РОЛЛЫ =====
+  // ===== КУХНЯ: СУШИ РОЛЛ =====
   makeItem({
     ru: "Филадельфия",
-    en: "Philadelphia",
-    price: "3 800 ₸",
+    kz: "Филадельфия ролл",
+    en: "Philadelphia Roll",
+    price: "3 290 ₸",
     category: "rolls",
     image: "images/roll_philadelphia.webp",
     ingKz: "Лосось, күріш, сыр, нори.",
@@ -586,10 +873,43 @@ const menuItems = [
     ingEn: "Salmon, rice, cheese, nori."
   }),
   makeItem({
+    ru: "Канада",
+    kz: "Канада ролл",
+    en: "Canada Roll",
+    price: "3 400 ₸",
+    category: "rolls",
+    image: placeholder,
+    ingKz: "Крабы, авокадо, күріш.",
+    ingRu: "Краб, авокадо, рис.",
+    ingEn: "Crab, avocado, rice."
+  }),
+  makeItem({
+    ru: "Сливочный с лососем",
+    kz: "Лосось кілегейлі ролл",
+    en: "Creamy Salmon Roll",
+    price: "2 890 ₸",
+    category: "rolls",
+    image: placeholder,
+    ingKz: "Лосось, кілегейлі соус, күріш.",
+    ingRu: "Лосось, сливочный соус, рис.",
+    ingEn: "Salmon, creamy sauce, rice."
+  }),
+  makeItem({
+    ru: "Сливочный с угрем",
+    kz: "Жылан балық кілегейлі ролл",
+    en: "Creamy Eel Roll",
+    price: "3 200 ₸",
+    category: "rolls",
+    image: placeholder,
+    ingKz: "Жылан балық, кілегейлі соус, күріш.",
+    ingRu: "Угорь, сливочный соус, рис.",
+    ingEn: "Eel, creamy sauce, rice."
+  }),
+  makeItem({
     ru: "Цезарь",
     kz: "Цезарь ролл",
     en: "Caesar Roll",
-    price: "3 300 ₸",
+    price: "3 290 ₸",
     category: "rolls",
     image: "images/roll_caesar_fried.webp",
     ingKz: "Тауық еті, күріш, сыр, соус.",
@@ -597,42 +917,56 @@ const menuItems = [
     ingEn: "Chicken, rice, cheese, sauce."
   }),
   makeItem({
-    ru: "Америка темпура",
-    en: "America Tempura",
-    price: "3 500 ₸",
-    category: "rolls",
-    image: "images/roll_america_tempura.webp",
-    ingKz: "Темпура ролл.",
-    ingRu: "Темпура ролл.",
-    ingEn: "Tempura roll."
-  }),
-  makeItem({
     ru: "Унаги темпура",
-    en: "Unagi Tempura",
-    price: "3 000 ₸",
+    kz: "Унаги темпура ролл",
+    en: "Unagi Tempura Roll",
+    price: "2 900 ₸",
     category: "rolls",
     image: "images/roll_unagi_tempura.webp",
     ingKz: "Унаги темпура ролл.",
     ingRu: "Ролл унаги темпура.",
     ingEn: "Unagi tempura roll."
   }),
-
-  // ===== ШАШЛЫКИ =====
   makeItem({
-    ru: "Кусковой говядина",
-    kz: "Сиыр етінен шашлык",
-    en: "Beef Shashlik",
-    price: "1 150 ₸",
-    category: "shashlyk",
-    image: "images/kuskovaya-govyadina.webp",
-    ingKz: "Сиыр етінен шашлык.",
-    ingRu: "Шашлык из говядины.",
-    ingEn: "Beef shashlik."
+    ru: "Америка с лососем",
+    kz: "Лосось Америка ролл",
+    en: "America with Salmon Roll",
+    price: "3 890 ₸",
+    category: "rolls",
+    image: "images/roll_america_tempura.webp",
+    ingKz: "Лосось, темпура, күріш.",
+    ingRu: "Лосось, темпура, рис.",
+    ingEn: "Salmon, tempura, rice."
   }),
   makeItem({
+    ru: "Запеченная лосось",
+    kz: "Піскен лосось ролл",
+    en: "Baked Salmon Roll",
+    price: "3 690 ₸",
+    category: "rolls",
+    image: placeholder,
+    ingKz: "Піскен лосось, күріш, нори.",
+    ingRu: "Запечённый лосось, рис, нори.",
+    ingEn: "Baked salmon, rice, nori."
+  }),
+  makeItem({
+    ru: "Запеченная угорь",
+    kz: "Піскен жылан балық ролл",
+    en: "Baked Eel Roll",
+    price: "3 690 ₸",
+    category: "rolls",
+    image: placeholder,
+    ingKz: "Піскен жылан балық, күріш, нори.",
+    ingRu: "Запечённый угорь, рис, нори.",
+    ingEn: "Baked eel, rice, nori."
+  }),
+
+  // ===== КУХНЯ: ШАШЛЫК =====
+  makeItem({
     ru: "Люля кебаб",
+    kz: "Люля кебаб",
     en: "Lula Kebab",
-    price: "1 250 ₸",
+    price: "1 150 ₸",
     category: "shashlyk",
     image: "images/lyulya-kebab.webp",
     ingKz: "Люля кебаб.",
@@ -641,8 +975,9 @@ const menuItems = [
   }),
   makeItem({
     ru: "Окорочка",
+    kz: "Тауық санынан шашлык",
     en: "Chicken Leg Shashlik",
-    price: "1 050 ₸",
+    price: "1 100 ₸",
     category: "shashlyk",
     image: "images/okorochka-kebab.webp",
     ingKz: "Тауық окорочка.",
@@ -650,102 +985,26 @@ const menuItems = [
     ingEn: "Chicken legs."
   }),
   makeItem({
-    ru: "Печень в оболочке",
-    kz: "Қабықтағы бауыр",
-    en: "Liver in Caul Fat",
+    ru: "Кусковой говядина",
+    kz: "Сиыр етінен шашлык",
+    en: "Beef Shashlik",
     price: "1 300 ₸",
+    category: "shashlyk",
+    image: "images/kuskovaya-govyadina.webp",
+    ingKz: "Сиыр етінен шашлык.",
+    ingRu: "Шашлык из говядины.",
+    ingEn: "Beef shashlik."
+  }),
+  makeItem({
+    ru: "Печень",
+    kz: "Бауыр шашлык",
+    en: "Liver Shashlik",
+    price: "950 ₸",
     category: "shashlyk",
     image: "images/pechen-v-obolochke-kebab.webp",
     ingKz: "Бауыр шашлык.",
     ingRu: "Шашлык из печени.",
     ingEn: "Liver shashlik."
-  }),
-  makeItem({
-    ru: "Утка",
-    kz: "Үйрек",
-    en: "Duck",
-    price: "2 000 ₸",
-    category: "shashlyk",
-    image: "images/utka-shashlyk.webp",
-    ingKz: "Үйрек еті.",
-    ingRu: "Утиное мясо.",
-    ingEn: "Duck meat."
-  }),
-
-  // ===== СЕТЫ НА КОМПАНИЮ =====
-  makeItem({
-    ru: "Сет FOX на 6–8 персон",
-    kz: "Сет FOX 6–8 адамға",
-    en: "FOX Set for 6–8 People",
-    price: "38 000 ₸",
-    category: "company",
-    image: "images/set_fox.webp",
-    ingKz: "Рибай, тибон, қуырдақ, цыпленок табака, колбаски, салат, дольки, көкөніс.",
-    ingRu: "Рибай, тибон, куырдак, цыпленок табака, колбаски, салат, дольки, овощи.",
-    ingEn: "Ribeye, T-bone, kuyrdak, chicken tabaka, sausages, salad, wedges, vegetables."
-  }),
-  makeItem({
-    ru: "Сет SHELBY на 12–15 персон",
-    kz: "Сет SHELBY 12–15 адамға",
-    en: "SHELBY Set for 12–15 People",
-    price: "50 000 ₸",
-    category: "company",
-    image: placeholder,
-    ingKz: "Компанияға арналған үлкен ет сеті.",
-    ingRu: "Большой мясной сет на компанию.",
-    ingEn: "Large meat set for a company."
-  }),
-  makeItem({
-    ru: "Куырдак",
-    kz: "Қуырдақ",
-    en: "Kuyrdak",
-    price: "30 000 ₸",
-    category: "company",
-    image: "images/kuyrdak.webp",
-    ingKz: "Компанияға арналған қуырдақ.",
-    ingRu: "Куырдак на компанию.",
-    ingEn: "Kuyrdak for a company."
-  }),
-  makeItem({
-    ru: "Бешбармак",
-    kz: "Бешбармақ",
-    en: "Beshbarmak",
-    price: "25 000 ₸",
-    category: "company",
-    image: "images/beshbarmak.webp",
-    ingKz: "Компанияға арналған бешбармақ.",
-    ingRu: "Бешбармак на компанию.",
-    ingEn: "Beshbarmak for a company."
-  }),
-  makeItem({
-    ru: "Микс суши",
-    en: "Sushi Mix",
-    price: "18 000 ₸",
-    category: "company",
-    image: "images/mix_sushi_1200x800.webp",
-    ingKz: "Суши сет ассорти, соус, имбирь, васаби.",
-    ingRu: "Суши сет ассорти, соус, имбирь, васаби.",
-    ingEn: "Assorted sushi set, sauce, ginger, wasabi."
-  }),
-  makeItem({
-    ru: "Мясной микс",
-    en: "Meat Mix",
-    price: "25 000 ₸",
-    category: "company",
-    image: "images/meat_mix_1200x800.webp",
-    ingKz: "Ет ассорти, гарнир, көкөніс, соустар.",
-    ingRu: "Мясное ассорти, гарнир, овощи, соусы.",
-    ingEn: "Assorted meat, side dish, vegetables, sauces."
-  }),
-  makeItem({
-    ru: "Куриное асорти",
-    en: "Chicken Assorted",
-    price: "8 000 ₸",
-    category: "company",
-    image: "images/chicken_assorti_1200x800.webp",
-    ingKz: "Тауық ассорти, соус.",
-    ingRu: "Куриное ассорти, соус.",
-    ingEn: "Assorted chicken, sauce."
   }),
 
   // ===== БАР: ЛИМОНАДЫ =====
