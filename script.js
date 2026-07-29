@@ -127,9 +127,9 @@ const menuItems = [
     ingEn: "Chicken, lettuce, cheese, croutons, sauce."
   }),
   makeItem({
-    ru: "Мухабби каприз",
-    kz: "Мухабби каприз",
-    en: "Muhabbi Caprice",
+    ru: "Мужской каприз",
+    kz: "Мужской каприз",
+    en: "Мужской каприз",
     price: "2 390 ₸",
     category: "salads",
     image: placeholder,
